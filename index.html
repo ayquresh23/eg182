@@ -1,0 +1,2860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EG182 — Manufacturing Technology 1 Study Site</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+</head>
+<body>
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<!-- NAVIGATION -->
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="#" class="nav-brand" onclick="showSection('home', event)">
+      <div class="nav-logo">EG</div>
+      <span>EG182</span>
+    </a>
+    <div class="nav-tabs">
+      <button class="nav-tab active" data-section="home" onclick="showSection('home', event)">Home</button>
+      <button class="nav-tab" data-section="t1" onclick="showSection('t1', event)">T1</button>
+      <button class="nav-tab" data-section="t2" onclick="showSection('t2', event)">T2 Casting</button>
+      <button class="nav-tab" data-section="t3" onclick="showSection('t3', event)">T3 Plastics</button>
+      <button class="nav-tab" data-section="t4" onclick="showSection('t4', event)">T4 Rubber</button>
+      <button class="nav-tab" data-section="t5" onclick="showSection('t5', event)">T5 PM</button>
+      <button class="nav-tab" data-section="t6" onclick="showSection('t6', event)">T6 Forming</button>
+      <button class="nav-tab" data-section="t7" onclick="showSection('t7', event)">T7 Machining</button>
+      <button class="nav-tab" data-section="t8" onclick="showSection('t8', event)">T8 Tools</button>
+      <button class="nav-tab" data-section="t9" onclick="showSection('t9', event)">T9 Grinding</button>
+      <button class="nav-tab" data-section="t10" onclick="showSection('t10', event)">T10 HT/AM/SSM</button>
+      <button class="nav-tab" data-section="formulas" onclick="showSection('formulas', event)">Formulas</button>
+      <button class="nav-tab" data-section="glossary" onclick="showSection('glossary', event)">Glossary</button>
+      <button class="nav-tab" data-section="traps" onclick="showSection('traps', event)">Traps</button>
+      <a href="definitions.html" class="nav-tab" style="text-decoration:none">Definitions ↗</a>
+    </div>
+    <div class="nav-mode">
+      <button class="mode-btn active" data-mode="learn" onclick="setMode('learn')">Learn</button>
+      <button class="mode-btn" data-mode="revise" onclick="setMode('revise')">Revise</button>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<!-- HOME SECTION -->
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<section id="home" class="section active">
+  <div class="container">
+    <div class="hero">
+      <span class="hero-tag">Manufacturing Technology 1 — Swansea University</span>
+      <h1>EG182 Study Site</h1>
+      <p class="hero-subtitle">A complete, self-contained revision resource. From first principles to exam-ready, covering every topic, formula, and process in the module.</p>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-value">10</div>
+          <div class="hero-stat-label">Topics</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value">300+</div>
+          <div class="hero-stat-label">Terms</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value">12</div>
+          <div class="hero-stat-label">Formulas</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value">25+</div>
+          <div class="hero-stat-label">MCQ Traps</div>
+        </div>
+      </div>
+    </div>
+
+    <h2>Pick a topic</h2>
+    <p>Each topic includes first-principles explanations, expandable engineering detail, worked examples, and exam tips. Use the navigation bar above to jump between sections, or scroll through the cards below.</p>
+    
+    <div class="card-grid">
+      <div class="topic-card topic-1" onclick="showSection('t1')">
+        <div class="topic-num">Topic 1</div>
+        <div class="topic-title">General Manufacturing</div>
+        <div class="topic-desc">What manufacturing is, how industries are structured, and how production quantities and varieties trade off.</div>
+        <div class="topic-meta">
+          <div class="topic-meta-item">Difficulty: <span>Easy</span></div>
+          <div class="topic-meta-item">Read: <span>10 min</span></div>
+        </div>
+      </div>
+      
+      <div class="topic-card topic-2" onclick="showSection('t2')">
+        <div class="topic-num">Topic 2</div>
+        <div class="topic-title">Metal Casting</div>
+        <div class="topic-desc">Pour molten metal into a mould. Sand casting, investment casting, die casting. Solidification, defects, and Chvorinov's rule.</div>
+        <div class="topic-meta">
+          <div class="topic-meta-item">Difficulty: <span>Medium</span></div>
+          <div class="topic-meta-item">Read: <span>30 min</span></div>
+        </div>
+      </div>
+      
+      <div class="topic-card topic-3" onclick="showSection('t3')">
+        <div class="topic-num">Topic 3</div>
+        <div class="topic-title">Plastics Shaping</div>
+        <div class="topic-desc">Thermoplastics vs thermosets. Extrusion, injection moulding, blow moulding, thermoforming, and more.</div>
+        <div class="topic-meta">
+          <div class="topic-meta-item">Difficulty: <span>Medium</span></div>
+          <div class="topic-meta-item">Read: <span>35 min</span></div>
+        </div>
+      </div>
+      
+      <div class="topic-card topic-4" onclick="showSection('t4')">
+        <div class="topic-num">Topic 4</div>
+        <div class="topic-title">Rubber & PMC</div>
+        <div class="topic-desc">Natural rubber processing, vulcanisation. Polymer matrix composites — fibreglass, carbon fibre, Kevlar.</div>
+        <div class="topic-meta">
+          <div class="topic-meta-item">Difficulty: <span>Medium</span></div>
+          <div class="topic-meta-item">Read: <span>25 min</span></div>
+        </div>
+      </div>
+      
+      <div class="topic-card topic-5" onclick="showSection('t5')">
+        <div class="topic-num">Topic 5</div>
+        <div class="topic-title">Powder Metallurgy</div>
+        <div class="topic-desc">Make parts from metal powder. Compaction, sintering, secondary operations. Self-lubricating bearings.</div>
+        <div class="topic-meta">
+          <div class="topic-meta-item">Difficulty: <span>Medium</span></div>
+          <div class="topic-meta-item">Read: <span>25 min</span></div>
+        </div>
+      </div>
+      
+      <div class="topic-card topic-6" onclick="showSection('t6')">
+        <div class="topic-num">Topic 6</div>
+        <div class="topic-title">Metal Forming</div>
+        <div class="topic-desc">Plastic deformation, work hardening, recrystallisation. Rolling, forging, extrusion, drawing, sheet metalwork.</div>
+        <div class="topic-meta">
+          <div class="topic-meta-item">Difficulty: <span>Hard</span></div>
+          <div class="topic-meta-item">Read: <span>40 min</span></div>
+        </div>
+      </div>
+      
+      <div class="topic-card topic-7" onclick="showSection('t7')">
+        <div class="topic-num">Topic 7</div>
+        <div class="topic-title">Metal Machining</div>
+        <div class="topic-desc">Subtractive manufacturing. Turning, drilling, milling, broaching. Cutting parameters and chip formation.</div>
+        <div class="topic-meta">
+          <div class="topic-meta-item">Difficulty: <span>Medium</span></div>
+          <div class="topic-meta-item">Read: <span>30 min</span></div>
+        </div>
+      </div>
+      
+      <div class="topic-card topic-8" onclick="showSection('t8')">
+        <div class="topic-num">Topic 8</div>
+        <div class="topic-title">Cutting Tools</div>
+        <div class="topic-desc">Tool wear, Taylor's tool life equation, tool materials from HSS to diamond, cutting fluids.</div>
+        <div class="topic-meta">
+          <div class="topic-meta-item">Difficulty: <span>Medium</span></div>
+          <div class="topic-meta-item">Read: <span>20 min</span></div>
+        </div>
+      </div>
+      
+      <div class="topic-card topic-9" onclick="showSection('t9')">
+        <div class="topic-num">Topic 9</div>
+        <div class="topic-title">Grinding & Finishing</div>
+        <div class="topic-desc">Abrasive machining. Wheel components, friability, grinding rules. Honing, lapping, superfinishing.</div>
+        <div class="topic-meta">
+          <div class="topic-meta-item">Difficulty: <span>Medium</span></div>
+          <div class="topic-meta-item">Read: <span>20 min</span></div>
+        </div>
+      </div>
+      
+      <div class="topic-card topic-10" onclick="showSection('t10')">
+        <div class="topic-num">Topic 10</div>
+        <div class="topic-title">HT, AM & SSM</div>
+        <div class="topic-desc">Heat treatment of steels. Additive manufacturing. Semi-solid metal processing. The newer technologies.</div>
+        <div class="topic-meta">
+          <div class="topic-meta-item">Difficulty: <span>Medium</span></div>
+          <div class="topic-meta-item">Read: <span>30 min</span></div>
+        </div>
+      </div>
+    </div>
+
+    <h2>Quick reference</h2>
+    <p>Need to look something up fast? Use these direct links.</p>
+    <div class="card-grid">
+      <div class="topic-card" onclick="showSection('formulas')" style="--bar-color: var(--accent);">
+        <div class="topic-num">Reference</div>
+        <div class="topic-title">📐 Formula Sheet</div>
+        <div class="topic-desc">Every calculation in the module. Variables explained, units flagged, worked examples included.</div>
+      </div>
+      <div class="topic-card" onclick="showSection('glossary')" style="--bar-color: var(--teal);">
+        <div class="topic-num">Reference</div>
+        <div class="topic-title">📚 Glossary</div>
+        <div class="topic-desc">300+ terms searchable across all 10 topics. Filter by topic, search by definition.</div>
+      </div>
+      <div class="topic-card" onclick="showSection('traps')" style="--bar-color: var(--coral);">
+        <div class="topic-num">Reference</div>
+        <div class="topic-title">⚠️ MCQ Traps</div>
+        <div class="topic-desc">25+ exam traps that catch people out. The wrong-but-believable claims and what's actually true.</div>
+      </div>
+    </div>
+
+    <h2>How to use this site</h2>
+    <div class="two-col">
+      <div class="concept-box note">
+        <div class="concept-box-title">📖 Learn Mode</div>
+        <p>Read each topic from start to finish. First-principles intro builds up to engineering detail. Best for first-time learners or thorough review.</p>
+      </div>
+      <div class="concept-box tip">
+        <div class="concept-box-title">⚡ Revise Mode</div>
+        <p>Hides intro fluff and shows only the exam-relevant content — formulas, traps, key terms. Best for last-minute exam prep.</p>
+      </div>
+    </div>
+
+    <div class="concept-box success">
+      <div class="concept-box-title">💡 Pro tip</div>
+      <p>Use <strong>Ctrl+F</strong> (or <strong>Cmd+F</strong> on Mac) to search any page. The Glossary section also has a built-in search that filters across all 300+ terms instantly.</p>
+    </div>
+  </div>
+</section>
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<!-- TOPIC 1 — GENERAL MANUFACTURING -->
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<section id="t1" class="section">
+  <div class="container">
+    <div class="topic-num">Topic 1 of 10</div>
+    <h1>General Manufacturing</h1>
+    <p class="hero-subtitle" style="margin-bottom: 32px;">The foundations — what manufacturing actually is, how industries are structured, and how production volume shapes everything that follows.</p>
+
+    <div class="toc">
+      <div class="toc-title">In this topic</div>
+      <ul class="toc-list">
+        <li><a href="#t1-what" class="toc-link">→ What is manufacturing?</a></li>
+        <li><a href="#t1-ops" class="toc-link">→ Operations: process vs assembly</a></li>
+        <li><a href="#t1-goods" class="toc-link">→ Consumer vs capital goods</a></li>
+        <li><a href="#t1-industry" class="toc-link">→ Industry structure</a></li>
+        <li><a href="#t1-quantity" class="toc-link">→ Production quantity & variety</a></li>
+        <li><a href="#t1-shape" class="toc-link">→ Net shape & near-net shape</a></li>
+      </ul>
+    </div>
+
+    <h2 id="t1-what">What is manufacturing?</h2>
+    <p class="learn-only">Forget the textbook definition for a second. Manufacturing is just <strong>turning stuff into other stuff</strong>. You take raw materials — metal ore from a mine, oil from the ground, sand from a beach — and through a series of processes, transform them into things people want to buy. A car. A phone. A pen.</p>
+
+    <p>The module gives manufacturing two formal definitions that you need to know:</p>
+
+    <div class="concept-box">
+      <div class="concept-box-title">Technological definition</div>
+      <p>Manufacturing is the application of physical and chemical processes to <em>change the geometry, properties, or appearance</em> of a starting material to make parts or products.</p>
+    </div>
+
+    <div class="concept-box note">
+      <div class="concept-box-title">Economic definition</div>
+      <p>Manufacturing is the transformation of raw materials into items of <em>greater value</em>. Each manufacturing step adds value — that's the whole point of it economically.</p>
+    </div>
+
+    <div class="analogy">
+      <div class="analogy-icon">🪵</div>
+      <div class="analogy-text">Think of a tree. As raw timber it's worth £50. Cut into planks — £150. Made into a chair — £500. Sold in a furniture shop with a brand — £2000. <strong>That's value being added at each manufacturing step.</strong></div>
+    </div>
+
+    <h2 id="t1-ops">Operations: processing vs assembly</h2>
+    <p class="learn-only">Every manufacturing operation falls into one of two categories. Understanding the difference matters because they require completely different equipment, skills, and considerations.</p>
+
+    <div class="two-col">
+      <div class="concept-box">
+        <div class="concept-box-title">Processing operations</div>
+        <p><strong>Transform a single material</strong> — change its shape, properties, or appearance.</p>
+        <ul>
+          <li>Casting — pouring molten metal into a mould</li>
+          <li>Machining — removing material with a cutting tool</li>
+          <li>Moulding — pressing plastic into a die</li>
+          <li>Forging — hammering metal into shape</li>
+          <li>Heat treatment — changing properties through heating/cooling</li>
+        </ul>
+      </div>
+      <div class="concept-box note">
+        <div class="concept-box-title">Assembly operations</div>
+        <p><strong>Join two or more components</strong> together — no transformation, just connection.</p>
+        <ul>
+          <li>Welding — fusing metals together</li>
+          <li>Bolting — mechanical fasteners</li>
+          <li>Adhesive bonding — glues</li>
+          <li>Brazing & soldering — joining with filler metals</li>
+          <li>Riveting — permanent mechanical joins</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="t1-goods">Consumer vs capital goods</h2>
+    <p class="learn-only">Not all products are sold to the same people. The module splits manufactured goods into two categories based on <em>who buys them</em>.</p>
+
+    <div class="two-col">
+      <div class="concept-box success">
+        <div class="concept-box-title">Consumer goods</div>
+        <p>Bought by <strong>individuals</strong> for personal use.</p>
+        <div class="inline-list">
+          <span class="tag">Cars</span>
+          <span class="tag">Phones</span>
+          <span class="tag">Tyres</span>
+          <span class="tag">Clothes</span>
+          <span class="tag">Tennis rackets</span>
+        </div>
+      </div>
+      <div class="concept-box warn">
+        <div class="concept-box-title">Capital goods</div>
+        <p>Bought by <strong>companies</strong> to make other goods.</p>
+        <div class="inline-list">
+          <span class="tag">Lathes</span>
+          <span class="tag">Aircraft</span>
+          <span class="tag">Robots</span>
+          <span class="tag">Industrial ovens</span>
+          <span class="tag">CNC machines</span>
+        </div>
+      </div>
+    </div>
+
+    <p>An aircraft is a capital good when British Airways buys it to fly passengers. The same aircraft becomes a consumer good if a wealthy individual bought it for private use. <strong>Who buys it determines the category.</strong></p>
+
+    <h2 id="t1-industry">Industry structure — three tiers</h2>
+    <p class="learn-only">All economic activity sits in one of three industry tiers. Manufacturing is firmly in the middle one, which is why this module is called Manufacturing Technology.</p>
+
+    <div class="card-grid">
+      <div class="card">
+        <h4 style="color: var(--green);">Primary industry</h4>
+        <p><strong>Extracts raw materials from nature.</strong></p>
+        <div class="inline-list">
+          <span class="tag">Agriculture</span>
+          <span class="tag">Fishing</span>
+          <span class="tag">Mining</span>
+          <span class="tag">Forestry</span>
+          <span class="tag">Oil drilling</span>
+        </div>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--accent);">Secondary industry</h4>
+        <p><strong>This module.</strong> Transforms primary materials into products. Manufacturing.</p>
+        <div class="inline-list">
+          <span class="tag">Steel mills</span>
+          <span class="tag">Car factories</span>
+          <span class="tag">Plastics plants</span>
+          <span class="tag">Chemical plants</span>
+        </div>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--teal);">Tertiary industry</h4>
+        <p><strong>Services</strong> — no physical product is made.</p>
+        <div class="inline-list">
+          <span class="tag">Restaurants</span>
+          <span class="tag">Banking</span>
+          <span class="tag">Retail</span>
+          <span class="tag">Healthcare</span>
+          <span class="tag">Education</span>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="t1-quantity">Production quantity & variety</h2>
+    <p class="learn-only">A factory making 10 custom yachts a year operates completely differently from one making 10 million identical bottle caps. The relationship between quantity and variety is fundamental to choosing manufacturing methods.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Quantity range</th><th>Units/year</th><th>Variety</th><th>Typical methods</th></tr></thead>
+        <tbody>
+          <tr><td>Low</td><td>1 – 100</td><td>High variety</td><td>Job shops, hand finishing</td></tr>
+          <tr><td>Medium</td><td>100 – 10,000</td><td>Moderate</td><td>Batch production</td></tr>
+          <tr><td>High</td><td>10,000+</td><td>Low variety</td><td>Mass production, automation</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="concept-box tip">
+      <div class="concept-box-title">Key insight</div>
+      <p><strong>Quantity and variety trade off against each other.</strong> You can make many different things in low quantities, OR a few things in high quantities. Trying to do both gets expensive fast — that's why factories specialise.</p>
+    </div>
+
+    <h2 id="t1-shape">Net shape & near-net shape</h2>
+    <p>Two terms you'll hear repeatedly across the module — they describe how close a manufacturing process gets you to the final part dimensions:</p>
+
+    <div class="two-col">
+      <div class="concept-box success">
+        <div class="concept-box-title">Net shape</div>
+        <p>Part comes out of the process at <strong>final dimensions</strong>. No further machining needed. Most efficient — no wasted material.</p>
+        <p style="font-size: 13px; color: var(--muted);">Example: precision die casting, MIM, some additive manufacturing.</p>
+      </div>
+      <div class="concept-box note">
+        <div class="concept-box-title">Near-net shape</div>
+        <p>Part requires <strong>only minimal finishing</strong> — typically light machining or grinding to hit final tolerances.</p>
+        <p style="font-size: 13px; color: var(--muted);">Example: most powder metallurgy, investment casting, drop forging.</p>
+      </div>
+    </div>
+
+    <h2>Topic 1 essentials</h2>
+    <div class="concept-box">
+      <div class="concept-box-title revise-only">EXAM CHEAT SHEET</div>
+      <div class="concept-box-title learn-only">Quick recap</div>
+      <ul>
+        <li>Manufacturing = transforming materials → adding value (technological + economic definitions)</li>
+        <li>Two operation types: <strong>processing</strong> (transforms one material) and <strong>assembly</strong> (joins multiple)</li>
+        <li>Consumer goods (individuals buy) vs capital goods (companies buy)</li>
+        <li>Industry tiers: <strong>primary</strong> (extract), <strong>secondary</strong> (manufacture), <strong>tertiary</strong> (services)</li>
+        <li>Production quantity ranges: low (1–100), medium (100–10k), high (10k+)</li>
+        <li><strong>Net shape</strong> = no machining needed; <strong>near-net shape</strong> = minimal finishing</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<!-- TOPIC 2 — METAL CASTING -->
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<section id="t2" class="section">
+  <div class="container">
+    <div class="topic-num">Topic 2 of 10</div>
+    <h1>Metal Casting</h1>
+    <p class="hero-subtitle" style="margin-bottom: 32px;">The oldest manufacturing process. Pour molten metal into a mould, let it solidify, get a part. Sounds simple — but the physics is rich and the engineering is precise.</p>
+
+    <div class="toc">
+      <div class="toc-title">In this topic</div>
+      <ul class="toc-list">
+        <li><a href="#t2-basics" class="toc-link">→ The basics</a></li>
+        <li><a href="#t2-mould-types" class="toc-link">→ Mould types</a></li>
+        <li><a href="#t2-sand" class="toc-link">→ Sand casting anatomy</a></li>
+        <li><a href="#t2-properties" class="toc-link">→ Sand properties</a></li>
+        <li><a href="#t2-solidification" class="toc-link">→ Solidification theory</a></li>
+        <li><a href="#t2-defects" class="toc-link">→ Casting defects</a></li>
+        <li><a href="#t2-processes" class="toc-link">→ Other processes</a></li>
+        <li><a href="#t2-formulas" class="toc-link">→ Calculations</a></li>
+        <li><a href="#t2-traps" class="toc-link">→ Exam traps</a></li>
+      </ul>
+    </div>
+
+    <h2 id="t2-basics">The basics</h2>
+    <p class="learn-only">Imagine you want to make a metal teapot. You could machine it from a solid block of aluminium — slow and expensive. You could forge it from sheet metal — works for simple shapes but not curves. Or you could <strong>cast it</strong> — make a teapot-shaped hollow in some material, pour molten metal in, let it cool, break out the part.</p>
+
+    <p>Casting is one of the oldest manufacturing processes — bronze swords were cast 5,000 years ago. The principle hasn't changed:</p>
+
+    <div class="process-flow">
+      <div class="process-step">
+        <div class="process-step-num">Step 1</div>
+        <div class="process-step-name">Melt metal</div>
+        <div class="process-step-desc">In a furnace</div>
+      </div>
+      <div class="process-step">
+        <div class="process-step-num">Step 2</div>
+        <div class="process-step-name">Pour into mould</div>
+        <div class="process-step-desc">Cavity in shape of part</div>
+      </div>
+      <div class="process-step">
+        <div class="process-step-num">Step 3</div>
+        <div class="process-step-name">Solidify</div>
+        <div class="process-step-desc">Metal cools and freezes</div>
+      </div>
+      <div class="process-step">
+        <div class="process-step-num">Step 4</div>
+        <div class="process-step-name">Remove</div>
+        <div class="process-step-desc">Break or open the mould</div>
+      </div>
+      <div class="process-step">
+        <div class="process-step-num">Step 5</div>
+        <div class="process-step-name">Finish</div>
+        <div class="process-step-desc">Trim, clean, machine</div>
+      </div>
+    </div>
+
+    <p><strong>Why use casting?</strong> Three big advantages:</p>
+    <ul>
+      <li><strong>Complex shapes</strong> — internal cavities, curved surfaces, hollow features</li>
+      <li><strong>Large parts</strong> — engine blocks, ship propellers, statues</li>
+      <li><strong>Variety of metals</strong> — almost any metal that can be melted can be cast</li>
+    </ul>
+
+    <h2 id="t2-mould-types">Mould types — expendable vs permanent</h2>
+    <p>The mould is half the manufacturing process. Two fundamental categories:</p>
+
+    <div class="two-col">
+      <div class="concept-box warn">
+        <div class="concept-box-title">Expendable moulds</div>
+        <p>Destroyed after each casting. New mould per part.</p>
+        <ul>
+          <li>Sand casting (most common)</li>
+          <li>Investment casting (lost wax)</li>
+          <li>Lost foam (EPS pattern)</li>
+        </ul>
+        <p style="font-size: 13px; color: var(--muted);">Pros: complex shapes, any metal, low tooling cost.<br>Cons: slower, single-use, more material handling.</p>
+      </div>
+      <div class="concept-box note">
+        <div class="concept-box-title">Permanent moulds</div>
+        <p>Reused thousands of times. Made of metal.</p>
+        <ul>
+          <li>Die casting (most common)</li>
+          <li>Centrifugal casting</li>
+          <li>Slush casting</li>
+        </ul>
+        <p style="font-size: 13px; color: var(--muted);">Pros: fast, consistent, smooth finish.<br>Cons: limited to lower melting metals, expensive tooling, restricted to high volumes.</p>
+      </div>
+    </div>
+
+    <h2 id="t2-sand">Sand casting anatomy</h2>
+    <p class="learn-only">Sand casting is the most common and oldest casting method. The mould is made by packing sand around a wooden or metal pattern, then removing the pattern to leave a cavity. Molten metal fills the cavity, solidifies, and the sand is broken away.</p>
+
+    <p>Every component of a sand mould has a specific job. Learn the anatomy because the exam tests it directly.</p>
+
+    <div class="card-grid">
+      <div class="card"><h4>Cope</h4><p>Top half of the mould.</p></div>
+      <div class="card"><h4>Drag</h4><p>Bottom half of the mould.</p></div>
+      <div class="card"><h4>Flask</h4><p>Rigid box containing both halves.</p></div>
+      <div class="card"><h4>Parting line</h4><p>Where cope and drag meet — leaves a visible seam on the casting.</p></div>
+      <div class="card"><h4>Pouring basin</h4><p>Funnel at top — receives molten metal smoothly.</p></div>
+      <div class="card"><h4>Sprue</h4><p>Vertical channel down which metal flows. <strong>Tapered</strong> to prevent air ingestion.</p></div>
+      <div class="card"><h4>Runner</h4><p>Horizontal channel distributing metal from sprue to gates.</p></div>
+      <div class="card"><h4>Gate</h4><p>Narrow entry into cavity — easy to snap off after solidification.</p></div>
+      <div class="card"><h4>Cavity</h4><p>The hollow space that becomes the casting.</p></div>
+      <div class="card"><h4>Core</h4><p>Sand insert that creates internal hollow features.</p></div>
+      <div class="card"><h4>Chaplet</h4><p>Metal support that holds the core in position. Must have <strong>higher melting point</strong> than the cast metal.</p></div>
+      <div class="card"><h4>Riser</h4><p>Reservoir of molten metal that <strong>solidifies last</strong> — feeds shrinkage in the cavity.</p></div>
+    </div>
+
+    <div class="concept-box tip">
+      <div class="concept-box-title">Why is the sprue tapered?</div>
+      <p>As metal flows down by gravity, it accelerates. If the sprue had constant cross-section, the falling metal would create suction and pull air in — causing porosity. The taper keeps the metal column full at all times.</p>
+    </div>
+
+    <h2 id="t2-properties">Sand properties — the five (plus extras)</h2>
+    <p>You can't just use any sand. Foundry sand needs five specific properties — these are <strong>direct exam MCQ targets</strong>:</p>
+
+    <div class="card-grid">
+      <div class="card"><h4 style="color: var(--amber);">1. Strength</h4><p>Holds shape and resists erosion when hot metal is poured in.</p></div>
+      <div class="card"><h4 style="color: var(--amber);">2. Permeability</h4><p>Allows hot gases to escape through voids between sand grains. Without this, gas gets trapped → porosity.</p></div>
+      <div class="card"><h4 style="color: var(--amber);">3. Thermal stability</h4><p>Resists cracking on contact with molten metal. Silica (SiO₂) is the main material.</p></div>
+      <div class="card"><h4 style="color: var(--amber);">4. Collapsibility</h4><p>Gives way as the casting shrinks during cooling. If sand was too rigid, casting would crack (<em>hot tearing</em>).</p></div>
+      <div class="card"><h4 style="color: var(--amber);">5. Reusability</h4><p>Sand from broken moulds can be recycled into new moulds, reducing cost.</p></div>
+      <div class="card"><h4 style="color: var(--muted);">+ Refractory</h4><p>Withstands high temperatures without degrading — this is <em>why</em> silica works.</p></div>
+    </div>
+
+    <div class="concept-box">
+      <div class="concept-box-title">Standard sand mix</div>
+      <p><strong>90% sand</strong> (silica) + <strong>7% clay</strong> (binder) + <strong>3% water</strong> (activator)</p>
+      <p>Small grain = better surface finish. Large grain = better permeability. Always a trade-off.</p>
+    </div>
+
+    <h2 id="t2-solidification">Solidification theory</h2>
+    <p class="learn-only">When you pour molten metal into a mould, it doesn't just freeze in place. The way it solidifies determines the final grain structure and therefore the mechanical properties of the casting. This section is heavy on physics — but it explains why castings behave the way they do.</p>
+
+    <h3>Pure metals vs alloys — different behaviour</h3>
+    <div class="two-col">
+      <div class="concept-box note">
+        <div class="concept-box-title">Pure metals</div>
+        <p>Freeze at <strong>one specific temperature</strong>. The cooling curve has a flat section called <em>thermal arrest</em> — temperature stays constant while latent heat of fusion is released.</p>
+      </div>
+      <div class="concept-box warn">
+        <div class="concept-box-title">Alloys</div>
+        <p>Freeze over a <strong>temperature range</strong> (between liquidus and solidus). Within this range — the <em>mushy zone</em> — the metal is part liquid, part solid.</p>
+      </div>
+    </div>
+
+    <h3>Three solidification zones</h3>
+    <p>As metal solidifies in a mould, three distinct grain structures form from outside to inside:</p>
+
+    <div class="card-grid">
+      <div class="card">
+        <h4 style="color: var(--blue);">1. Chill zone</h4>
+        <p><strong>Outermost layer</strong> — touches cold mould wall, freezes instantly. Very fine, randomly oriented grains.</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--purple);">2. Columnar zone</h4>
+        <p><strong>Middle layer</strong> — grains grow inward against heat flow direction. Long, parallel, <em>anisotropic</em> (different properties in different directions).</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--teal);">3. Equiaxed zone</h4>
+        <p><strong>Centre</strong> — equal-sized grains in all directions. <em>Isotropic</em> — best mechanical properties for general use.</p>
+      </div>
+    </div>
+
+    <h3>Three shrinkage stages</h3>
+    <p>Metal contracts in three distinct stages as it cools from molten to room temperature:</p>
+    <ol>
+      <li><strong>Liquid contraction</strong> — molten metal volume reduces as temperature drops</li>
+      <li><strong>Solidification shrinkage</strong> — biggest stage. Metal contracts as it changes from liquid to solid. <em>This is what the riser feeds.</em></li>
+      <li><strong>Solid thermal contraction</strong> — solid metal continues to shrink as it cools to room temperature</li>
+    </ol>
+
+    <div class="concept-box danger">
+      <div class="concept-box-title">⚠️ Why risers exist</div>
+      <p>Solidification shrinkage causes voids in the casting if there's no extra metal to feed them. The <strong>riser</strong> is a reservoir of molten metal that solidifies LAST — feeding liquid metal into the shrinking cavity. <strong>Riser must have a higher V/A ratio than the casting</strong> to ensure it solidifies last (Chvorinov's rule).</p>
+    </div>
+
+    <h2 id="t2-defects">Casting defects</h2>
+    <p>Things that go wrong. Each defect has specific causes — exam MCQs often test what causes what.</p>
+
+    <div class="card-grid">
+      <div class="card">
+        <h4 style="color: var(--coral);">Porosity</h4>
+        <p>Voids from trapped air or solidification shrinkage. Weakens the part. Caused by turbulent pouring or poor riser design.</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--coral);">Cold shut</h4>
+        <p>Two flow fronts meet but don't fuse — premature freezing creates a visible seam and stress concentration.</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--coral);">Misrun</h4>
+        <p>Metal solidifies before completely filling cavity — either too cold, too slow, or section too thin.</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--coral);">Cold shots</h4>
+        <p>Metal splatters during pouring — solid globules become entrapped in casting.</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--coral);">Hot tearing</h4>
+        <p>Cracking caused by <strong>RIGID mould</strong> restricting thermal contraction during cooling. ⚠️ Common exam trap — NOT caused by flexible mould.</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--coral);">Sand blow / wash</h4>
+        <p>Blow = balloon-shaped gas cavity. Wash = sand erosion creating embedded particles. Both from gas/erosion during pouring.</p>
+      </div>
+    </div>
+
+    <h2 id="t2-processes">Other casting processes</h2>
+
+    <h3>Investment casting (lost wax)</h3>
+    <p class="learn-only">A 5,000-year-old technique still used today for high-precision parts like jet engine turbine blades. Originally developed for jewellery and statues.</p>
+    <div class="process-flow">
+      <div class="process-step"><div class="process-step-num">1</div><div class="process-step-name">Wax pattern</div><div class="process-step-desc">Made by injection moulding</div></div>
+      <div class="process-step"><div class="process-step-num">2</div><div class="process-step-name">Wax tree</div><div class="process-step-desc">Multiple patterns on sprue</div></div>
+      <div class="process-step"><div class="process-step-num">3</div><div class="process-step-name">Ceramic shell</div><div class="process-step-desc">Repeated dipping in slurry</div></div>
+      <div class="process-step"><div class="process-step-num">4</div><div class="process-step-name">Wax melted out</div><div class="process-step-desc">Wax CAN be reused</div></div>
+      <div class="process-step"><div class="process-step-num">5</div><div class="process-step-name">Pour & solidify</div><div class="process-step-desc">Hot ceramic shell</div></div>
+      <div class="process-step"><div class="process-step-num">6</div><div class="process-step-name">Break shell</div><div class="process-step-desc">Recover casting</div></div>
+    </div>
+
+    <div class="concept-box success">
+      <div class="concept-box-title">Why "lost wax"?</div>
+      <p>The wax is melted away (lost) before the metal is poured. But the wax <strong>can be recovered and reused</strong> — that's an MCQ trap. Just because it's "lost" from the mould doesn't mean it's discarded.</p>
+    </div>
+
+    <h3>Die casting</h3>
+    <p>Permanent metal mould (the die) with molten metal injected under high pressure. Two variants:</p>
+
+    <div class="two-col">
+      <div class="concept-box">
+        <div class="concept-box-title">Hot chamber</div>
+        <p>Injection mechanism is <strong>submerged in the melt</strong>. Fast, continuous cycle.</p>
+        <p style="font-size: 13px; color: var(--muted);">Limited to <strong>low-melting metals</strong> — zinc, tin alloys. Reactive metals would corrode the mechanism.</p>
+      </div>
+      <div class="concept-box">
+        <div class="concept-box-title">Cold chamber</div>
+        <p>Injection mechanism is <strong>separate from the melt</strong>. Metal ladled in for each shot.</p>
+        <p style="font-size: 13px; color: var(--muted);">Used for <strong>reactive/high-temperature metals</strong> — aluminium, magnesium, copper.</p>
+      </div>
+    </div>
+
+    <h3>Centrifugal casting</h3>
+    <p>Mould spins at high speed during pouring. Centrifugal force flings metal outward against the mould wall — hollow centre forms <em>naturally</em>, no core needed. Limited to <strong>axisymmetric shapes</strong> (pipes, tubes, rings, train wheels).</p>
+
+    <h2 id="t2-formulas">Calculations</h2>
+
+    <div class="formula-block">
+      <div class="formula-name">Chvorinov's Rule — solidification time</div>
+      <div class="formula-eq">Ts = C × (V/A)²</div>
+      <div class="formula-vars">
+        <div class="formula-var"><span class="formula-var-symbol">Ts</span>solidification time (s)</div>
+        <div class="formula-var"><span class="formula-var-symbol">C</span>mould constant (given in exam)</div>
+        <div class="formula-var"><span class="formula-var-symbol">V</span>volume of casting (cm³)</div>
+        <div class="formula-var"><span class="formula-var-symbol">A</span>surface area (cm²)</div>
+      </div>
+      <p style="margin-top: 16px;"><strong>What it tells you:</strong> bigger volume relative to surface area = slower solidification. A sphere (high V/A) cools slower than a flat plate (low V/A) of the same volume. <strong>The riser must have higher V/A than the casting</strong> so it solidifies last.</p>
+    </div>
+
+    <div class="formula-block">
+      <div class="formula-name">Sprue / pouring calculations — three steps</div>
+      <div class="formula-eq">v = √(2gh)  →  Q = v × A  →  T = V / Q</div>
+      <div class="formula-vars">
+        <div class="formula-var"><span class="formula-var-symbol">v</span>velocity at sprue base (cm/s)</div>
+        <div class="formula-var"><span class="formula-var-symbol">g</span>gravitational acceleration = 981 cm/s²</div>
+        <div class="formula-var"><span class="formula-var-symbol">h</span>sprue height (cm)</div>
+        <div class="formula-var"><span class="formula-var-symbol">Q</span>volumetric flow rate (cm³/s)</div>
+        <div class="formula-var"><span class="formula-var-symbol">A</span>sprue cross-sectional area (cm²)</div>
+        <div class="formula-var"><span class="formula-var-symbol">T</span>mould fill time (s)</div>
+        <div class="formula-var"><span class="formula-var-symbol">V</span>cavity volume (cm³)</div>
+      </div>
+    </div>
+
+    <div class="example">
+      <div class="example-label">Worked example — Chvorinov's rule</div>
+      <p class="example-q">A cube casting (40mm side) needs a cylindrical riser. Mould constant C = 4 s/mm². If the riser must solidify 25% slower than the casting, find the dimensions of a riser with H/D ratio = 1.</p>
+      <div class="example-step">Step 1: Calculate V/A for the cube. V = 40³ = 64,000 mm³. A = 6 × 40² = 9,600 mm². V/A = 6.67 mm.</div>
+      <div class="example-step">Step 2: Casting Ts = 4 × (6.67)² = 178 s.</div>
+      <div class="example-step">Step 3: Riser must take 25% longer → Tr = 178 × 1.25 = 222 s.</div>
+      <div class="example-step">Step 4: For riser, (V/A)² = 222 / 4 = 55.6 → V/A = 7.45 mm.</div>
+      <div class="example-step">Step 5: For cylinder with H = D: V = π(D/2)²×D = πD³/4. A = 2π(D/2)² + πD×D = πD²/2 + πD² = 3πD²/2.</div>
+      <div class="example-step">Step 6: V/A = (πD³/4) / (3πD²/2) = D/6. So D/6 = 7.45 → D = 44.7 mm, H = 44.7 mm.</div>
+      <div class="example-answer">Answer: Riser diameter and height = 44.7 mm</div>
+    </div>
+
+    <h2 id="t2-traps">Topic 2 — exam traps</h2>
+    
+    <div class="trap-card">
+      <span class="trap-tag">Trap 1</span>
+      <div class="trap-claim">"Hot tearing is caused by flexible moulds restricting shrinkage."</div>
+      <div class="trap-truth"><strong>FALSE.</strong> Hot tearing is caused by <strong>RIGID</strong> moulds restricting thermal contraction during cooling.</div>
+    </div>
+
+    <div class="trap-card">
+      <span class="trap-tag">Trap 2</span>
+      <div class="trap-claim">"In investment casting, the wax pattern is destroyed and cannot be recovered."</div>
+      <div class="trap-truth"><strong>FALSE.</strong> Wax <strong>can be recovered and reused</strong> — it's melted out, but it doesn't disappear. The pattern is "lost" from the mould but the wax itself is recyclable.</div>
+    </div>
+
+    <div class="trap-card">
+      <span class="trap-tag">Trap 3</span>
+      <div class="trap-claim">"Investment casting can produce very large parts."</div>
+      <div class="trap-truth"><strong>FALSE.</strong> Investment casting <strong>IS size-limited</strong>. The ceramic shell becomes too heavy and fragile for large parts. Used for small, complex, high-precision components.</div>
+    </div>
+
+    <div class="trap-card">
+      <span class="trap-tag">Trap 4</span>
+      <div class="trap-claim">"Lost foam casting cannot have core shift defects because there's no core."</div>
+      <div class="trap-truth"><strong>FALSE.</strong> Lost foam can have core shift defects when foam patterns deform during pouring. No conventional core ≠ no core-related defects.</div>
+    </div>
+
+    <div class="trap-card">
+      <span class="trap-tag">Trap 5</span>
+      <div class="trap-claim">"Centrifugal casting can produce any shape since the mould spins."</div>
+      <div class="trap-truth"><strong>FALSE.</strong> Centrifugal casting only produces <strong>axisymmetric</strong> shapes — pipes, tubes, rings, wheels. Anything that's symmetrical about a rotation axis.</div>
+    </div>
+  </div>
+</section>
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<!-- TOPIC 3 — PLASTICS SHAPING -->
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<section id="t3" class="section">
+  <div class="container">
+    <div class="topic-num">Topic 3 of 10</div>
+    <h1>Plastics Shaping Processes</h1>
+    <p class="hero-subtitle" style="margin-bottom: 32px;">From milk bottles to phone cases, plastics get into shape through nine distinct processes. Understanding viscosity, shear thinning, and die swell unlocks all of them.</p>
+
+    <div class="toc">
+      <div class="toc-title">In this topic</div>
+      <ul class="toc-list">
+        <li><a href="#t3-types" class="toc-link">→ TP vs TS</a></li>
+        <li><a href="#t3-melt" class="toc-link">→ Polymer melt properties</a></li>
+        <li><a href="#t3-extrusion" class="toc-link">→ Extrusion</a></li>
+        <li><a href="#t3-film" class="toc-link">→ Sheet & film</a></li>
+        <li><a href="#t3-injection" class="toc-link">→ Injection moulding</a></li>
+        <li><a href="#t3-other-mould" class="toc-link">→ Other moulding</a></li>
+        <li><a href="#t3-blow-rot" class="toc-link">→ Blow & rotational</a></li>
+        <li><a href="#t3-thermo" class="toc-link">→ Thermoforming</a></li>
+        <li><a href="#t3-traps" class="toc-link">→ Exam traps</a></li>
+      </ul>
+    </div>
+
+    <h2 id="t3-types">Two fundamental types — TP vs TS</h2>
+    <p class="learn-only">Before we touch any process, you need to understand the two categories of plastic. They behave completely differently and dictate which processes you can use.</p>
+
+    <div class="two-col">
+      <div class="concept-box success">
+        <div class="concept-box-title">Thermoplastics (TP)</div>
+        <p><strong>Re-meltable, recyclable.</strong> Heat them, they soften. Cool them, they solidify. Repeat as many times as you like.</p>
+        <p style="font-size: 13px; color: var(--muted);">Examples: PE, PP, PVC, PET, PS, ABS, nylon</p>
+        <div class="analogy">
+          <div class="analogy-icon">🧈</div>
+          <div class="analogy-text">Like <strong>butter</strong>. Melt it, set it, melt it again.</div>
+        </div>
+      </div>
+      <div class="concept-box danger">
+        <div class="concept-box-title">Thermosets (TS)</div>
+        <p><strong>Permanently cured.</strong> Heat triggers a chemical reaction (curing) that permanently cross-links the molecules. Once cured, can never be remelted.</p>
+        <p style="font-size: 13px; color: var(--muted);">Examples: epoxy, polyester resin, phenolic, melamine, vulcanised rubber</p>
+        <div class="analogy">
+          <div class="analogy-icon">🧱</div>
+          <div class="analogy-text">Like <strong>concrete</strong>. Once it sets, it's set forever.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="concept-box warn">
+      <div class="concept-box-title">Why this matters</div>
+      <p>Some processes <strong>require</strong> the plastic to be re-melted from a solid form (like thermoforming, which heats a solid sheet). These processes only work with TP. Other processes use the curing reaction itself (like compression moulding) and only work with TS.</p>
+    </div>
+
+    <h2 id="t3-melt">Polymer melt properties — three key concepts</h2>
+    <p class="learn-only">When you melt a plastic, it behaves <em>differently</em> from a normal liquid like water. Three properties make plastic processing what it is.</p>
+
+    <h3>1. Viscosity — resistance to flow</h3>
+    <p>Honey is more viscous than water. For polymers, viscosity depends on:</p>
+    <ul>
+      <li><strong>Temperature</strong> — higher temp = lower viscosity = easier flow</li>
+      <li><strong>Molecular weight</strong> — longer chains = higher viscosity</li>
+      <li><strong>Shear rate</strong> — faster pushing = lower viscosity (shear thinning)</li>
+    </ul>
+
+    <h3>2. Shear thinning — non-Newtonian behaviour</h3>
+    <p>This is the weird one. Water has the same viscosity whether you push it slowly or quickly. <strong>Polymer melts get thinner the faster you push them.</strong></p>
+
+    <div class="analogy">
+      <div class="analogy-icon">🍅</div>
+      <div class="analogy-text">Like <strong>ketchup</strong>. Shake the bottle slowly — nothing comes out. Shake it hard and fast — it suddenly flows. Same physics in polymer extrusion: pushing harder makes it flow easier.</div>
+    </div>
+
+    <p>This behaviour is called <em>pseudoplastic</em> or <em>shear thinning</em>. It's why high-pressure injection moulding works — the polymer flows easily into complex moulds under high pressure.</p>
+
+    <h3>3. Viscoelasticity — elastic memory</h3>
+    <p>Polymer chains have memory. When forced through a die, they stretch and align. When they exit the die and the pressure releases, they want to return to their natural coiled state.</p>
+
+    <div class="concept-box note">
+      <div class="concept-box-title">Die swell</div>
+      <p>The polymer extrudate <strong>swells larger than the die opening</strong> as it exits — chains relaxing back to their coiled state. Dies must be designed smaller than the desired final dimensions to compensate.</p>
+    </div>
+
+    <h2 id="t3-extrusion">Extrusion — the foundation</h2>
+    <p class="learn-only">Extrusion is the most fundamental plastic process. Several others build on top of it. Master this and you've understood half the topic.</p>
+
+    <p><strong>The principle:</strong> push softened plastic through a shaped opening (die). Whatever shape the die is, the plastic comes out in that shape — continuously. Like a play-doh extruder.</p>
+
+    <div class="analogy">
+      <div class="analogy-icon">🍝</div>
+      <div class="analogy-text">A <strong>pasta machine</strong> with a shaped disc on the end. Push pasta dough through, get spaghetti, fettuccine, or whatever shape the disc makes — continuously, in long strands.</div>
+    </div>
+
+    <h3>Extruder anatomy</h3>
+    <div class="card-grid">
+      <div class="card"><h4>Hopper</h4><p>Funnel where plastic pellets feed in.</p></div>
+      <div class="card"><h4>Barrel</h4><p>Heated cylindrical tube that holds the screw.</p></div>
+      <div class="card"><h4>Screw</h4><p>Rotates inside barrel — conveys pellets, melts them by friction, builds pressure toward the die.</p></div>
+      <div class="card"><h4>Screen pack</h4><p>Wire mesh filter — removes contaminants, builds pressure, straightens flow.</p></div>
+      <div class="card" style="border-color: var(--coral);"><h4 style="color: var(--coral);">Die ⚠️</h4><p><strong>NOT part of the extruder!</strong> A separate, replaceable tool fitted at the end. Each die makes a different cross-section.</p></div>
+      <div class="card"><h4>Mandrel</h4><p>Pin in the centre of the die (held by spider legs) — creates hollow profiles like pipes and tubes.</p></div>
+    </div>
+
+    <div class="formula-block">
+      <div class="formula-name">Net flow rate from extruder</div>
+      <div class="formula-eq">Qx = Qd − Qb</div>
+      <div class="formula-vars">
+        <div class="formula-var"><span class="formula-var-symbol">Qx</span>net output flow</div>
+        <div class="formula-var"><span class="formula-var-symbol">Qd</span>drag flow (forward, from screw)</div>
+        <div class="formula-var"><span class="formula-var-symbol">Qb</span>back pressure flow (reverse, from die resistance)</div>
+      </div>
+      <p style="margin-top: 16px;">The screw pushes melt forward (Qd). The die resists, pushing some back (Qb). Net output is the difference.</p>
+    </div>
+
+    <h2 id="t3-film">Sheet and film production</h2>
+    <p>Three different processes for making flat plastic. Don't confuse them.</p>
+
+    <div class="card-grid">
+      <div class="card">
+        <h4 style="color: var(--blue);">Slit die extrusion</h4>
+        <p>Polymer pushed through a wide letterbox-shaped die. Comes out as flat sheet. <strong>No mandrel, no air, no rolls.</strong></p>
+        <p style="font-size: 13px; color: var(--muted);">Sheet (>0.5mm) and film (<0.5mm). Used for window glazing, packaging.</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--teal);">Blown film</h4>
+        <p>Polymer extruded as a tube, inflated with air into a bubble that rises upward, cools at the <em>frost line</em>, then flattened by pinch rolls.</p>
+        <p style="font-size: 13px; color: var(--muted);">Carrier bags, cling film, bin liners.</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--amber);">Calendering</h4>
+        <p>Polymer fed between progressively closer heated rollers — like a pasta machine. <strong>No extrusion at all</strong>, no die.</p>
+        <p style="font-size: 13px; color: var(--muted);">PVC shower curtains, floor tiles, pool liners.</p>
+      </div>
+    </div>
+
+    <div class="concept-box tip">
+      <div class="concept-box-title">Frost line — what controls film thickness</div>
+      <p>In blown film, the polymer solidifies at a specific height called the frost line. Higher frost line = more time for the bubble to stretch = thinner film. Lower frost line = less stretching = thicker film.</p>
+    </div>
+
+    <h2 id="t3-injection">Injection moulding</h2>
+    <p>Most widely used plastic process for discrete parts. Phone cases, pen barrels, plug sockets, LEGO bricks — all injection moulded.</p>
+
+    <p><strong>Two units in the machine:</strong></p>
+    <div class="two-col">
+      <div class="concept-box">
+        <div class="concept-box-title">Injection unit</div>
+        <p>Melts and delivers plastic into the mould. Contains barrel, screw, and a non-return valve. Works like an extruder — but the screw also acts as a ram for injection.</p>
+      </div>
+      <div class="concept-box note">
+        <div class="concept-box-title">Clamping unit</div>
+        <p><strong>Holds two mould halves shut</strong> during injection — provides alignment and clamping force. ⚠️ Common exam trap to attribute this to the injection unit.</p>
+      </div>
+    </div>
+
+    <h3>The injection moulding cycle</h3>
+    <div class="process-flow">
+      <div class="process-step"><div class="process-step-num">1</div><div class="process-step-name">Clamp</div><div class="process-step-desc">Mould halves close</div></div>
+      <div class="process-step"><div class="process-step-num">2</div><div class="process-step-name">Inject</div><div class="process-step-desc">Screw pushes melt in</div></div>
+      <div class="process-step"><div class="process-step-num">3</div><div class="process-step-name">Solidify</div><div class="process-step-desc">Mould cools the part</div></div>
+      <div class="process-step"><div class="process-step-num">4</div><div class="process-step-name">Eject</div><div class="process-step-desc">Mould opens, pins push</div></div>
+    </div>
+
+    <div class="concept-box tip">
+      <div class="concept-box-title">Shrinkage — five factors</div>
+      <p>The mould cavity is made <strong>oversized</strong> to compensate for plastic shrinking on cooling. Five factors affect how much it shrinks:</p>
+      <ul>
+        <li><strong>Higher injection pressure</strong> → reduces shrinkage (more material packed in)</li>
+        <li><strong>Longer compaction time</strong> → reduces shrinkage (more time to pack material)</li>
+        <li><strong>Higher temperature</strong> → reduces shrinkage (lower viscosity helps filling)</li>
+        <li><strong>Fillers in plastic</strong> → reduce shrinkage</li>
+        <li><strong>Thicker parts</strong> → INCREASE shrinkage (more material to contract)</li>
+      </ul>
+    </div>
+
+    <h2 id="t3-other-mould">Compression and transfer moulding</h2>
+    <div class="two-col">
+      <div class="concept-box warn">
+        <div class="concept-box-title">Compression moulding</div>
+        <p><strong>Mainly TS.</strong> A measured charge placed in heated mould, pressed, cured, ejected. Like a waffle iron for thermosets.</p>
+        <p>Min 1,000 parts to be economical. Products: plug sockets, dinnerware, pot handles.</p>
+      </div>
+      <div class="concept-box">
+        <div class="concept-box-title">Transfer moulding</div>
+        <p><strong>TS only.</strong> Charge placed in separate pot first, then forced through channels into mould cavity. Better flow into complex shapes.</p>
+        <p>Sits between injection and compression in production volume.</p>
+      </div>
+    </div>
+
+    <h2 id="t3-blow-rot">Blow moulding & rotational moulding</h2>
+    <div class="two-col">
+      <div class="concept-box success">
+        <div class="concept-box-title">Blow moulding</div>
+        <p><strong>TP only.</strong> Soft tube of plastic (parison) is inflated with air inside a closed mould — takes the mould's shape. Like glass blowing but with plastic.</p>
+        <p>Three variants: extrusion, injection, stretch blow moulding.</p>
+        <p style="font-size: 13px; color: var(--muted);">Products: bottles, containers, fuel tanks.</p>
+      </div>
+      <div class="concept-box note">
+        <div class="concept-box-title">Rotational moulding</div>
+        <p><strong>TP and TS.</strong> Powder placed inside hollow mould, rotated slowly in oven. Gravity coats the inside walls evenly.</p>
+        <p>Lower production rate. Large hollow parts.</p>
+        <p style="font-size: 13px; color: var(--muted);">Products: tanks, kayak hulls, playground equipment.</p>
+      </div>
+    </div>
+
+    <h2 id="t3-thermo">Thermoforming</h2>
+    <p><strong>TP ONLY.</strong> A flat plastic sheet is heated until soft, then pressed or vacuumed into a mould shape.</p>
+
+    <div class="concept-box danger">
+      <div class="concept-box-title">⚠️ Why TP only?</div>
+      <p>Thermoforming reheats a SOLID sheet. Thermosets are already cross-linked — they can't be softened by reheating. So thermoforming is fundamentally impossible for TS.</p>
+    </div>
+
+    <p>Two mould types:</p>
+    <ul>
+      <li><strong>Negative mould</strong> — concave cavity, sheet is sucked into the depression</li>
+      <li><strong>Positive mould</strong> — convex shape, sheet is draped over the raised form</li>
+    </ul>
+    <p>Products: blister packs (around tablets), yoghurt pot lids, bath tubs, fridge door liners.</p>
+
+    <h2 id="t3-traps">Topic 3 — exam traps</h2>
+
+    <div class="trap-card">
+      <span class="trap-tag">Trap 1</span>
+      <div class="trap-claim">"The die is part of the extruder."</div>
+      <div class="trap-truth"><strong>FALSE.</strong> The die is a <strong>separate, replaceable tool</strong> — not part of the extruder itself. Each cross-section needs a different die.</div>
+    </div>
+
+    <div class="trap-card">
+      <span class="trap-tag">Trap 2</span>
+      <div class="trap-claim">"Thermosets can be thermoformed."</div>
+      <div class="trap-truth"><strong>FALSE.</strong> Thermoforming requires reheating a solid sheet. Thermosets can't be softened by reheating once cured.</div>
+    </div>
+
+    <div class="trap-card">
+      <span class="trap-tag">Trap 3</span>
+      <div class="trap-claim">"The injection unit holds the two mould halves in alignment."</div>
+      <div class="trap-truth"><strong>FALSE.</strong> The <strong>clamping unit</strong> holds the mould halves. The injection unit just melts and delivers the plastic.</div>
+    </div>
+
+    <div class="trap-card">
+      <span class="trap-tag">Trap 4</span>
+      <div class="trap-claim">"Higher polymer viscosity makes flow through small channels easier."</div>
+      <div class="trap-truth"><strong>FALSE.</strong> Higher viscosity = harder flow. The whole point of heating polymers is to <em>reduce</em> viscosity for easier processing.</div>
+    </div>
+
+    <div class="trap-card">
+      <span class="trap-tag">Trap 5</span>
+      <div class="trap-claim">"Longer compaction time leads to greater shrinkage."</div>
+      <div class="trap-truth"><strong>FALSE.</strong> Longer compaction time <strong>REDUCES</strong> shrinkage — more time to pack material into the cavity before it solidifies.</div>
+    </div>
+
+    <div class="trap-card">
+      <span class="trap-tag">Trap 6</span>
+      <div class="trap-claim">"Stretch injection blow moulding can process both thermoplastics and thermosets."</div>
+      <div class="trap-truth"><strong>FALSE.</strong> All blow moulding is <strong>TP only</strong>. Thermosets can't be softened and inflated — they're cross-linked.</div>
+    </div>
+
+    <div class="trap-card">
+      <span class="trap-tag">Trap 7</span>
+      <div class="trap-claim">"Calendering offers poor surface finish and low gauge accuracy."</div>
+      <div class="trap-truth"><strong>FALSE.</strong> Calendering is actually one of the <strong>best</strong> methods for surface finish and gauge accuracy. That's why it's used for premium products.</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<!-- TOPIC 4 — RUBBER & PMC -->
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<section id="t4" class="section">
+  <div class="container">
+    <div class="topic-num">Topic 4 of 10</div>
+    <h1>Rubber & Polymer Matrix Composites</h1>
+    <p class="hero-subtitle" style="margin-bottom: 32px;">Two related but distinct topics — natural rubber processing (vulcanisation) and polymer matrix composites (carbon fibre and friends).</p>
+
+    <div class="toc">
+      <div class="toc-title">In this topic</div>
+      <ul class="toc-list">
+        <li><a href="#t4-elastomers" class="toc-link">→ Elastomers explained</a></li>
+        <li><a href="#t4-natural" class="toc-link">→ Natural rubber</a></li>
+        <li><a href="#t4-processing" class="toc-link">→ Rubber processing</a></li>
+        <li><a href="#t4-vulcanisation" class="toc-link">→ Vulcanisation</a></li>
+        <li><a href="#t4-tpe" class="toc-link">→ TPEs</a></li>
+        <li><a href="#t4-pmc" class="toc-link">→ PMCs</a></li>
+        <li><a href="#t4-pmc-processes" class="toc-link">→ PMC processes</a></li>
+        <li><a href="#t4-traps" class="toc-link">→ Exam traps</a></li>
+      </ul>
+    </div>
+
+    <h2 id="t4-elastomers">What makes an elastomer different?</h2>
+    <p class="learn-only">A regular plastic stretches a bit and then breaks or deforms permanently. An elastomer stretches a LOT — sometimes 5-10× its original length — and snaps back. Why?</p>
+
+    <p>Three structural features:</p>
+    <ul>
+      <li><strong>Long flexible polymer chains</strong> — uncoil and recoil easily</li>
+      <li><strong>Light cross-links</strong> between chains — stop them sliding past each other permanently, but allow flexing</li>
+      <li><strong>Glass transition temperature (Tg) below room temperature</strong> — at room temp, chains are mobile and rubbery</li>
+    </ul>
+
+    <div class="concept-box note">
+      <div class="concept-box-title">Why does rubber spring back? — Entropy!</div>
+      <p>A randomly coiled chain has high entropy (lots of disorder). A stretched chain has low entropy (more ordered). Nature wants high entropy — so when you release the stretch, the chains spontaneously recoil. <strong>This is entropy-driven elasticity.</strong></p>
+    </div>
+
+    <div class="analogy">
+      <div class="analogy-icon">🍝</div>
+      <div class="analogy-text">Imagine a bowl of cooked spaghetti with a few staples between strands at random points. The strands can flex and the staples allow movement — but they prevent the strands from sliding completely past each other. <strong>That's an elastomer.</strong> Heavy staples = thermoset. No staples = thermoplastic.</div>
+    </div>
+
+    <h2 id="t4-natural">Natural rubber — from tree to part</h2>
+    <p>Natural rubber comes from the <strong>Hevea brasiliensis</strong> tree, native to the Amazon, now grown across Southeast Asia.</p>
+
+    <div class="process-flow">
+      <div class="process-step"><div class="process-step-num">1</div><div class="process-step-name">Tap tree</div><div class="process-step-desc">Collect latex sap</div></div>
+      <div class="process-step"><div class="process-step-num">2</div><div class="process-step-name">Coagulate</div><div class="process-step-desc">Add formic acid</div></div>
+      <div class="process-step"><div class="process-step-num">3</div><div class="process-step-name">Roll & dry</div><div class="process-step-desc">Sheet form</div></div>
+      <div class="process-step"><div class="process-step-num">4</div><div class="process-step-name">Grade</div><div class="process-step-desc">Pale crepe (best) → RSS</div></div>
+    </div>
+
+    <p>Latex is roughly 30% polyisoprene (the polymer) in water. Adding formic acid causes coagulation — the rubber particles clump together and solidify.</p>
+
+    <h2 id="t4-processing">Rubber processing — four steps</h2>
+    <div class="process-flow">
+      <div class="process-step"><div class="process-step-num">1</div><div class="process-step-name">Compounding</div><div class="process-step-desc">Add additives</div></div>
+      <div class="process-step"><div class="process-step-num">2</div><div class="process-step-name">Mixing</div><div class="process-step-desc">Blend additives in</div></div>
+      <div class="process-step"><div class="process-step-num">3</div><div class="process-step-name">Shaping</div><div class="process-step-desc">Form to product</div></div>
+      <div class="process-step"><div class="process-step-num">4</div><div class="process-step-name">Vulcanising</div><div class="process-step-desc">Permanent cross-linking</div></div>
+    </div>
+
+    <h3>Key additives</h3>
+    <div class="card-grid">
+      <div class="card">
+        <h4>Sulphur</h4>
+        <p>The most important additive — creates cross-links between rubber chains during vulcanisation.</p>
+      </div>
+      <div class="card">
+        <h4>Carbon black</h4>
+        <p><strong>Reinforcing filler</strong>. Increases tensile strength + provides UV protection. That's why most rubber is black.</p>
+      </div>
+      <div class="card">
+        <h4>China clay</h4>
+        <p><strong>Non-reinforcing filler</strong>. Used when product can't be black. Cheaper bulk filler.</p>
+      </div>
+      <div class="card">
+        <h4>Accelerators</h4>
+        <p>ZnO + stearic acid. Reduce vulcanisation time from hours to 15-20 minutes.</p>
+      </div>
+    </div>
+
+    <div class="concept-box danger">
+      <div class="concept-box-title">⚠️ The two-stage mixing rule</div>
+      <p><strong>Sulphur is added LAST</strong> in mixing. If added at the start, mixing friction would heat the rubber, triggering premature vulcanisation in the mixer — destroying everything.</p>
+      <ul>
+        <li><strong>Stage 1 (masterbatch):</strong> All additives EXCEPT vulcanising agents</li>
+        <li><strong>Stage 2:</strong> Add sulphur and accelerators after cooling</li>
+      </ul>
+    </div>
+
+    <h2 id="t4-vulcanisation">Vulcanisation — sulphur cross-linking</h2>
+    <p>Discovered by <strong>Charles Goodyear in 1839</strong>. Sulphur atoms insert themselves between double bonds on neighbouring polymer chains, creating sulphur bridges that lock the chains together.</p>
+
+    <p>Original Goodyear process: <strong>140°C for 5 hours</strong>. Modern process with accelerators: <strong>15-20 minutes</strong>.</p>
+
+    <div class="two-col">
+      <div class="concept-box success">
+        <div class="concept-box-title">Low cross-link density</div>
+        <p>Soft, stretchy rubber. 1-10 cross-links per 100 carbon atoms.</p>
+        <p style="font-size: 13px; color: var(--muted);">Elastic bands, gloves, tyres, seals.</p>
+      </div>
+      <div class="concept-box danger">
+        <div class="concept-box-title">High cross-link density</div>
+        <p><strong>Ebonite</strong> — hard rubber. Many more cross-links lock chains rigidly.</p>
+        <p style="font-size: 13px; color: var(--muted);">Bowling balls, hard protective cases.</p>
+      </div>
+    </div>
+
+    <h2 id="t4-tpe">Thermoplastic Elastomers (TPE)</h2>
+    <p>A modern alternative to vulcanised rubber. Behaves like rubber in service but processes like a thermoplastic — meaning <strong>recyclable</strong> and <strong>no vulcanisation step needed</strong>.</p>
+
+    <div class="concept-box note">
+      <div class="concept-box-title">Limitation</div>
+      <p>TPEs are <strong>not suitable for vehicle tyres</strong> — performance demands too high. They work fine for shoe soles, medical tubing, and even cycle tyres.</p>
+    </div>
+
+    <h2 id="t4-pmc">Polymer Matrix Composites (PMCs)</h2>
+    <p class="learn-only">A composite combines two distinct materials to get properties better than either alone. PMCs are polymer + fibre. The polymer (matrix) binds everything together. The fibres (reinforcement) provide the strength.</p>
+
+    <div class="analogy">
+      <div class="analogy-icon">🏗️</div>
+      <div class="analogy-text">Like <strong>reinforced concrete</strong> — concrete is the matrix, steel rods are the reinforcement. Together they're way stronger than either alone. PMCs work the same way: polymer + fibres = composite.</div>
+    </div>
+
+    <h3>Three main fibre types</h3>
+    <div class="card-grid">
+      <div class="card">
+        <h4 style="color: var(--blue);">Glass fibre</h4>
+        <p><strong>Cheap.</strong> Good stiffness, low cost. The everyday option.</p>
+        <p style="font-size: 13px; color: var(--muted);">Boats, wind turbine blades, car panels.</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--purple);">Carbon fibre</h4>
+        <p><strong>Strong & stiff.</strong> High strength-to-weight ratio. Expensive.</p>
+        <p style="font-size: 13px; color: var(--muted);">Aerospace, F1 cars, premium sports gear.</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--amber);">Aramid (Kevlar)</h4>
+        <p><strong>Tough.</strong> Best at absorbing impact energy.</p>
+        <p style="font-size: 13px; color: var(--muted);">Bulletproof vests, helmets, cut-resistant gloves.</p>
+      </div>
+    </div>
+
+    <div class="concept-box warn">
+      <div class="concept-box-title">PMCs are intentionally anisotropic</div>
+      <p>The fibres are <strong>aligned in the load direction</strong>. A composite is strongest along the fibres, weaker perpendicular. This is deliberate — engineering controls fibre orientation to resist expected loads.</p>
+    </div>
+
+    <h3>Continuous vs chopped fibres</h3>
+    <div class="two-col">
+      <div class="concept-box success">
+        <div class="concept-box-title">Continuous fibres</div>
+        <p>Run the full length of the part. <strong>Highest performance</strong>.</p>
+        <p>But: <strong>cannot flow</strong> into complex moulds. Must be placed deliberately.</p>
+      </div>
+      <div class="concept-box note">
+        <div class="concept-box-title">Chopped fibres</div>
+        <p>Short random fibres. Moderate performance.</p>
+        <p>But: <strong>can flow</strong> into complex 3D mould shapes (used in injection moulding, compression moulding).</p>
+      </div>
+    </div>
+
+    <h2 id="t4-pmc-processes">PMC manufacturing processes</h2>
+
+    <h3>Open mould — labour-intensive, low volume</h3>
+    <div class="card-grid">
+      <div class="card">
+        <h4>Hand lay-up</h4>
+        <p>Manual application of resin and fibre layers. Gel coat first, rolled to remove air, room temp cure.</p>
+        <p style="font-size: 13px; color: var(--muted);">Boat hulls, wind turbine blades, custom car bodies.</p>
+      </div>
+      <div class="card">
+        <h4>Spray-up</h4>
+        <p>Resin and chopped fibres sprayed simultaneously. Faster but lower properties (random orientation).</p>
+      </div>
+      <div class="card">
+        <h4>Automated tape laying</h4>
+        <p>Computer-controlled gantry lays prepreg tape. Aerospace wings.</p>
+      </div>
+    </div>
+
+    <h3>Closed mould — chopped fibre systems</h3>
+    <div class="two-col">
+      <div class="concept-box">
+        <div class="concept-box-title">SMC — Sheet Moulding Compound</div>
+        <p>Sheet of resin with 20-50% chopped glass fibre. Used in <strong>compression moulding</strong>.</p>
+        <p style="font-size: 13px; color: var(--muted);">Higher fibre content = better structural performance.</p>
+      </div>
+      <div class="concept-box">
+        <div class="concept-box-title">BMC — Bulk Moulding Compound</div>
+        <p>Dough-like material with shorter fibres, lower content. Better flow → suitable for <strong>injection moulding</strong> and compression.</p>
+      </div>
+    </div>
+
+    <h3>Continuous fibre processes — high performance</h3>
+    <div class="two-col">
+      <div class="concept-box success">
+        <div class="concept-box-title">Filament winding</div>
+        <p>Continuous fibres pulled through resin bath, wound onto rotating mandrel in precise patterns. Hollow cylindrical parts.</p>
+        <p style="font-size: 13px; color: var(--muted);">Pressure vessels, LPG cylinders, pipes, rocket motor casings.</p>
+      </div>
+      <div class="concept-box note">
+        <div class="concept-box-title">Pultrusion</div>
+        <p>Fibres <strong>pulled</strong> through resin bath then heated die. Constant cross-section profiles only.</p>
+        <p style="font-size: 13px; color: var(--muted);">Structural beams, ladder rails, bridge decking.</p>
+      </div>
+    </div>
+
+    <h2 id="t4-traps">Topic 4 — exam traps</h2>
+
+    <div class="trap-card">
+      <span class="trap-tag">Trap 1</span>
+      <div class="trap-claim">"Carbon black provides no protection from UV radiation."</div>
+      <div class="trap-truth"><strong>FALSE.</strong> Carbon black <strong>DOES provide UV protection</strong> — that's a major reason it's added to rubber, alongside reinforcement.</div>
+    </div>
+
+    <div class="trap-card">
+      <span class="trap-tag">Trap 2</span>
+      <div class="trap-claim">"Sulphur is added at the start of mixing for best dispersion."</div>
+      <div class="trap-truth"><strong>FALSE.</strong> Sulphur is added <strong>LAST</strong> in stage 2 mixing. Adding it early would cause premature vulcanisation in the mixer.</div>
+    </div>
+
+    <div class="trap-card">
+      <span class="trap-tag">Trap 3</span>
+      <div class="trap-claim">"TPEs are suitable for vehicle tyres."</div>
+      <div class="trap-truth"><strong>FALSE.</strong> TPEs are not suitable for vehicle tyres — performance demands too high. OK for cycle tyres though.</div>
+    </div>
+
+    <div class="trap-card">
+      <span class="trap-tag">Trap 4</span>
+      <div class="trap-claim">"Continuous fibres can flow into complex moulds during compression moulding."</div>
+      <div class="trap-truth"><strong>FALSE.</strong> Continuous fibres <strong>cannot flow</strong>. That's why closed mould PMC processes use chopped fibre systems (SMC, BMC).</div>
+    </div>
+
+    <div class="trap-card">
+      <span class="trap-tag">Trap 5</span>
+      <div class="trap-claim">"PMCs should be designed to be isotropic for best performance."</div>
+      <div class="trap-truth"><strong>FALSE.</strong> PMCs are <strong>intentionally anisotropic</strong> — fibres aligned in the load direction give the best performance for that direction.</div>
+    </div>
+  </div>
+</section>
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<!-- TOPIC 5 — POWDER METALLURGY -->
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<section id="t5" class="section">
+  <div class="container">
+    <div class="topic-num">Topic 5 of 10</div>
+    <h1>Powder Metallurgy</h1>
+    <p class="hero-subtitle" style="margin-bottom: 32px;">Make parts from metal powder without ever fully melting the metal. Self-lubricating bearings, high-temperature materials, complex small parts — PM does what other processes can't.</p>
+
+    <div class="toc">
+      <div class="toc-title">In this topic</div>
+      <ul class="toc-list">
+        <li><a href="#t5-why" class="toc-link">→ Why powder metallurgy?</a></li>
+        <li><a href="#t5-sequence" class="toc-link">→ Full PM sequence</a></li>
+        <li><a href="#t5-powder" class="toc-link">→ Powder production</a></li>
+        <li><a href="#t5-blend" class="toc-link">→ Blending vs mixing</a></li>
+        <li><a href="#t5-compact" class="toc-link">→ Compaction</a></li>
+        <li><a href="#t5-sinter" class="toc-link">→ Sintering</a></li>
+        <li><a href="#t5-secondary" class="toc-link">→ Secondary operations</a></li>
+        <li><a href="#t5-advanced" class="toc-link">→ Advanced PM</a></li>
+        <li><a href="#t5-formulas" class="toc-link">→ Calculations</a></li>
+        <li><a href="#t5-traps" class="toc-link">→ Exam traps</a></li>
+      </ul>
+    </div>
+
+    <h2 id="t5-why">Why powder metallurgy?</h2>
+    <p class="learn-only">If you can cast and machine almost anything, why bother with powder? Because some things genuinely can't be done any other way.</p>
+
+    <div class="card-grid">
+      <div class="card">
+        <h4 style="color: var(--green);">High-melting materials</h4>
+        <p>Tungsten melts at 3,422°C — impossible to cast in a conventional foundry. PM processes it at a fraction of that temperature.</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--green);">Controlled porosity</h4>
+        <p>Self-lubricating bearings need a controlled network of pores to hold oil. No other process can reliably do this.</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--green);">Near-net shape</h4>
+        <p>&gt;95% material utilisation — almost no waste. Gears, bearings, and bushings come out nearly finished.</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--green);">Mixed compositions</h4>
+        <p>Mix powders of different metals or alloys to tailor properties precisely.</p>
+      </div>
+    </div>
+
+    <h2 id="t5-sequence">Full PM sequence</h2>
+    <div class="process-flow">
+      <div class="process-step"><div class="process-step-num">1</div><div class="process-step-name">Powder production</div><div class="process-step-desc">Make the powder</div></div>
+      <div class="process-step"><div class="process-step-num">2</div><div class="process-step-name">Blending/mixing</div><div class="process-step-desc">Combine powders</div></div>
+      <div class="process-step"><div class="process-step-num">3</div><div class="process-step-name">Compaction</div><div class="process-step-desc">Press into shape</div></div>
+      <div class="process-step"><div class="process-step-num">4</div><div class="process-step-name">Sintering</div><div class="process-step-desc">Heat to bond</div></div>
+      <div class="process-step"><div class="process-step-num">5</div><div class="process-step-name">Secondary ops</div><div class="process-step-desc">Optional finishing</div></div>
+    </div>
+
+    <h2 id="t5-powder">Powder production methods</h2>
+    <p>Three main methods. Each gives different particle shape — and shape matters for how well the powder compacts.</p>
+
+    <div class="card-grid">
+      <div class="card">
+        <h4 style="color: var(--amber);">Gas atomisation</h4>
+        <p>Molten metal broken into droplets by high-velocity inert gas (Ar or N₂). Droplets solidify as spheres.</p>
+        <p><strong>Spherical particles</strong> → excellent flowability → fills die easily → aerospace quality.</p>
+        <p style="font-size: 13px; color: var(--muted);">Expensive. Used for aerospace and medical powders.</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--amber);">Water atomisation</h4>
+        <p>Molten metal broken by high-pressure water jets. Solidifies as irregular shapes.</p>
+        <p><strong>Irregular particles</strong> → better interlocking → better compaction → cheaper.</p>
+        <p style="font-size: 13px; color: var(--muted);">Most common commercial method.</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--amber);">Electrolysis</h4>
+        <p>Metal ions dissolved from an <strong>anode</strong>, deposited as powder at the <strong>cathode</strong>.</p>
+        <p>Very high purity powder. Used for copper, iron.</p>
+        <p style="font-size: 13px; color: var(--muted);">⚠️ MCQ trap: deposition is at CATHODE, not anode.</p>
+      </div>
+    </div>
+
+    <div class="analogy">
+      <div class="analogy-icon">💧</div>
+      <div class="analogy-text">Atomisation is like spraying water from a hose into cold air — the water breaks into droplets that solidify (freeze) mid-air. Gas atomisation uses inert gas instead of water, giving perfectly round droplets.</div>
+    </div>
+
+    <h2 id="t5-blend">Blending vs mixing — MCQ trap</h2>
+    <p>These sound the same but are defined differently in the module. Get them wrong and you lose marks.</p>
+
+    <div class="two-col">
+      <div class="concept-box">
+        <div class="concept-box-title">Blending</div>
+        <p><strong>Same composition, different particle sizes.</strong> You're combining Fe powder (fine) with Fe powder (coarse) to improve packing density.</p>
+        <p style="font-size: 13px; color: var(--muted);">No new alloy is created — just better particle size distribution.</p>
+      </div>
+      <div class="concept-box note">
+        <div class="concept-box-title">Mixing</div>
+        <p><strong>Different compositions.</strong> Fe powder + graphite powder = the start of steel. Cu powder + Sn powder = the start of bronze.</p>
+        <p style="font-size: 13px; color: var(--muted);">A new alloy composition is created during sintering.</p>
+      </div>
+    </div>
+
+    <div class="concept-box warn">
+      <div class="concept-box-title">Quick test</div>
+      <p>Iron powder + graphite powder — is that blending or mixing? <strong>Mixing</strong>, because they're different chemical compositions (Fe and C).</p>
+    </div>
+
+    <h2 id="t5-compact">Compaction — pressing into shape</h2>
+    <p class="learn-only">After blending/mixing, the powder goes into a die and gets pressed. Think of it like pressing a tablet — the powder flows into the die cavity and then gets squashed from above and below simultaneously by punches.</p>
+
+    <p>The result is a <strong>green compact</strong> — the part holds its shape but is weak, porous, and fragile. Like pressed chalk. It's the sintering that gives it strength.</p>
+
+    <div class="concept-box tip">
+      <div class="concept-box-title">Green compact — key properties</div>
+      <ul>
+        <li>Holds its shape ✓</li>
+        <li>Handleable (can be moved) ✓</li>
+        <li>Weak (easily crushed) ✓</li>
+        <li>Porous ✓</li>
+        <li>NOT sintered ✓</li>
+      </ul>
+    </div>
+
+    <div class="formula-block">
+      <div class="formula-name">Compaction force</div>
+      <div class="formula-eq">F = Ap × Pc</div>
+      <div class="formula-vars">
+        <div class="formula-var"><span class="formula-var-symbol">F</span>compaction force (N)</div>
+        <div class="formula-var"><span class="formula-var-symbol">Ap</span>projected area of part (mm²)</div>
+        <div class="formula-var"><span class="formula-var-symbol">Pc</span>compaction pressure (MPa = N/mm²)</div>
+      </div>
+      <p style="margin-top: 16px;"><strong>Units match automatically:</strong> mm² × N/mm² = N. Work in mm throughout — don't convert to metres.</p>
+    </div>
+
+    <div class="example">
+      <div class="example-label">Worked example</div>
+      <p class="example-q">A hollow bronze bearing (OD = 45mm, ID = 20mm) pressed at Pc = 240 MPa. Find compaction force.</p>
+      <div class="example-step">Projected area = outer circle − inner circle = π(22.5)² − π(10)²</div>
+      <div class="example-step">= 1590.4 − 314.2 = 1276.3 mm²</div>
+      <div class="example-step">F = 1276.3 × 240 = 306,307 N = <strong>306.3 kN</strong></div>
+      <div class="example-answer">306.3 kN</div>
+    </div>
+
+    <div class="concept-box danger">
+      <div class="concept-box-title">⚠️ Density is NOT uniform in conventional die pressing</div>
+      <p>Top and bottom punches apply pressure. Friction against the die walls reduces pressure reaching the middle and sides. Only <strong>isostatic pressing</strong> (pressure from all directions equally) gives uniform density.</p>
+    </div>
+
+    <h2 id="t5-sinter">Sintering — how powder becomes metal</h2>
+    <p class="learn-only">After pressing, the green compact looks like the right shape but it's just powder held together by mechanical interlocking. Sintering is what actually makes it a structural metal part.</p>
+
+    <p>Sintering temperature: <strong>70–90% of the melting point</strong> (in Kelvin). Hot enough for atomic diffusion across particle boundaries. Not hot enough to melt.</p>
+
+    <div class="analogy">
+      <div class="analogy-icon">🔥</div>
+      <div class="analogy-text">Imagine ice cubes pressed together in a cold room. If you warm them slightly — not enough to melt — the surfaces begin to bond where they touch. The ice cubes fuse together at their contact points. That's exactly what sintering does to metal powder.</div>
+    </div>
+
+    <h3>Sintering in three stages — exam sequence question</h3>
+    <div class="process-flow">
+      <div class="process-step"><div class="process-step-num">1</div><div class="process-step-name">Neck formation</div><div class="process-step-desc">Atoms diffuse across boundaries. Small bridges form between particles.</div></div>
+      <div class="process-step"><div class="process-step-num">2</div><div class="process-step-name">Pore shrinkage</div><div class="process-step-desc">Necks grow. Pores get smaller and more rounded.</div></div>
+      <div class="process-step"><div class="process-step-num">3</div><div class="process-step-name">Grain growth</div><div class="process-step-desc">Little further densification. Grain boundaries migrate.</div></div>
+    </div>
+
+    <p>Sintering causes <strong>1–5% dimensional shrinkage</strong> — tooling must be designed oversized to compensate.</p>
+
+    <h2 id="t5-secondary">Secondary operations</h2>
+
+    <div class="card-grid">
+      <div class="card">
+        <h4 style="color: var(--blue);">Sizing</h4>
+        <p><strong>Light repressing</strong> after sintering. Corrects the 1–5% shrinkage. Improves dimensional accuracy and roundness of gear teeth.</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--blue);">Coining</h4>
+        <p><strong>Heavy repressing.</strong> Densifies surface regions. Improves surface finish and strength where contact occurs.</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--purple);">Infiltration</h4>
+        <p>Lower-melting metal (e.g. <strong>bronze</strong>) placed on sintered iron part, heated, melts and wicks into pores by capillary action. Increases density and thermal conductivity.</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--purple);">Impregnation</h4>
+        <p><strong>Oil</strong> fills the pores. Creates <em>self-lubricating bearings</em> — oil seeps out during use, lubricates automatically, no maintenance needed.</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--teal);">HIP (Hot Isostatic Pressing)</h4>
+        <p>After sintering — inert gas applies equal pressure from ALL directions at high temperature. Closes remaining pores. Near full theoretical density. Aerospace critical parts.</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--teal);">Heat treatment</h4>
+        <p>Same methods as for solid steels — hardening, tempering, nitriding. Improves hardness, wear resistance, and fatigue life.</p>
+      </div>
+    </div>
+
+    <div class="concept-box success">
+      <div class="concept-box-title">Memory device — secondary ops</div>
+      <p><strong>Pressing</strong> (sizing, coining) → <strong>Filling</strong> (infiltration, impregnation) → <strong>Densifying</strong> (HIP) → <strong>Strengthening</strong> (heat treatment)</p>
+    </div>
+
+    <h2 id="t5-advanced">Advanced PM processes</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h4 style="color: var(--amber);">MIM — Metal Injection Moulding</h4>
+        <p>Powder + polymer binder mixed to make a feedstock, then injection moulded like plastic. Binder removed (debinding) then sintered. For <strong>small, complex, high-volume</strong> parts.</p>
+        <p style="font-size: 13px; color: var(--muted);">Surgical instruments, firearms components, dental brackets.</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--amber);">CIP — Cold Isostatic Pressing</h4>
+        <p>Water applies equal pressure from all directions at room temperature. Uniform density without needing heat.</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--amber);">Spark sintering</h4>
+        <p>Upper and lower punches act as electrodes — electrical discharge generates rapid localised heating at particle contact points. Much faster sintering than conventional.</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--amber);">Liquid phase sintering</h4>
+        <p>One component melts during sintering, forming a liquid that fills gaps and promotes faster densification. Used for WC-Co (cemented carbide).</p>
+      </div>
+    </div>
+
+    <h2 id="t5-formulas">Calculations</h2>
+    <div class="formula-block">
+      <div class="formula-name">Particle size from mesh screen</div>
+      <div class="formula-eq">Particle size = (25.4 / Mc) − wire diameter</div>
+      <div class="formula-vars">
+        <div class="formula-var"><span class="formula-var-symbol">Mc</span>mesh count (openings per linear inch)</div>
+        <div class="formula-var"><span class="formula-var-symbol">25.4</span>mm per inch (constant)</div>
+        <div class="formula-var"><span class="formula-var-symbol">result</span>maximum particle size in mm</div>
+      </div>
+      <p style="margin-top: 16px;"><strong>Why:</strong> 25.4mm ÷ Mc gives the opening size per inch. Subtract wire diameter to get the actual gap the particle passes through.</p>
+    </div>
+
+    <div class="example">
+      <div class="example-label">Worked example — particle size</div>
+      <p class="example-q">Screen: 250 mesh count, wire diameter = 0.025mm. Find maximum particle size.</p>
+      <div class="example-step">Particle size = (25.4 / 250) − 0.025</div>
+      <div class="example-step">= 0.1016 − 0.025</div>
+      <div class="example-answer">= 0.0766 mm</div>
+    </div>
+
+    <div class="example">
+      <div class="example-label">Worked example — open space proportion</div>
+      <p class="example-q">Screen: 325 mesh, wire diameter = 0.035mm. Find (1) particle size and (2) proportion of open space.</p>
+      <div class="example-step">1. Particle size = (25.4/325) − 0.035 = 0.0782 − 0.035 = 0.043 mm</div>
+      <div class="example-step">2. Mc² openings per square inch = 325² = 105,625</div>
+      <div class="example-step">Area per opening = 0.043² = 0.001849 mm²</div>
+      <div class="example-step">Total open area = 105,625 × 0.001849 = 195.3 mm²</div>
+      <div class="example-step">Total area of 1 sq inch = 25.4² = 645.16 mm²</div>
+      <div class="example-answer">Open space proportion = 195.3 / 645.16 = 0.303 = 30.3%</div>
+    </div>
+
+    <h2 id="t5-traps">Topic 5 — exam traps</h2>
+
+    <div class="trap-card">
+      <span class="trap-tag">Trap 1</span>
+      <div class="trap-claim">"In electrolysis, the anode dissolves and metal deposits at the anode."</div>
+      <div class="trap-truth"><strong>FALSE.</strong> Metal dissolves from the anode but deposits as powder at the <strong>CATHODE</strong>.</div>
+    </div>
+
+    <div class="trap-card">
+      <span class="trap-tag">Trap 2</span>
+      <div class="trap-claim">"Blending combines powders of different chemistries to create alloys."</div>
+      <div class="trap-truth"><strong>FALSE.</strong> That's <strong>mixing</strong>. Blending = same composition + different particle sizes.</div>
+    </div>
+
+    <div class="trap-card">
+      <span class="trap-tag">Trap 3</span>
+      <div class="trap-claim">"Green compact strength is greater than after sintering."</div>
+      <div class="trap-truth"><strong>FALSE.</strong> Green compact is weak. Sintering dramatically increases strength through atomic bonding.</div>
+    </div>
+
+    <div class="trap-card">
+      <span class="trap-tag">Trap 4</span>
+      <div class="trap-claim">"Porosity is always unwanted in PM parts."</div>
+      <div class="trap-truth"><strong>FALSE.</strong> Self-lubricating bearings <strong>require</strong> controlled porosity — up to 50% possible. Without pores there's nowhere for the oil to live.</div>
+    </div>
+
+    <div class="trap-card">
+      <span class="trap-tag">Trap 5</span>
+      <div class="trap-claim">"Conventional die pressing gives uniform density throughout the part."</div>
+      <div class="trap-truth"><strong>FALSE.</strong> Only <strong>isostatic pressing</strong> gives uniform density. Conventional die pressing creates density gradients — higher near punches, lower in the middle.</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<!-- TOPIC 6 — METAL FORMING -->
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<section id="t6" class="section">
+  <div class="container">
+    <div class="topic-num">Topic 6 of 10</div>
+    <h1>Metal Forming</h1>
+    <p class="hero-subtitle" style="margin-bottom: 32px;">Reshape metal by plastic deformation — no material removed, no melting. Rolling, forging, extrusion, drawing, and sheet metalwork.</p>
+
+    <div class="toc">
+      <div class="toc-title">In this topic</div>
+      <ul class="toc-list">
+        <li><a href="#t6-fundamentals" class="toc-link">→ Plastic deformation basics</a></li>
+        <li><a href="#t6-workhardening" class="toc-link">→ Work hardening</a></li>
+        <li><a href="#t6-temperatures" class="toc-link">→ Cold, warm and hot working</a></li>
+        <li><a href="#t6-flowstress" class="toc-link">→ Flow stress — Hollomon</a></li>
+        <li><a href="#t6-bulk" class="toc-link">→ Bulk forming processes</a></li>
+        <li><a href="#t6-sheet" class="toc-link">→ Sheet metalworking</a></li>
+        <li><a href="#t6-drawing" class="toc-link">→ Deep drawing</a></li>
+        <li><a href="#t6-formulas" class="toc-link">→ Calculations</a></li>
+        <li><a href="#t6-traps" class="toc-link">→ Exam traps</a></li>
+      </ul>
+    </div>
+
+    <h2 id="t6-fundamentals">Plastic deformation — the fundamental concept</h2>
+    <p class="learn-only">Before we look at any forming process, we need to understand what happens inside the metal when you force it into a new shape. This is what separates a forming engineer from someone who just "pushes metal around".</p>
+
+    <p>Metal forming relies on <strong>plastic deformation</strong> — permanent shape change that occurs when stress exceeds the yield strength. Unlike elastic deformation (which springs back), plastic deformation is permanent.</p>
+
+    <div class="two-col">
+      <div class="concept-box note">
+        <div class="concept-box-title">Elastic deformation</div>
+        <p>Below yield strength. Atoms displaced but bonds intact. Remove force → springs back completely. Like a spring.</p>
+      </div>
+      <div class="concept-box warn">
+        <div class="concept-box-title">Plastic deformation</div>
+        <p>Above yield strength. Atoms permanently rearranged via dislocation movement. Remove force → permanent change. Like bending a paperclip.</p>
+      </div>
+    </div>
+
+    <h2 id="t6-workhardening">Work hardening — why metal gets harder as you form it</h2>
+    <p class="learn-only">You've probably noticed that bending a paperclip repeatedly makes it stiffer and eventually it snaps. That's work hardening. Here's why it happens.</p>
+
+    <p>Metal crystals contain defects called <strong>dislocations</strong> — line defects in the crystal structure that allow slip (plastic deformation). When you plastically deform metal:</p>
+    <ol>
+      <li>Dislocations multiply dramatically</li>
+      <li>Dislocations tangle and block each other's movement</li>
+      <li>Further deformation requires more force</li>
+    </ol>
+
+    <div class="analogy">
+      <div class="analogy-icon">🚗</div>
+      <div class="analogy-text">Imagine a traffic jam. One car moving is easy (low dislocation density). But as more cars fill the road, movement gets harder (high dislocation density). Work hardening is a traffic jam in the crystal structure.</div>
+    </div>
+
+    <p><strong>Effects of work hardening:</strong></p>
+    <ul>
+      <li><strong>Strength increases</strong> — harder to deform further</li>
+      <li><strong>Ductility decreases</strong> — less ability to deform without fracturing</li>
+    </ul>
+
+    <h3>Recrystallisation — resetting the material</h3>
+    <p>Heat the work-hardened metal to approximately <strong>0.5 Tm</strong> (in Kelvin) and new strain-free grains nucleate and grow to replace the deformed ones. Dislocations eliminated. Strength drops back down. Ductility restored. Material reset.</p>
+
+    <div class="concept-box success">
+      <div class="concept-box-title">Why recrystallisation matters for hot working</div>
+      <p>In hot working, recrystallisation occurs <em>during</em> deformation (temperature is above 0.5 Tm). So you can keep deforming without the material ever getting too work-hardened to continue. Like forming putty — it never stiffens up.</p>
+    </div>
+
+    <h2 id="t6-temperatures">Cold, warm and hot working</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Type</th><th>Temperature range</th><th>Forces</th><th>Work hardening</th><th>Surface</th><th>Accuracy</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Cold</strong></td><td>Below 0.3 Tm</td><td>High</td><td>Significant</td><td>Excellent</td><td>Excellent</td></tr>
+          <tr><td><strong>Warm</strong></td><td>0.3 – 0.5 Tm</td><td>Medium</td><td>Some</td><td>Good</td><td>Good</td></tr>
+          <tr><td><strong>Hot</strong></td><td>Above recryst. (~0.5 Tm)</td><td>Low</td><td>None (recryst.)</td><td>Poor (oxidation)</td><td>Lower</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="concept-box warn">
+      <div class="concept-box-title">Finishing uses HIGH speed — counterintuitive</div>
+      <p>Roughing cuts use low speed (heavy cuts generate too much heat). Finishing cuts use <strong>high speed</strong> with light cuts — this gives a better surface finish because the chip flow is smoother.</p>
+    </div>
+
+    <h2 id="t6-flowstress">Flow stress — the Hollomon equation</h2>
+    <p><strong>Flow stress</strong> is the instantaneous stress required to continue plastic deformation at any given moment. As the material work hardens, flow stress increases.</p>
+
+    <div class="formula-block">
+      <div class="formula-name">Hollomon flow curve equation</div>
+      <div class="formula-eq">σ = K × εⁿ</div>
+      <div class="formula-vars">
+        <div class="formula-var"><span class="formula-var-symbol">σ</span>flow stress (MPa)</div>
+        <div class="formula-var"><span class="formula-var-symbol">K</span>strength coefficient (MPa) — material constant</div>
+        <div class="formula-var"><span class="formula-var-symbol">ε</span>true strain (dimensionless)</div>
+        <div class="formula-var"><span class="formula-var-symbol">n</span>strain hardening exponent — how quickly material hardens</div>
+      </div>
+    </div>
+
+    <div class="formula-block">
+      <div class="formula-name">Average flow stress</div>
+      <div class="formula-eq">Ȳf = K × εfⁿ / (1 + n)</div>
+      <div class="formula-vars">
+        <div class="formula-var"><span class="formula-var-symbol">Ȳf</span>average flow stress (MPa)</div>
+        <div class="formula-var"><span class="formula-var-symbol">εf</span>final true strain</div>
+      </div>
+      <p style="margin-top: 12px;">Shortcut: <code>Ȳf = flow stress / (1 + n)</code> — calculate flow stress first, then divide.</p>
+    </div>
+
+    <div class="example">
+      <div class="example-label">Worked example — K and n from two data points</div>
+      <p class="example-q">Two stress/strain points: σ₁ = 217 MPa at ε₁ = 0.35 and σ₂ = 259 MPa at ε₂ = 0.68. Find K and n.</p>
+      <div class="example-step">Take ln of σ = Kεⁿ → ln σ = ln K + n ln ε</div>
+      <div class="example-step">Eq1: ln(217) = ln K + n·ln(0.35) → 5.380 = ln K − 1.050n</div>
+      <div class="example-step">Eq2: ln(259) = ln K + n·ln(0.68) → 5.557 = ln K − 0.386n</div>
+      <div class="example-step">Subtract Eq1 from Eq2: 0.177 = 0.664n → <strong>n = 0.266</strong></div>
+      <div class="example-step">Substitute back: ln K = 5.557 + 0.386 × 0.266 = 5.660 → <strong>K = e^5.660 = 287 MPa</strong></div>
+      <div class="example-answer">n = 0.266, K = 287 MPa</div>
+    </div>
+
+    <h2 id="t6-bulk">Bulk forming processes</h2>
+
+    <h3>Rolling — most widely used</h3>
+    <p>Metal passed between rotating rolls that squeeze it, reducing thickness and increasing length. Like a pasta machine.</p>
+
+    <div class="card-grid">
+      <div class="card"><h4>Flat rolling</h4><p>Simple flat rolls → plates, sheets. Most common.</p></div>
+      <div class="card"><h4>Shape rolling</h4><p>Shaped groove rolls → I-beams, railway rails, channels.</p></div>
+      <div class="card"><h4>Thread rolling</h4><p>Cold rolling threads onto fasteners. <strong>Stronger than cut threads</strong> — grain flow preserved, surface work hardened.</p></div>
+      <div class="card"><h4>Ring rolling</h4><p>Thin wall ring made from thick ring. <strong>Hot for large, cold for small</strong>. Bearing races, pressure vessel rings.</p></div>
+    </div>
+
+    <h3>Forging — compressed between dies</h3>
+    <div class="card-grid">
+      <div class="card">
+        <h4>Open-die forging</h4>
+        <p>Metal compressed between flat dies, flows freely outward. Simple shapes. Large parts. Like hitting clay with a flat board.</p>
+      </div>
+      <div class="card">
+        <h4>Impression-die forging</h4>
+        <p>Shaped die cavity. Metal fills it. <strong>Flash</strong> is squeezed out at the die parting line — its resistance helps force metal into every corner. Crankshafts, connecting rods.</p>
+      </div>
+      <div class="card">
+        <h4>Flashless forging</h4>
+        <p>Precision forging. No flash, no waste. Billet volume must exactly match die cavity. More precise but harder to set up.</p>
+      </div>
+      <div class="card">
+        <h4>Upset forging</h4>
+        <p><strong>Most common forging operation.</strong> Axial compression shortens and widens. Bolt heads, nail heads, rivets.</p>
+      </div>
+    </div>
+
+    <h3>Extrusion — pushing through a die</h3>
+    <div class="two-col">
+      <div class="concept-box">
+        <div class="concept-box-title">Direct extrusion</div>
+        <p>Ram pushes billet toward fixed die. Metal flows in <strong>same direction</strong> as ram. Most common. Higher friction (billet slides against container).</p>
+      </div>
+      <div class="concept-box note">
+        <div class="concept-box-title">Indirect extrusion</div>
+        <p>Die moves toward stationary billet. Metal flows <strong>backward</strong> through hollow ram. Lower friction — billet stays still.</p>
+      </div>
+    </div>
+
+    <h3>Wire and bar drawing</h3>
+    <p>Metal <strong>pulled</strong> through a die by tensile force — opposite of extrusion which pushes. Reduces cross-section. Usually cold worked, which work-hardens the wire increasing its strength. Used for electrical wire, spring wire, structural cables.</p>
+
+    <h2 id="t6-sheet">Sheet metalworking</h2>
+    <p>Operations performed on thin sheet (0.4–6mm) using presses. Products called stampings.</p>
+
+    <h3>Cutting — four stages every time</h3>
+    <p>This sequence happens every time sheet metal is cut, whether by blanking or punching:</p>
+    <div class="process-flow">
+      <div class="process-step"><div class="process-step-num">1</div><div class="process-step-name">Contact</div><div class="process-step-desc">Punch touches sheet</div></div>
+      <div class="process-step"><div class="process-step-num">2</div><div class="process-step-name">Deform</div><div class="process-step-desc">Sheet yields, bends</div></div>
+      <div class="process-step"><div class="process-step-num">3</div><div class="process-step-name">Penetrate</div><div class="process-step-desc">Punch enters — smooth cut zone</div></div>
+      <div class="process-step"><div class="process-step-num">4</div><div class="process-step-name">Fracture</div><div class="process-step-desc">Cracks meet → separation</div></div>
+    </div>
+
+    <div class="two-col">
+      <div class="concept-box success">
+        <div class="concept-box-title">Blanking</div>
+        <p>The cut piece <strong>IS the desired part</strong>. Surrounding sheet is scrap.</p>
+        <div class="analogy" style="margin: 8px 0;">
+          <div class="analogy-icon">🪙</div>
+          <div class="analogy-text">Making coins — the coin disc is the product, the sheet with holes is scrap.</div>
+        </div>
+      </div>
+      <div class="concept-box note">
+        <div class="concept-box-title">Punching</div>
+        <p>The cut piece (slug) <strong>IS the scrap</strong>. The sheet with the hole is the product.</p>
+        <div class="analogy" style="margin: 8px 0;">
+          <div class="analogy-icon">🔩</div>
+          <div class="analogy-text">Making a bracket with holes — the holes are punched through, slugs discarded.</div>
+        </div>
+      </div>
+    </div>
+
+    <h3>Bending</h3>
+    <div class="two-col">
+      <div class="concept-box">
+        <div class="concept-box-title">V-bending</div>
+        <p>Simple V-shaped punch and die. Low tooling cost. Used for low to medium production. Press brake machine.</p>
+      </div>
+      <div class="concept-box note">
+        <div class="concept-box-title">Edge bending</div>
+        <p>Sheet clamped, punch bends it over die edge. More complex tooling. Higher production rates.</p>
+      </div>
+    </div>
+
+    <div class="concept-box warn">
+      <div class="concept-box-title">Springback</div>
+      <p>Elastic portion of bend recovers on release — angle opens up. Fixed by <strong>overbending</strong> past the desired angle, so after springback it ends up at the right angle. Standard practice in all bending operations.</p>
+    </div>
+
+    <h2 id="t6-drawing">Deep drawing</h2>
+    <p>Punch draws a flat blank into a die cavity, forming a hollow cup. Used for drinks cans, car body panels, ammunition shells, kitchen sinks.</p>
+
+    <p><strong>Key components:</strong></p>
+    <ul>
+      <li><strong>Blank</strong> — flat circular starting sheet</li>
+      <li><strong>Punch</strong> — pushes blank into die</li>
+      <li><strong>Die</strong> — defines shape of cup</li>
+      <li><strong>Blankholder</strong> — clamps outer edges of blank, prevents wrinkling</li>
+    </ul>
+
+    <h3>Five drawing defects</h3>
+    <div class="card-grid">
+      <div class="card"><h4 style="color: var(--coral);">Wrinkling</h4><p>Flange buckles under compression. Fixed by blankholder force.</p></div>
+      <div class="card"><h4 style="color: var(--coral);">Tearing</h4><p>Wall fractures at punch radius — too much tensile stress.</p></div>
+      <div class="card"><h4 style="color: var(--coral);">Earing</h4><p>Uneven scalloped rim. Caused by anisotropy in starting sheet.</p></div>
+      <div class="card"><h4 style="color: var(--coral);">Scratching</h4><p>Rough punch/die or insufficient lubrication.</p></div>
+      <div class="card"><h4 style="color: var(--coral);">Wall thinning</h4><p>Non-uniform thinning of walls during drawing.</p></div>
+    </div>
+
+    <p><strong>Redrawing</strong> — when cup too deep for single draw, done in stages (changes cup shape).</p>
+    <p><strong>Ironing</strong> — cup forced through narrow die gap to thin and elongate walls uniformly. Drinks cans = drawn then ironed.</p>
+
+    <h2 id="t6-traps">Topic 6 — exam traps</h2>
+
+    <div class="trap-card">
+      <span class="trap-tag">Trap 1</span>
+      <div class="trap-claim">"Blanking is used to create holes in sheet metal."</div>
+      <div class="trap-truth"><strong>FALSE.</strong> Blanking produces the cut piece as the part (coins, discs). Holes are made by <strong>punching</strong> — where the slug is scrap.</div>
+    </div>
+
+    <div class="trap-card">
+      <span class="trap-tag">Trap 2</span>
+      <div class="trap-claim">"Thread rolling gives weaker threads than cutting because it deforms the material."</div>
+      <div class="trap-truth"><strong>FALSE.</strong> Thread rolling gives <strong>stronger</strong> threads — grain flow follows thread contour, and surface is work hardened, improving fatigue resistance.</div>
+    </div>
+
+    <div class="trap-card">
+      <span class="trap-tag">Trap 3</span>
+      <div class="trap-claim">"Hot working is used for small rings in ring rolling."</div>
+      <div class="trap-truth"><strong>FALSE.</strong> Hot working for <strong>large</strong> rings, cold working for <strong>small</strong> rings. Large rings require the lower forces of hot working.</div>
+    </div>
+
+    <div class="trap-card">
+      <span class="trap-tag">Trap 4</span>
+      <div class="trap-claim">"Flash in impression-die forging wastes material and should be eliminated."</div>
+      <div class="trap-truth"><strong>FALSE.</strong> Flash is actually <em>useful</em> — friction in the thin flash gap resists metal flow, forcing metal to fill every corner of the die cavity first. It's then trimmed off, but it serves a purpose.</div>
+    </div>
+
+    <div class="trap-card">
+      <span class="trap-tag">Trap 5</span>
+      <div class="trap-claim">"Finishing cuts use low cutting speed to avoid damage."</div>
+      <div class="trap-truth"><strong>FALSE.</strong> Finishing cuts use <strong>HIGH</strong> cutting speed with low feed and depth. High speed gives smoother chip flow and better surface finish.</div>
+    </div>
+  </div>
+</section>
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<!-- TOPIC 7 — METAL MACHINING -->
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<section id="t7" class="section">
+  <div class="container">
+    <div class="topic-num">Topic 7 of 10</div>
+    <h1>Metal Machining</h1>
+    <p class="hero-subtitle" style="margin-bottom: 32px;">The only manufacturing process that removes material to achieve shape. Turning, drilling, milling, broaching — each with a specific machine, tool, and purpose.</p>
+
+    <div class="toc">
+      <div class="toc-title">In this topic</div>
+      <ul class="toc-list">
+        <li><a href="#t7-why" class="toc-link">→ Why and why not machine?</a></li>
+        <li><a href="#t7-three" class="toc-link">→ Three main operations</a></li>
+        <li><a href="#t7-other" class="toc-link">→ Other operations</a></li>
+        <li><a href="#t7-params" class="toc-link">→ Cutting parameters</a></li>
+        <li><a href="#t7-chips" class="toc-link">→ Chip formation</a></li>
+        <li><a href="#t7-surface" class="toc-link">→ Surface finish</a></li>
+        <li><a href="#t7-design" class="toc-link">→ Design for machining</a></li>
+        <li><a href="#t7-traps" class="toc-link">→ Exam traps</a></li>
+      </ul>
+    </div>
+
+    <h2 id="t7-why">Why machine — and why not?</h2>
+    <p class="learn-only">If machining gives such good accuracy and finish, why not machine everything? Because it has serious drawbacks that make other processes preferable for initial shaping.</p>
+
+    <div class="two-col">
+      <div class="concept-box success">
+        <div class="concept-box-title">✓ Advantages of machining</div>
+        <ul>
+          <li>Excellent dimensional accuracy and surface finish</li>
+          <li>Works on virtually any solid material</li>
+          <li>Can produce complex geometries</li>
+          <li>Good for small batches</li>
+        </ul>
+      </div>
+      <div class="concept-box danger">
+        <div class="concept-box-title">✗ Why not machine everything?</div>
+        <ul>
+          <li><strong>Material waste</strong> — removed material becomes chips, mostly wasted</li>
+          <li><strong>Slow</strong> — not suited to high-volume production</li>
+          <li><strong>Expensive</strong> — machining time + tool cost + setup</li>
+          <li><strong>Often unnecessary</strong> — casting, forging, PM give near-net shape</li>
+        </ul>
+      </div>
+    </div>
+
+    <p>Best practice: <strong>use casting/forging/PM to get close to shape, then machine only the critical features</strong> that need tight tolerances or good surface finish.</p>
+
+    <h2 id="t7-three">Three main machining operations</h2>
+
+    <div class="card-grid">
+      <div class="card">
+        <h4 style="color: var(--blue);">Turning</h4>
+        <p><strong>Workpiece rotates.</strong> Single-point tool moves linearly. Machine: <em>lathe</em>. Produces cylindrical surfaces.</p>
+        <p style="font-size: 13px; color: var(--muted);">Turning operations: facing, taper turning, contour turning, chamfering, cutoff, threading, boring.</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--teal);">Drilling</h4>
+        <p><strong>Tool rotates.</strong> Workpiece stationary. Machine: <em>drill press</em>. Creates round holes only.</p>
+        <p style="font-size: 13px; color: var(--muted);">Related ops: tapping (internal threads), countersinking (conical), counterboring (flat), reaming (sizing).</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--purple);">Milling</h4>
+        <p><strong>Tool rotates.</strong> Workpiece moves. Machine: <em>milling machine</em>. Multi-point cutter. Flat surfaces, slots, profiles.</p>
+        <p style="font-size: 13px; color: var(--muted);">Peripheral milling (axis parallel to surface) vs face milling (axis perpendicular).</p>
+      </div>
+    </div>
+
+    <div class="concept-box danger">
+      <div class="concept-box-title">⚠️ Critical distinction — turning vs milling</div>
+      <p><strong>Turning: workpiece rotates.</strong> Tool is stationary (just moves linearly).</p>
+      <p><strong>Milling: tool rotates.</strong> Workpiece moves into the rotating cutter.</p>
+      <p>This is consistently tested. Get it the wrong way round and you lose marks.</p>
+    </div>
+
+    <div class="concept-box note">
+      <div class="concept-box-title">Boring vs turning — both on a lathe?</div>
+      <p><strong>Turning</strong> = machining the <em>outside</em> diameter of a rotating workpiece.<br>
+      <strong>Boring</strong> = machining the <em>inside</em> diameter of an existing hole — effectively internal turning.<br>
+      Turning on a lathe: workpiece rotates. Boring on a drill press or milling machine: tool rotates.</p>
+    </div>
+
+    <h3>Drilling detail — through holes vs blind holes</h3>
+    <div class="two-col">
+      <div class="concept-box">
+        <div class="concept-box-title">Through hole</div>
+        <p>Drill <strong>exits</strong> the opposite side. Clean exit. Simple.</p>
+      </div>
+      <div class="concept-box note">
+        <div class="concept-box-title">Blind hole</div>
+        <p>Drill does <strong>NOT</strong> exit the opposite side. Flat or conical bottom. More care needed.</p>
+      </div>
+    </div>
+
+    <h3>Tapping vs threading</h3>
+    <ul>
+      <li><strong>Tapping</strong> — cuts <em>internal</em> threads into an existing hole (the nut side)</li>
+      <li><strong>Threading</strong> — cuts <em>external</em> threads on a cylindrical surface (the bolt side)</li>
+    </ul>
+
+    <h2 id="t7-other">Other machining operations</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h4>Broaching</h4>
+        <p>Multi-tooth tool moved linearly in a <strong>single pass</strong>. Each tooth cuts slightly deeper than previous. Used for non-circular holes: keyways, square holes, internal splines, gear tooth profiles.</p>
+        <div class="analogy" style="margin: 8px 0;"><div class="analogy-icon">🔑</div><div class="analogy-text">Like a serrated key being pulled through a lock.</div></div>
+      </div>
+      <div class="card">
+        <h4>Shaping</h4>
+        <p>Single-point tool moves <strong>back and forth</strong> across a stationary workpiece. Produces flat surfaces.</p>
+      </div>
+      <div class="card">
+        <h4>Planing</h4>
+        <p><strong>Workpiece</strong> moves back and forth past a stationary tool. Produces flat surfaces. Opposite motion to shaping.</p>
+      </div>
+    </div>
+
+    <h2 id="t7-params">Cutting parameters — MRR</h2>
+    <p>Three parameters define any machining operation:</p>
+
+    <div class="formula-block">
+      <div class="formula-name">Material Removal Rate (MRR)</div>
+      <div class="formula-eq">MRR = v × f × d</div>
+      <div class="formula-vars">
+        <div class="formula-var"><span class="formula-var-symbol">v</span>cutting speed (mm/s or m/min)</div>
+        <div class="formula-var"><span class="formula-var-symbol">f</span>feed — tool advance per revolution (mm/rev)</div>
+        <div class="formula-var"><span class="formula-var-symbol">d</span>depth of cut (mm)</div>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Type</th><th>Speed</th><th>Feed</th><th>Depth</th><th>Purpose</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Roughing</strong></td><td>Low</td><td>High</td><td>High</td><td>Remove bulk material fast</td></tr>
+          <tr><td><strong>Finishing</strong></td><td>High</td><td>Low</td><td>Low</td><td>Achieve final dimensions and finish</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="t7-chips">Chip formation — four types</h2>
+    <p>The type of chip produced tells you about the cutting conditions and material:</p>
+
+    <div class="card-grid">
+      <div class="card">
+        <h4 style="color: var(--teal);">Continuous chip</h4>
+        <p>Long ribbon. Ductile material, high speed, small feeds, sharp tool, low friction.</p>
+        <p><strong>Best surface finish.</strong></p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--amber);">Discontinuous chip</h4>
+        <p>Broken segments. Brittle material (cast iron, ceramics), low speed, large feeds.</p>
+        <p>Interruptions in cut — reduces finish.</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--coral);">BUE (Built-Up Edge)</h4>
+        <p>Ductile material, low-to-medium speed. Chip welds to rake face, builds up, then breaks off cyclically.</p>
+        <p><strong>Damages surface finish.</strong></p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--purple);">Serrated chip</h4>
+        <p>Difficult-to-machine metals at high speed. Alternating high and low shear zones. Saw-tooth appearance.</p>
+      </div>
+    </div>
+
+    <h2 id="t7-surface">Surface finish — what controls it</h2>
+    <div class="formula-block">
+      <div class="formula-name">Ideal surface roughness</div>
+      <div class="formula-eq">Ri = f² / (8 × NR)</div>
+      <div class="formula-vars">
+        <div class="formula-var"><span class="formula-var-symbol">Ri</span>ideal surface roughness</div>
+        <div class="formula-var"><span class="formula-var-symbol">f</span>feed rate</div>
+        <div class="formula-var"><span class="formula-var-symbol">NR</span>tool nose radius</div>
+      </div>
+      <p style="margin-top: 12px;"><strong>Key insight:</strong> Lower feed and larger nose radius → better finish. This is the theoretical minimum — actual finish is always worse due to BUE, chatter, etc.</p>
+    </div>
+
+    <div class="concept-box warn">
+      <div class="concept-box-title">Chatter — enemy of surface finish</div>
+      <p>Vibration between tool and workpiece that creates a wavy, rippled surface. Causes:</p>
+      <ul>
+        <li>Low stiffness in setup or machine</li>
+        <li>Operating near natural frequency</li>
+        <li>Large feeds and depths</li>
+      </ul>
+      <p>Fix: increase stiffness, use damping, reduce feeds and depths, apply cutting fluid.</p>
+    </div>
+
+    <h2 id="t7-design">Design for machining — guidelines</h2>
+    <ul>
+      <li><strong>Minimise machining</strong> — use near-net shape processes first</li>
+      <li><strong>Avoid sharp internal corners</strong> — cutting tools have a nose radius, can't make a perfect sharp corner</li>
+      <li><strong>Use standard stock sizes</strong> — reduces initial machining required</li>
+      <li><strong>Design for accessibility</strong> — cutting tool must be able to reach the feature</li>
+    </ul>
+
+    <h2 id="t7-traps">Topic 7 — exam traps</h2>
+
+    <div class="trap-card">
+      <span class="trap-tag">Trap 1</span>
+      <div class="trap-claim">"In turning, the tool rotates."</div>
+      <div class="trap-truth"><strong>FALSE.</strong> In turning, the <strong>workpiece</strong> rotates. The tool is (mostly) stationary and moves linearly.</div>
+    </div>
+
+    <div class="trap-card">
+      <span class="trap-tag">Trap 2</span>
+      <div class="trap-claim">"Boring is the same as turning — both on a lathe."</div>
+      <div class="trap-truth"><strong>FALSE.</strong> Boring machines the <strong>inside</strong> diameter. Turning machines the <strong>outside</strong> diameter. Different operations, often different machines.</div>
+    </div>
+
+    <div class="trap-card">
+      <span class="trap-tag">Trap 3</span>
+      <div class="trap-claim">"Finishing cuts are done before roughing cuts."</div>
+      <div class="trap-truth"><strong>FALSE.</strong> Always <strong>roughing first</strong> to remove bulk material, then finishing to achieve final dimensions and surface finish.</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<!-- TOPIC 8 — CUTTING TOOLS -->
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<section id="t8" class="section">
+  <div class="container">
+    <div class="topic-num">Topic 8 of 10</div>
+    <h1>Cutting Tools</h1>
+    <p class="hero-subtitle" style="margin-bottom: 32px;">The tool is doing the real work in machining. Tool life, wear mechanisms, material selection, cutting fluids, and cost optimisation.</p>
+
+    <div class="toc">
+      <div class="toc-title">In this topic</div>
+      <ul class="toc-list">
+        <li><a href="#t8-failure" class="toc-link">→ Tool failure modes</a></li>
+        <li><a href="#t8-wear" class="toc-link">→ Tool wear</a></li>
+        <li><a href="#t8-taylor" class="toc-link">→ Taylor tool life equation</a></li>
+        <li><a href="#t8-materials" class="toc-link">→ Tool materials</a></li>
+        <li><a href="#t8-fluids" class="toc-link">→ Cutting fluids</a></li>
+        <li><a href="#t8-cost" class="toc-link">→ Cost & time optimisation</a></li>
+        <li><a href="#t8-traps" class="toc-link">→ Exam traps</a></li>
+      </ul>
+    </div>
+
+    <h2 id="t8-failure">Three ways a cutting tool fails</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h4 style="color: var(--coral);">1. Fracture failure</h4>
+        <p>Sudden tool breakage from high cutting force or interrupted cut. <strong>Unpredictable and dangerous</strong> — causes scrapped workpieces and can be violent.</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--amber);">2. Temperature failure</h4>
+        <p>Excessive heat softens the cutting edge — loses its shape and cutting ability. Occurs when cutting speed is too high for the tool material.</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--green);">3. Gradual wear ✓ preferred</h4>
+        <p>Slow, progressive wear over time. <strong>This is what you want</strong> — predictable, gives maximum tool life, allows planned replacement before part quality degrades.</p>
+      </div>
+    </div>
+
+    <h2 id="t8-wear">Tool wear — two locations</h2>
+    <div class="two-col">
+      <div class="concept-box note">
+        <div class="concept-box-title">Crater wear</div>
+        <p>Depression worn into the <strong>rake face</strong> (top of tool) where the chip slides over it. The chip acts like sandpaper, grinding away material from above.</p>
+        <p style="font-size: 13px; color: var(--muted);">Like water carving a valley in rock — slow but persistent.</p>
+      </div>
+      <div class="concept-box warn">
+        <div class="concept-box-title">Flank wear</div>
+        <p>Flat worn area on the <strong>flank face</strong> (side of tool) where it rubs against the freshly machined surface.</p>
+        <p><strong>Tool life criterion: replace tool at 0.5mm flank wear.</strong> Measured and monitored in practice.</p>
+      </div>
+    </div>
+
+    <h2 id="t8-taylor">Taylor tool life equation</h2>
+    <div class="formula-block">
+      <div class="formula-name">Taylor tool life</div>
+      <div class="formula-eq">v × Tⁿ = C</div>
+      <div class="formula-vars">
+        <div class="formula-var"><span class="formula-var-symbol">v</span>cutting speed (m/min)</div>
+        <div class="formula-var"><span class="formula-var-symbol">T</span>tool life (min)</div>
+        <div class="formula-var"><span class="formula-var-symbol">n</span>Taylor exponent (material + tool constant)</div>
+        <div class="formula-var"><span class="formula-var-symbol">C</span>constant (cutting speed for T = 1 min)</div>
+      </div>
+      <p style="margin-top: 12px;"><strong>Key relationship:</strong> Higher cutting speed = shorter tool life. And it's non-linear — doubling speed reduces tool life by much more than half.</p>
+      <p>On a <strong>log-log graph</strong>, this becomes a straight line — that's how n and C are found from experimental data.</p>
+    </div>
+
+    <div class="concept-box tip">
+      <div class="concept-box-title">Rearranging for tool life or speed</div>
+      <p>If you know v and need T: <code>T = (C/v)^(1/n)</code></p>
+      <p>If you know T and need v: <code>v = C / T^n</code></p>
+      <p>If you have two speed/life pairs to find n and C: take log of both sides and solve simultaneously — same as Hollomon in T6.</p>
+    </div>
+
+    <h2 id="t8-materials">Tool materials — hardness ladder</h2>
+    <p>Listed in increasing order of hardness and heat resistance:</p>
+
+    <div class="card-grid">
+      <div class="card">
+        <h4 style="color: var(--blue);">High Speed Steel (HSS)</h4>
+        <p>Maintains hardness up to ~600°C. Can be resharpened. Most versatile — drills, taps, reamers, broaches, milling cutters. Used at lower cutting speeds.</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--teal);">Cemented Carbides</h4>
+        <p>Tungsten carbide (WC) with cobalt (Co) binder. Much harder and more heat resistant than HSS. Higher cutting speeds. Inserts common.</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--teal);">Coated Carbides</h4>
+        <p>Cemented carbide with thin ceramic coating (TiC, TiN, Al₂O₃). Coating is 2.5–13 μm thick, applied by CVD or PVD. Even longer tool life.</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--purple);">Ceramics</h4>
+        <p>Very high hardness and heat resistance. <strong>Brittle</strong> — not suitable for interrupted cuts or heavy feeds. High-speed finishing.</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--amber);">CBN (Cubic Boron Nitride)</h4>
+        <p>Second hardest material. Excellent for hardened steels and superalloys. Doesn't react with iron.</p>
+      </div>
+      <div class="card" style="border-color: var(--coral);">
+        <h4 style="color: var(--coral);">Synthetic Diamond ⚠️</h4>
+        <p>Hardest material. Excellent for non-ferrous metals, ceramics, composites, glass. <strong>Cannot be used on steel</strong> — diamond (carbon) reacts chemically with iron at machining temperatures. Tool dissolves.</p>
+      </div>
+    </div>
+
+    <h2 id="t8-fluids">Cutting fluids</h2>
+    <div class="two-col">
+      <div class="concept-box">
+        <div class="concept-box-title">Coolants — water-based</div>
+        <p>Primary job: <strong>remove heat</strong> from cutting zone. Best at high cutting speeds where temperature is the main problem.</p>
+        <p style="font-size: 13px; color: var(--muted);">Also remove chips, reduce thermal distortion, prolong tool life.</p>
+      </div>
+      <div class="concept-box note">
+        <div class="concept-box-title">Lubricants — oil-based</div>
+        <p>Primary job: <strong>reduce friction</strong> at tool-chip and tool-work interfaces. Best at low cutting speeds where friction is the dominant problem.</p>
+        <p style="font-size: 13px; color: var(--muted);">Drilling, tapping, reaming.</p>
+      </div>
+    </div>
+
+    <h2 id="t8-cost">Cost and time optimisation</h2>
+    <div class="formula-block">
+      <div class="formula-name">Production cycle time per part</div>
+      <div class="formula-eq">Tc = Th + To + Tt</div>
+      <div class="formula-vars">
+        <div class="formula-var"><span class="formula-var-symbol">Tc</span>total cycle time (min/part)</div>
+        <div class="formula-var"><span class="formula-var-symbol">Th</span>handling time (load/unload)</div>
+        <div class="formula-var"><span class="formula-var-symbol">To</span>machining time</div>
+        <div class="formula-var"><span class="formula-var-symbol">Tt</span>tool change time per part</div>
+      </div>
+    </div>
+
+    <div class="formula-block">
+      <div class="formula-name">Cost per part</div>
+      <div class="formula-eq">Cpc = Cm + (CL + Ceq) × Tc + Ct</div>
+      <div class="formula-vars">
+        <div class="formula-var"><span class="formula-var-symbol">Cm</span>material cost (£/part)</div>
+        <div class="formula-var"><span class="formula-var-symbol">CL</span>labour cost rate (£/min)</div>
+        <div class="formula-var"><span class="formula-var-symbol">Ceq</span>equipment cost rate (£/min)</div>
+        <div class="formula-var"><span class="formula-var-symbol">Ct</span>tooling cost (£/part)</div>
+      </div>
+    </div>
+
+    <div class="concept-box tip">
+      <div class="concept-box-title">The speed trade-off</div>
+      <p>Higher cutting speed → shorter machining time (To ↓) → fewer parts per tool → higher tool cost per part (Ct ↑). There's an <strong>optimum speed</strong> that minimises total cost per part — faster isn't always cheaper.</p>
+    </div>
+
+    <h2 id="t8-traps">Topic 8 — exam traps</h2>
+
+    <div class="trap-card">
+      <span class="trap-tag">Trap 1</span>
+      <div class="trap-claim">"Diamond cutting tools are used for machining hardened steel."</div>
+      <div class="trap-truth"><strong>FALSE.</strong> Diamond reacts chemically with iron at machining temperatures — the tool dissolves. Use <strong>CBN</strong> for hardened steels.</div>
+    </div>
+
+    <div class="trap-card">
+      <span class="trap-tag">Trap 2</span>
+      <div class="trap-claim">"Lubricant-type cutting fluids are water-based."</div>
+      <div class="trap-truth"><strong>FALSE.</strong> Lubricants are <strong>oil-based</strong>. Water-based = coolants. Different primary functions.</div>
+    </div>
+
+    <div class="trap-card">
+      <span class="trap-tag">Trap 3</span>
+      <div class="trap-claim">"Gradual tool wear should be avoided — it's the worst failure mode."</div>
+      <div class="trap-truth"><strong>FALSE.</strong> Gradual wear is the <strong>preferred</strong> failure mode — predictable, allows planned replacement. Fracture failure is the dangerous one.</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<!-- TOPIC 9 — GRINDING AND FINISHING -->
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<section id="t9" class="section">
+  <div class="container">
+    <div class="topic-num">Topic 9 of 10</div>
+    <h1>Grinding & Abrasive Finishing</h1>
+    <p class="hero-subtitle" style="margin-bottom: 32px;">Machining with no defined cutting edge — just millions of hard abrasive grains doing random, tiny cuts. Precision beyond what conventional machining can achieve.</p>
+
+    <div class="toc">
+      <div class="toc-title">In this topic</div>
+      <ul class="toc-list">
+        <li><a href="#t9-basics" class="toc-link">→ Abrasive machining basics</a></li>
+        <li><a href="#t9-wheel" class="toc-link">→ Grinding wheel anatomy</a></li>
+        <li><a href="#t9-properties" class="toc-link">→ Wheel properties</a></li>
+        <li><a href="#t9-rules" class="toc-link">→ Grinding rules</a></li>
+        <li><a href="#t9-finishing" class="toc-link">→ Ultra-precision finishing</a></li>
+        <li><a href="#t9-traps" class="toc-link">→ Exam traps</a></li>
+      </ul>
+    </div>
+
+    <h2 id="t9-basics">What makes grinding different?</h2>
+    <p class="learn-only">A milling cutter has a precise number of cutting edges arranged at specific angles, cutting in a controlled way. A grinding wheel has millions of tiny abrasive grains, each with a random shape and negative rake angle — more friction, more heat, but capable of much finer material removal.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th></th><th>Conventional machining</th><th>Grinding</th></tr></thead>
+        <tbody>
+          <tr><td>Cutting edges</td><td>Defined geometry, known rake angle</td><td>Random abrasive grains, mostly negative rake</td></tr>
+          <tr><td>Speed</td><td>Lower</td><td>Very high (30+ m/s)</td></tr>
+          <tr><td>Material removal</td><td>High</td><td>Low — precision removal</td></tr>
+          <tr><td>Purpose</td><td>Shape creation</td><td>Surface finishing and precision</td></tr>
+          <tr><td>Heat generation</td><td>Moderate</td><td>High — cooling critical</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="concept-box tip">
+      <div class="concept-box-title">Grain action types</div>
+      <p>Not every grain actually cuts material:</p>
+      <ul>
+        <li><strong>Cutting</strong> — grain removes a chip (only a fraction of grains do this)</li>
+        <li><strong>Ploughing</strong> — grain deforms the surface but doesn't remove material</li>
+        <li><strong>Rubbing</strong> — grain slides without cutting — pure friction and heat</li>
+      </ul>
+    </div>
+
+    <h2 id="t9-wheel">Grinding wheel anatomy</h2>
+    <p>Three components — each has a critical job:</p>
+
+    <div class="card-grid">
+      <div class="card">
+        <h4 style="color: var(--amber);">Abrasive grains</h4>
+        <p>The cutting particles. Must be harder than the workpiece.</p>
+        <p>Materials: Aluminium oxide (Al₂O₃) — general purpose. Silicon carbide (SiC) — harder materials. CBN and diamond — hardest applications.</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--blue);">Bond material</h4>
+        <p>Holds grains together. Must be strong enough to hold grains during cutting but allow <em>worn</em> grains to release so fresh ones are exposed.</p>
+        <p>Vitrified (glass), resinoid, rubber, metal bonds.</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--teal);">Porosity</h4>
+        <p>Spaces between grains. Essential for:</p>
+        <ul>
+          <li>Chip escape during cutting</li>
+          <li>Coolant access to cutting zone</li>
+          <li>Preventing clogging</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="t9-properties">Wheel properties</h2>
+
+    <h3>Friability — the self-sharpening property</h3>
+    <div class="concept-box danger">
+      <div class="concept-box-title">⚠️ Exam MCQ trap — the friability question</div>
+      <p><strong>Friability = the ability of abrasive grains to fracture and expose new sharp edges.</strong></p>
+      <p>Your exam paper may say "friability prevents grains from fracturing" — this is <strong>FALSE</strong>. Friability <em>allows</em> fracture. That fracture is what keeps the wheel self-sharpening.</p>
+      <ul>
+        <li>Too little friability → grains stay dull → <strong>glazing</strong> (wheel surface becomes smooth and useless)</li>
+        <li>Too much friability → grains break away too fast → rapid wheel wear</li>
+      </ul>
+    </div>
+
+    <div class="analogy">
+      <div class="analogy-icon">✏️</div>
+      <div class="analogy-text">Like a pencil that is designed to break in specific places as it wears — revealing a fresh sharp point. That's friability in grinding wheels.</div>
+    </div>
+
+    <h3>Wheel grade vs wheel structure</h3>
+    <div class="two-col">
+      <div class="concept-box">
+        <div class="concept-box-title">Wheel grade = bond strength</div>
+        <p>How <strong>strongly the bond holds the grains</strong>.</p>
+        <ul>
+          <li><strong>Hard grade</strong> — grains held firmly, release slowly</li>
+          <li><strong>Soft grade</strong> — grains released easily, continuously exposing fresh ones</li>
+        </ul>
+      </div>
+      <div class="concept-box note">
+        <div class="concept-box-title">Wheel structure = grain spacing</div>
+        <p>How far apart the grains are spaced.</p>
+        <ul>
+          <li><strong>Dense</strong> — more cutting edges, smoother finish, clogs faster</li>
+          <li><strong>Open</strong> — more chip clearance, higher MRR, less clogging</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="t9-rules">Grinding selection rules</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Objective</th><th>Grit size</th><th>Structure</th><th>Grade</th></tr></thead>
+        <tbody>
+          <tr><td>Maximum MRR</td><td>Coarse</td><td>Open</td><td>—</td></tr>
+          <tr><td>Best surface finish</td><td>Fine</td><td>Dense</td><td>—</td></tr>
+          <tr><td>Hard workpiece material</td><td>—</td><td>—</td><td>Soft (releases dull grains)</td></tr>
+          <tr><td>Soft workpiece material</td><td>—</td><td>—</td><td>Hard (grains stay longer)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="concept-box warn">
+      <div class="concept-box-title">Why hard material → soft wheel grade?</div>
+      <p>Hard material dulls grains faster. You need the bond to <strong>release dull grains quickly</strong> so fresh, sharp ones are exposed. A soft grade does this. A hard grade would hold dull grains in place — causing glazing.</p>
+    </div>
+
+    <h3>Dressing vs truing</h3>
+    <ul>
+      <li><strong>Dressing</strong> — sharpens the wheel by removing dull grains, exposing fresh sharp ones</li>
+      <li><strong>Truing</strong> — reshapes the wheel to restore its geometry and concentricity</li>
+    </ul>
+
+    <h2 id="t9-finishing">Ultra-precision finishing operations</h2>
+    <p>After grinding, some applications need even finer finish. Three processes in order of increasing precision:</p>
+
+    <div class="card-grid">
+      <div class="card">
+        <h4 style="color: var(--blue);">Honing</h4>
+        <p>Abrasive sticks with combined <strong>rotational + oscillating</strong> motion. Creates characteristic <em>cross-hatch pattern</em> that retains lubricating oil.</p>
+        <p style="font-size: 13px; color: var(--muted);">Engine cylinder bores — the cross-hatch holds oil against piston rings.</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--purple);">Superfinishing</h4>
+        <p>Very fine abrasive stone with light oscillating pressure. Removes peaks from previous grinding.</p>
+        <p style="font-size: 13px; color: var(--muted);">Bearings, precision shafts, instrument components.</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--teal);">Lapping</h4>
+        <p>Abrasive slurry between two surfaces rubbing together. <strong>Highest accuracy of any finishing process.</strong></p>
+        <p style="font-size: 13px; color: var(--muted);">Optical lenses, precision gauge surfaces, semiconductor wafers.</p>
+      </div>
+    </div>
+
+    <p>Precision order: <strong>Grinding → Honing → Superfinishing → Lapping</strong></p>
+
+    <h2 id="t9-traps">Topic 9 — exam traps</h2>
+
+    <div class="trap-card">
+      <span class="trap-tag">Trap 1</span>
+      <div class="trap-claim">"Friability prevents abrasive grains from fracturing during grinding."</div>
+      <div class="trap-truth"><strong>FALSE.</strong> Friability is specifically the property that <strong>ALLOWS</strong> fracture — this self-sharpening is desirable. "Prevents" is the opposite of what friability means.</div>
+    </div>
+
+    <div class="trap-card">
+      <span class="trap-tag">Trap 2</span>
+      <div class="trap-claim">"For hard workpiece materials, use a hard grade grinding wheel."</div>
+      <div class="trap-truth"><strong>FALSE.</strong> Hard material → <strong>soft grade</strong> wheel. The wheel needs to release dull grains quickly when cutting hard materials.</div>
+    </div>
+
+    <div class="trap-card">
+      <span class="trap-tag">Trap 3</span>
+      <div class="trap-claim">"A dense wheel structure gives the highest material removal rate."</div>
+      <div class="trap-truth"><strong>FALSE.</strong> Dense structure clogs with chips, reducing MRR. <strong>Open structure</strong> gives higher MRR because chips can escape freely.</div>
+    </div>
+  </div>
+</section>
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<!-- TOPIC 10 — HEAT TREATMENT, AM, SSM -->
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<section id="t10" class="section">
+  <div class="container">
+    <div class="topic-num">Topic 10 of 10</div>
+    <h1>Heat Treatment, AM & SSM</h1>
+    <p class="hero-subtitle" style="margin-bottom: 32px;">Three distinct sub-topics: changing metal properties through heat, building parts layer-by-layer, and processing in the mushy zone between solid and liquid.</p>
+
+    <div class="toc">
+      <div class="toc-title">In this topic</div>
+      <ul class="toc-list">
+        <li><a href="#t10-ht-basics" class="toc-link">→ Heat treatment basics</a></li>
+        <li><a href="#t10-processes" class="toc-link">→ HT processes</a></li>
+        <li><a href="#t10-phases" class="toc-link">→ Steel phases</a></li>
+        <li><a href="#t10-precip" class="toc-link">→ Precipitation hardening</a></li>
+        <li><a href="#t10-am" class="toc-link">→ Additive manufacturing</a></li>
+        <li><a href="#t10-ssm" class="toc-link">→ Semi-solid processing</a></li>
+        <li><a href="#t10-traps" class="toc-link">→ Exam traps</a></li>
+      </ul>
+    </div>
+
+    <!-- HEAT TREATMENT -->
+    <h2 id="t10-ht-basics">Heat treatment — what and why</h2>
+    <p class="learn-only">The same piece of steel can be made soft enough to be machined easily, or hard enough to cut through other metals — just by controlling how you heat and cool it. No chemistry changes. No new material. Just temperature and time.</p>
+
+    <p><strong>Heat treatment causes both microstructural AND mechanical property changes.</strong> You're not just heating the metal — you're fundamentally changing the crystal structure inside, which changes how it behaves.</p>
+
+    <p>Key uses:</p>
+    <ul>
+      <li><strong>Soften</strong> metal for easier machining or forming (annealing)</li>
+      <li><strong>Harden</strong> metal for better wear resistance (quench hardening)</li>
+      <li><strong>Reduce brittleness</strong> after hardening (tempering)</li>
+      <li><strong>Relieve internal stresses</strong> from forming or welding (stress-relief annealing)</li>
+      <li><strong>Restore ductility</strong> after cold working (recrystallisation annealing)</li>
+    </ul>
+
+    <h2 id="t10-processes">The four heat treatment processes</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h4 style="color: var(--blue);">Annealing</h4>
+        <p>Heat to below melting point, soak, then <strong>slow cool</strong> (in furnace). Softens metal, improves ductility, relieves residual stresses, enables recrystallisation.</p>
+        <p style="font-size: 13px; color: var(--muted);">Analogy: letting glass-blown glass cool very slowly to relieve stress — annealing glass is the same principle.</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--coral);">Hardening</h4>
+        <p>Heat steel above critical temperature (austenite phase), then <strong>rapidly quench</strong>. Produces martensite — very hard but brittle phase.</p>
+        <p style="font-size: 13px; color: var(--muted);">Always followed by tempering — hardened steel is too brittle to use.</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--amber);">Tempering</h4>
+        <p>Heat previously hardened steel to intermediate temperature (below critical). <strong>Reduces brittleness</strong> while retaining most hardness.</p>
+        <p style="font-size: 13px; color: var(--muted);">⚠️ Tempering REDUCES brittleness — it does NOT increase hardness.</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--teal);">Quenching</h4>
+        <p>The rapid cooling step in hardening. Different quench media give different cooling rates.</p>
+        <p><strong>Fastest → slowest:</strong></p>
+        <p>Brine → Agitated water → Still oil → Air</p>
+      </div>
+    </div>
+
+    <h2 id="t10-phases">Steel phases — what forms on cooling</h2>
+    <p class="learn-only">Why does quenching make steel hard? Why does slow cooling make it soft? The answer is in the crystal structure that forms depending on cooling rate.</p>
+
+    <div class="card-grid">
+      <div class="card">
+        <h4 style="color: var(--amber);">Austenite</h4>
+        <p>High-temperature FCC (face-centred cubic) phase. Dissolves carbon easily. Forms when steel is heated above the critical temperature (~723°C).</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--coral);">Martensite</h4>
+        <p>Forms by <strong>rapid quenching</strong> of austenite. Carbon has no time to diffuse out — gets trapped in a distorted BCC structure. <strong>Extremely hard and brittle.</strong></p>
+        <p style="font-size: 13px; color: var(--muted);">Hardness: very high. Ductility: very low.</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--green);">Pearlite</h4>
+        <p>Forms by <strong>slow cooling</strong> of austenite. Layered structure of ferrite and cementite. <strong>Much softer than martensite.</strong></p>
+        <p style="font-size: 13px; color: var(--muted);">Hardness: low-medium. Ductility: reasonable.</p>
+      </div>
+    </div>
+
+    <div class="concept-box danger">
+      <div class="concept-box-title">⚠️ Pearlite vs Martensite hardness — common MCQ trap</div>
+      <p><strong>Martensite is MUCH harder than pearlite.</strong> The exam may try to reverse this. Martensite = rapid quench = trapped carbon = distorted structure = HARD. Pearlite = slow cool = organised layered structure = SOFT.</p>
+    </div>
+
+    <div class="concept-box note">
+      <div class="concept-box-title">TTT Diagram</div>
+      <p>Time-Temperature-Transformation diagram — a map showing which phase you get depending on how fast you cool the steel. Different cooling curves cross different transformation regions, giving different final microstructures.</p>
+    </div>
+
+    <h2 id="t10-precip">Precipitation hardening (age hardening)</h2>
+    <p class="learn-only">A completely different mechanism from quench hardening — used for aluminium alloys, some stainless steels, and nickel superalloys. NOT available for all alloys.</p>
+
+    <div class="process-flow">
+      <div class="process-step"><div class="process-step-num">1</div><div class="process-step-name">Solution treatment</div><div class="process-step-desc">Heat to HIGH temp — all alloying elements dissolve</div></div>
+      <div class="process-step"><div class="process-step-num">2</div><div class="process-step-name">Quench</div><div class="process-step-desc">Rapid cool — supersaturated solution</div></div>
+      <div class="process-step"><div class="process-step-num">3</div><div class="process-step-name">Precipitation treatment</div><div class="process-step-desc">Heat to LOWER temp — fine precipitates form</div></div>
+    </div>
+
+    <div class="concept-box warn">
+      <div class="concept-box-title">⚠️ Solution treatment temp > precipitation treatment temp</div>
+      <p>Solution treatment is at <strong>higher</strong> temperature than precipitation (ageing) treatment. The exam may reverse this. Remember: you need high temp first to dissolve everything, then lower temp to let precipitates nucleate.</p>
+    </div>
+
+    <p>The fine precipitate particles block dislocation movement — this is what causes hardening. It's essentially the same mechanism as work hardening, but the obstacles are precipitates instead of other dislocations.</p>
+
+    <p><strong>Nitriding</strong> = introducing nitrogen into steel surface at elevated temperature. Nitride precipitates form in the surface layer. The hardening mode is <em>precipitation hardening</em> — same principle.</p>
+
+    <!-- ADDITIVE MANUFACTURING -->
+    <h2 id="t10-am">Additive Manufacturing (AM)</h2>
+    <p class="learn-only">Every process we've covered so far either removes material (machining) or reshapes it (forming, casting). AM is different — it adds material, layer by layer, from a digital CAD model. Complex internal channels, lattice structures, patient-specific implants — things impossible by any other method.</p>
+
+    <p>Also called: <strong>3D printing, rapid prototyping, direct digital manufacturing.</strong></p>
+
+    <h3>Key AM processes</h3>
+    <div class="card-grid">
+      <div class="card">
+        <h4 style="color: var(--teal);">Powder Bed Fusion (PBF)</h4>
+        <p>Thin layer of powder spread across build plate. Laser selectively melts regions. Platform lowers. Repeat.</p>
+        <p style="font-size: 13px; color: var(--muted);">Aerospace components, medical implants, complex internal channels. High quality, slow, expensive.</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--blue);">FDM — Fused Deposition Modelling</h4>
+        <p>Heated filament extruded through nozzle, deposited layer-by-layer. Most accessible 3D printing process.</p>
+        <p style="font-size: 13px; color: var(--muted);">Prototypes, low-cost parts, concept models.</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--purple);">DED — Directed Energy Deposition</h4>
+        <p>Powder or wire fed into a laser/electron beam melt pool. Used for large parts, repair of existing components, adding features.</p>
+      </div>
+    </div>
+
+    <h3>AM advantages</h3>
+    <ul>
+      <li>Complex geometries impossible by traditional methods — internal channels, lattices</li>
+      <li>No tooling cost — geometry driven by CAD</li>
+      <li>Mass customisation — each part different at no extra cost</li>
+      <li>Reduced part count — complex assemblies made as single parts</li>
+      <li>Reduced waste — builds only what's needed</li>
+    </ul>
+
+    <h3>AM defects — four main types</h3>
+    <div class="card-grid">
+      <div class="card"><h4 style="color: var(--coral);">Porosity</h4><p>Most common. Gas entrapment, lack of fusion between layers, keyhole instability. Reduces strength and fatigue life.</p></div>
+      <div class="card"><h4 style="color: var(--coral);">Surface roughness</h4><p>Layer-by-layer build creates staircase effect. Partially melted powder particles on surface. Usually requires post-processing.</p></div>
+      <div class="card"><h4 style="color: var(--coral);">Distortion</h4><p>Thermal gradients during build cause residual stresses and warping. Support structures help manage this.</p></div>
+      <div class="card"><h4 style="color: var(--coral);">Powder degradation</h4><p>Reused powder changes particle size distribution, satellite formation, composition variation — affects consistency.</p></div>
+    </div>
+
+    <div class="concept-box note">
+      <div class="concept-box-title">AM design considerations</div>
+      <ul>
+        <li>Columnar grains often observed — directional heat flow during layer melting</li>
+        <li>Build direction influences properties — anisotropic but NOT limited to vertical only</li>
+        <li>Support structures required for overhangs — NOT all AM parts are support-free</li>
+        <li>Warping can occur in some geometries</li>
+        <li>HIP often applied after AM to reduce porosity and improve fatigue performance</li>
+      </ul>
+    </div>
+
+    <!-- SEMI-SOLID METAL PROCESSING -->
+    <h2 id="t10-ssm">Semi-Solid Metal Processing (SSM)</h2>
+    <p class="learn-only">Metal doesn't have to be fully liquid to flow. In the mushy zone — between liquidus and solidus — it's part solid, part liquid. With the right microstructure, you can control this state to get the benefits of both casting (complex shapes) and forging (better properties).</p>
+
+    <p><strong>Key property: Thixotropy.</strong> At rest, semi-solid metal behaves like a solid. When sheared (stirred or pressed), it suddenly flows like a liquid.</p>
+
+    <div class="analogy">
+      <div class="analogy-icon">🥣</div>
+      <div class="analogy-text">Like <strong>ketchup</strong> — it sits solid in the bottle, but shake it and it flows. Semi-solid metal works the same way. Or like some yoghurts that become runny when stirred.</div>
+    </div>
+
+    <p><strong>Why it works:</strong> Normal solidification creates dendritic (tree-branch) microstructure that clogs up and prevents flow. SSM requires a <em>globular (spheroidal)</em> microstructure — formed by shearing during solidification — which allows flow under stress.</p>
+
+    <h3>Two processing routes</h3>
+    <div class="two-col">
+      <div class="concept-box">
+        <div class="concept-box-title">Rheo-route — from liquid</div>
+        <p>Start from <strong>liquid metal</strong>. Cool into mushy zone while <strong>shearing simultaneously</strong>. Shearing creates globular microstructure in one step. Semi-solid slurry injected directly into die.</p>
+        <ul>
+          <li><strong>ONE step</strong> — no intermediate solidification</li>
+          <li>Lower cost</li>
+          <li>Less control over microstructure</li>
+        </ul>
+      </div>
+      <div class="concept-box note">
+        <div class="concept-box-title">Thixo-route — from solid</div>
+        <p>Start from a <strong>specially pre-processed solid billet</strong> (already has globular microstructure). Reheat into mushy zone. Then inject into die.</p>
+        <ul>
+          <li><strong>TWO steps</strong> — solidification + reheating</li>
+          <li>Higher cost and complexity</li>
+          <li>Higher control and consistency</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="concept-box success">
+      <div class="concept-box-title">SSM advantages</div>
+      <ul>
+        <li>Lower processing temperature than conventional die casting — less thermal stress on dies</li>
+        <li>Near-net shape — excellent dimensional tolerance</li>
+        <li>Lower porosity than conventional die casting</li>
+        <li>Better mechanical properties than casting, approaching wrought properties</li>
+        <li>Wide freezing range alloys preferable — gives larger processing window</li>
+      </ul>
+    </div>
+
+    <h2 id="t10-traps">Topic 10 — exam traps</h2>
+
+    <div class="trap-card">
+      <span class="trap-tag">Trap 1</span>
+      <div class="trap-claim">"Tempering increases the hardness of hardened steel."</div>
+      <div class="trap-truth"><strong>FALSE.</strong> Tempering <strong>REDUCES brittleness</strong> (and slightly reduces hardness). It does NOT increase hardness. Hardness was achieved by quenching to martensite.</div>
+    </div>
+
+    <div class="trap-card">
+      <span class="trap-tag">Trap 2</span>
+      <div class="trap-claim">"Pearlite has higher hardness than martensite."</div>
+      <div class="trap-truth"><strong>FALSE.</strong> Martensite is <strong>much harder</strong> than pearlite. Martensite forms by rapid quenching (hard), pearlite by slow cooling (relatively soft).</div>
+    </div>
+
+    <div class="trap-card">
+      <span class="trap-tag">Trap 3</span>
+      <div class="trap-claim">"Solution treatment temperature is lower than precipitation treatment temperature."</div>
+      <div class="trap-truth"><strong>FALSE.</strong> Solution treatment is at <strong>HIGHER</strong> temperature — all alloying elements must dissolve. Precipitation occurs at a <em>lower</em> intermediate temperature.</div>
+    </div>
+
+    <div class="trap-card">
+      <span class="trap-tag">Trap 4</span>
+      <div class="trap-claim">"All AM components are manufactured without support structures."</div>
+      <div class="trap-truth"><strong>FALSE.</strong> Many AM components require <strong>support structures</strong> for overhanging features. These are removed after build.</div>
+    </div>
+
+    <div class="trap-card">
+      <span class="trap-tag">Trap 5</span>
+      <div class="trap-claim">"HIP improves surface roughness of AM parts."</div>
+      <div class="trap-truth"><strong>FALSE.</strong> HIP improves <em>internal</em> porosity and mechanical properties. It does <strong>NOT improve surface roughness</strong>.</div>
+    </div>
+
+    <div class="trap-card">
+      <span class="trap-tag">Trap 6</span>
+      <div class="trap-claim">"Alloys with narrow freezing range are preferable for SSM."</div>
+      <div class="trap-truth"><strong>FALSE.</strong> <strong>Wide freezing range</strong> alloys are preferable — they give a larger temperature window to work in, making the process more controllable.</div>
+    </div>
+
+    <div class="trap-card">
+      <span class="trap-tag">Trap 7</span>
+      <div class="trap-claim">"The thixo-route is a one-step process."</div>
+      <div class="trap-truth"><strong>FALSE.</strong> Thixo-route is <strong>TWO steps</strong> — first solidification (to create billet with globular microstructure), then reheating into semi-solid state. Rheo-route is the one-step process.</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<!-- FORMULA SHEET -->
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<section id="formulas" class="section">
+  <div class="container">
+    <h1>Formula Sheet</h1>
+    <p class="hero-subtitle" style="margin-bottom: 32px;">Every calculation in the module. Variables explained, units flagged, worked examples where they appear in past papers.</p>
+
+    <h2>Topic 2 — Metal Casting</h2>
+
+    <div class="formula-block">
+      <div class="formula-name">Chvorinov's rule — solidification time</div>
+      <div class="formula-eq">Ts = C × (V/A)²</div>
+      <div class="formula-vars">
+        <div class="formula-var"><span class="formula-var-symbol">Ts</span>solidification time (s)</div>
+        <div class="formula-var"><span class="formula-var-symbol">C</span>mould constant — given in exam</div>
+        <div class="formula-var"><span class="formula-var-symbol">V</span>volume of casting (cm³ or mm³)</div>
+        <div class="formula-var"><span class="formula-var-symbol">A</span>surface area (cm² or mm²)</div>
+      </div>
+      <p style="margin-top: 12px;"><strong>Key rule:</strong> Riser must have higher V/A than the casting → riser solidifies last and feeds shrinkage.</p>
+      <h4>Common V/A formulas</h4>
+      <ul>
+        <li>Cube (side s): V/A = s/6</li>
+        <li>Sphere (radius r): V/A = r/3</li>
+        <li>Cylinder (radius r, height h): V = πr²h, A = 2πr² + 2πrh</li>
+        <li>Rectangular block (l×w×h): V = lwh, A = 2(lw + lh + wh)</li>
+      </ul>
+    </div>
+
+    <div class="formula-block">
+      <div class="formula-name">Sprue / pouring — three-step sequence</div>
+      <div class="formula-eq">v = √(2gh) → Q = v × A → T = V / Q</div>
+      <div class="formula-vars">
+        <div class="formula-var"><span class="formula-var-symbol">v</span>velocity at sprue base (cm/s)</div>
+        <div class="formula-var"><span class="formula-var-symbol">g</span>981 cm/s² (gravitational acceleration)</div>
+        <div class="formula-var"><span class="formula-var-symbol">h</span>height of sprue (cm)</div>
+        <div class="formula-var"><span class="formula-var-symbol">Q</span>volumetric flow rate (cm³/s)</div>
+        <div class="formula-var"><span class="formula-var-symbol">A</span>cross-section area at base of sprue (cm²)</div>
+        <div class="formula-var"><span class="formula-var-symbol">T</span>mould fill time (s)</div>
+        <div class="formula-var"><span class="formula-var-symbol">V</span>cavity volume (cm³)</div>
+      </div>
+    </div>
+
+    <h2>Topic 5 — Powder Metallurgy</h2>
+
+    <div class="formula-block">
+      <div class="formula-name">Compaction force</div>
+      <div class="formula-eq">F = Ap × Pc</div>
+      <div class="formula-vars">
+        <div class="formula-var"><span class="formula-var-symbol">F</span>force (N)</div>
+        <div class="formula-var"><span class="formula-var-symbol">Ap</span>projected area of part (mm²)</div>
+        <div class="formula-var"><span class="formula-var-symbol">Pc</span>compaction pressure (MPa = N/mm²)</div>
+      </div>
+      <p style="margin-top: 12px;"><strong>Units tip:</strong> Work in mm throughout. Pressure in MPa (N/mm²) × area in mm² = force in N.</p>
+    </div>
+
+    <div class="formula-block">
+      <div class="formula-name">Particle size from mesh screen</div>
+      <div class="formula-eq">Particle size = (25.4 / Mc) − wire diameter</div>
+      <div class="formula-vars">
+        <div class="formula-var"><span class="formula-var-symbol">Mc</span>mesh count (openings per linear inch)</div>
+        <div class="formula-var"><span class="formula-var-symbol">25.4</span>mm per inch (constant)</div>
+        <div class="formula-var"><span class="formula-var-symbol">result</span>maximum particle size (mm)</div>
+      </div>
+    </div>
+
+    <h2>Topic 6 — Metal Forming</h2>
+
+    <div class="formula-block">
+      <div class="formula-name">Flow stress — Hollomon equation</div>
+      <div class="formula-eq">σ = K × εⁿ</div>
+      <div class="formula-vars">
+        <div class="formula-var"><span class="formula-var-symbol">σ</span>flow stress (MPa)</div>
+        <div class="formula-var"><span class="formula-var-symbol">K</span>strength coefficient (MPa)</div>
+        <div class="formula-var"><span class="formula-var-symbol">ε</span>true strain (dimensionless)</div>
+        <div class="formula-var"><span class="formula-var-symbol">n</span>strain hardening exponent</div>
+      </div>
+    </div>
+
+    <div class="formula-block">
+      <div class="formula-name">Average flow stress</div>
+      <div class="formula-eq">Ȳf = K × εfⁿ / (1 + n) = σf / (1 + n)</div>
+      <div class="formula-vars">
+        <div class="formula-var"><span class="formula-var-symbol">Ȳf</span>average flow stress (MPa)</div>
+        <div class="formula-var"><span class="formula-var-symbol">εf</span>final true strain</div>
+        <div class="formula-var"><span class="formula-var-symbol">σf</span>flow stress at final strain (from Hollomon)</div>
+      </div>
+    </div>
+
+    <div class="formula-block">
+      <div class="formula-name">Finding K and n from two data points</div>
+      <div class="formula-eq">ln σ = ln K + n × ln ε</div>
+      <p style="padding: 8px 0;"><strong>Method:</strong> Write two equations using two (σ, ε) pairs. Subtract to eliminate ln K → find n. Substitute back → find ln K → K = e^(ln K).</p>
+    </div>
+
+    <h2>Topics 7 and 8 — Machining and Cutting Tools</h2>
+
+    <div class="formula-block">
+      <div class="formula-name">Material removal rate (MRR)</div>
+      <div class="formula-eq">MRR = v × f × d</div>
+      <div class="formula-vars">
+        <div class="formula-var"><span class="formula-var-symbol">v</span>cutting speed</div>
+        <div class="formula-var"><span class="formula-var-symbol">f</span>feed (mm/rev)</div>
+        <div class="formula-var"><span class="formula-var-symbol">d</span>depth of cut (mm)</div>
+      </div>
+    </div>
+
+    <div class="formula-block">
+      <div class="formula-name">Taylor tool life equation</div>
+      <div class="formula-eq">v × Tⁿ = C</div>
+      <div class="formula-vars">
+        <div class="formula-var"><span class="formula-var-symbol">v</span>cutting speed (m/min)</div>
+        <div class="formula-var"><span class="formula-var-symbol">T</span>tool life (min)</div>
+        <div class="formula-var"><span class="formula-var-symbol">n, C</span>Taylor constants (given or found from data)</div>
+      </div>
+      <p style="margin-top: 12px;">Rearranged: T = (C/v)^(1/n) &nbsp;&nbsp; or &nbsp;&nbsp; v = C / T^n</p>
+    </div>
+
+    <div class="formula-block">
+      <div class="formula-name">Ideal surface roughness</div>
+      <div class="formula-eq">Ri = f² / (8 × NR)</div>
+      <div class="formula-vars">
+        <div class="formula-var"><span class="formula-var-symbol">Ri</span>ideal surface roughness</div>
+        <div class="formula-var"><span class="formula-var-symbol">f</span>feed rate</div>
+        <div class="formula-var"><span class="formula-var-symbol">NR</span>tool nose radius</div>
+      </div>
+    </div>
+
+    <div class="formula-block">
+      <div class="formula-name">Production cycle time and cost per part</div>
+      <div class="formula-eq">Tc = Th + To + Tt</div>
+      <div class="formula-eq" style="margin-top: 8px; font-size: 20px;">Cpc = Cm + (CL + Ceq) × Tc + Ct</div>
+      <div class="formula-vars">
+        <div class="formula-var"><span class="formula-var-symbol">Tc</span>cycle time (min/part)</div>
+        <div class="formula-var"><span class="formula-var-symbol">Th</span>handling time</div>
+        <div class="formula-var"><span class="formula-var-symbol">To</span>machining time</div>
+        <div class="formula-var"><span class="formula-var-symbol">Tt</span>tool change time per part</div>
+        <div class="formula-var"><span class="formula-var-symbol">Cpc</span>cost per part (£)</div>
+        <div class="formula-var"><span class="formula-var-symbol">Cm</span>material cost (£/part)</div>
+        <div class="formula-var"><span class="formula-var-symbol">CL</span>labour cost rate (£/min)</div>
+        <div class="formula-var"><span class="formula-var-symbol">Ceq</span>equipment cost rate (£/min)</div>
+        <div class="formula-var"><span class="formula-var-symbol">Ct</span>tooling cost (£/part)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<!-- GLOSSARY -->
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<section id="glossary" class="section">
+  <div class="container-wide">
+    <h1>Complete Glossary</h1>
+    <p style="margin-bottom: 24px; color: var(--text-2);">Search across all 300+ terms instantly. Filter by topic. Every definition from first principles.</p>
+    
+    <div class="glossary-search">
+      <div class="search-input-wrap">
+        <input type="text" class="search-input" id="glossary-search-input" placeholder="Search any term, definition, or concept..." autocomplete="off">
+        <span class="search-icon">⌕</span>
+      </div>
+      <div id="search-results"></div>
+    </div>
+
+    <div class="filter-row">
+      <button class="filter-btn active" data-gfilter="all">All topics</button>
+      <button class="filter-btn" data-gfilter="t1">T1 General</button>
+      <button class="filter-btn" data-gfilter="t2">T2 Casting</button>
+      <button class="filter-btn" data-gfilter="t3">T3 Plastics</button>
+      <button class="filter-btn" data-gfilter="t4">T4 Rubber</button>
+      <button class="filter-btn" data-gfilter="t5">T5 PM</button>
+      <button class="filter-btn" data-gfilter="t6">T6 Forming</button>
+      <button class="filter-btn" data-gfilter="t7">T7 Machining</button>
+      <button class="filter-btn" data-gfilter="t89">T8/9 Tools</button>
+      <button class="filter-btn" data-gfilter="t10">T10 HT/AM/SSM</button>
+    </div>
+
+    <div id="glossary-container"></div>
+    <div id="no-results" style="display:none; text-align:center; padding:60px 20px; color:var(--muted); font-family:'JetBrains Mono',monospace;">No terms found — try a different search</div>
+  </div>
+</section>
+
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<!-- MCQ TRAPS -->
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<section id="traps" class="section">
+  <div class="container">
+    <h1>MCQ Traps</h1>
+    <p class="hero-subtitle" style="margin-bottom: 32px;">25+ claims that sound plausible but are wrong. If you see any of these in your exam, you now know the truth.</p>
+
+    <h2>Topic 2 — Casting</h2>
+    <div class="trap-card"><span class="trap-tag">Casting T1</span><div class="trap-claim">"Hot tearing is caused by flexible moulds restricting shrinkage."</div><div class="trap-truth"><strong>FALSE.</strong> Caused by <strong>RIGID</strong> moulds restricting thermal contraction.</div></div>
+    <div class="trap-card"><span class="trap-tag">Casting T2</span><div class="trap-claim">"In investment casting, the wax is destroyed and cannot be recovered."</div><div class="trap-truth"><strong>FALSE.</strong> Wax <strong>CAN be recovered and reused</strong> — it melts out but is recyclable.</div></div>
+    <div class="trap-card"><span class="trap-tag">Casting T3</span><div class="trap-claim">"Investment casting can produce very large parts."</div><div class="trap-truth"><strong>FALSE.</strong> Investment casting <strong>IS size-limited</strong> — ceramic shell becomes too fragile at large sizes.</div></div>
+    <div class="trap-card"><span class="trap-tag">Casting T4</span><div class="trap-claim">"Centrifugal casting can produce any shape."</div><div class="trap-truth"><strong>FALSE.</strong> Only <strong>axisymmetric</strong> shapes — pipes, tubes, rings, wheels.</div></div>
+    <div class="trap-card"><span class="trap-tag">Casting T5</span><div class="trap-claim">"Lost foam cannot have core shift defects because there is no core."</div><div class="trap-truth"><strong>FALSE.</strong> Lost foam <strong>can still have core shift defects</strong> from foam pattern deformation.</div></div>
+
+    <h2>Topic 3 — Plastics</h2>
+    <div class="trap-card"><span class="trap-tag">Plastics T1</span><div class="trap-claim">"The die is part of the extruder."</div><div class="trap-truth"><strong>FALSE.</strong> Die is a <strong>separate, replaceable tool</strong> — not part of the extruder machine.</div></div>
+    <div class="trap-card"><span class="trap-tag">Plastics T2</span><div class="trap-claim">"Thermosets can be thermoformed."</div><div class="trap-truth"><strong>FALSE.</strong> Thermoforming requires reheating a solid sheet — impossible for cured thermosets.</div></div>
+    <div class="trap-card"><span class="trap-tag">Plastics T3</span><div class="trap-claim">"The injection unit holds the two mould halves in alignment."</div><div class="trap-truth"><strong>FALSE.</strong> The <strong>clamping unit</strong> holds the mould halves.</div></div>
+    <div class="trap-card"><span class="trap-tag">Plastics T4</span><div class="trap-claim">"Longer compaction time leads to greater shrinkage."</div><div class="trap-truth"><strong>FALSE.</strong> Longer compaction time <strong>reduces</strong> shrinkage — more material is packed in.</div></div>
+    <div class="trap-card"><span class="trap-tag">Plastics T5</span><div class="trap-claim">"Calendering offers poor surface finish and low gauge accuracy."</div><div class="trap-truth"><strong>FALSE.</strong> Calendering gives <strong>excellent</strong> surface finish and high gauge accuracy.</div></div>
+    <div class="trap-card"><span class="trap-tag">Plastics T6</span><div class="trap-claim">"Positive mould has a concave cavity."</div><div class="trap-truth"><strong>FALSE.</strong> Positive mould = <strong>convex</strong> shape. Negative mould = concave cavity.</div></div>
+
+    <h2>Topic 4 — Rubber & PMC</h2>
+    <div class="trap-card"><span class="trap-tag">Rubber T1</span><div class="trap-claim">"Carbon black provides no UV protection."</div><div class="trap-truth"><strong>FALSE.</strong> Carbon black <strong>DOES</strong> provide UV protection — a major reason it's added.</div></div>
+    <div class="trap-card"><span class="trap-tag">Rubber T2</span><div class="trap-claim">"Sulphur is added at the start of mixing for best dispersion."</div><div class="trap-truth"><strong>FALSE.</strong> Sulphur added <strong>LAST</strong> — adding early causes premature vulcanisation in the mixer.</div></div>
+    <div class="trap-card"><span class="trap-tag">Rubber T3</span><div class="trap-claim">"TPEs are suitable for vehicle tyres."</div><div class="trap-truth"><strong>FALSE.</strong> TPEs not suitable for vehicle tyres — performance demands too high. OK for cycle tyres.</div></div>
+    <div class="trap-card"><span class="trap-tag">PMC T1</span><div class="trap-claim">"Continuous fibres can flow into complex moulds."</div><div class="trap-truth"><strong>FALSE.</strong> Continuous fibres <strong>CANNOT flow</strong>. Only chopped fibres can be used in flow-based processes.</div></div>
+
+    <h2>Topic 5 — Powder Metallurgy</h2>
+    <div class="trap-card"><span class="trap-tag">PM T1</span><div class="trap-claim">"In electrolysis, metal deposits at the anode."</div><div class="trap-truth"><strong>FALSE.</strong> Metal dissolves from anode, deposits as powder at the <strong>CATHODE</strong>.</div></div>
+    <div class="trap-card"><span class="trap-tag">PM T2</span><div class="trap-claim">"Blending combines powders of different chemistries."</div><div class="trap-truth"><strong>FALSE.</strong> Blending = same composition + different sizes. <strong>Mixing</strong> = different compositions.</div></div>
+    <div class="trap-card"><span class="trap-tag">PM T3</span><div class="trap-claim">"Porosity is always unwanted in PM parts."</div><div class="trap-truth"><strong>FALSE.</strong> Self-lubricating bearings <strong>require</strong> controlled porosity to hold oil.</div></div>
+    <div class="trap-card"><span class="trap-tag">PM T4</span><div class="trap-claim">"Conventional die pressing gives uniform density."</div><div class="trap-truth"><strong>FALSE.</strong> Only <strong>isostatic pressing</strong> gives uniform density. Die pressing creates density gradients.</div></div>
+
+    <h2>Topic 6 — Metal Forming</h2>
+    <div class="trap-card"><span class="trap-tag">Forming T1</span><div class="trap-claim">"Blanking is used to create holes in sheet metal."</div><div class="trap-truth"><strong>FALSE.</strong> Blanking produces the cut piece as product. <strong>Punching</strong> creates holes (slug is scrap).</div></div>
+    <div class="trap-card"><span class="trap-tag">Forming T2</span><div class="trap-claim">"Thread rolling gives weaker threads than cutting."</div><div class="trap-truth"><strong>FALSE.</strong> Rolling gives <strong>stronger</strong> threads — preserved grain flow + work-hardened surface.</div></div>
+    <div class="trap-card"><span class="trap-tag">Forming T3</span><div class="trap-claim">"Hot working is used for small rings in ring rolling."</div><div class="trap-truth"><strong>FALSE.</strong> Hot for <strong>large</strong> rings, cold for <strong>small</strong> rings.</div></div>
+    <div class="trap-card"><span class="trap-tag">Forming T4</span><div class="trap-claim">"Finishing cuts use low cutting speed."</div><div class="trap-truth"><strong>FALSE.</strong> Finishing cuts use <strong>HIGH</strong> speed with low feed and depth.</div></div>
+
+    <h2>Topics 7-9 — Machining and Grinding</h2>
+    <div class="trap-card"><span class="trap-tag">Mach T1</span><div class="trap-claim">"In turning, the tool rotates."</div><div class="trap-truth"><strong>FALSE.</strong> In turning, the <strong>workpiece</strong> rotates. Tool moves linearly.</div></div>
+    <div class="trap-card"><span class="trap-tag">Mach T2</span><div class="trap-claim">"Diamond tools are ideal for machining hardened steel."</div><div class="trap-truth"><strong>FALSE.</strong> Diamond reacts chemically with iron at machining temperatures. Use <strong>CBN</strong> for steels.</div></div>
+    <div class="trap-card"><span class="trap-tag">Grind T1</span><div class="trap-claim">"Friability prevents abrasive grains from fracturing."</div><div class="trap-truth"><strong>FALSE.</strong> Friability <strong>ALLOWS</strong> fracture — this self-sharpening is the whole point.</div></div>
+    <div class="trap-card"><span class="trap-tag">Grind T2</span><div class="trap-claim">"Hard workpiece material → use hard grade wheel."</div><div class="trap-truth"><strong>FALSE.</strong> Hard material → <strong>SOFT grade</strong> wheel — to release dull grains quickly.</div></div>
+
+    <h2>Topic 10 — HT, AM, SSM</h2>
+    <div class="trap-card"><span class="trap-tag">HT T1</span><div class="trap-claim">"Tempering increases the hardness of hardened steel."</div><div class="trap-truth"><strong>FALSE.</strong> Tempering <strong>reduces brittleness</strong>. Does NOT increase hardness.</div></div>
+    <div class="trap-card"><span class="trap-tag">HT T2</span><div class="trap-claim">"Pearlite is harder than martensite."</div><div class="trap-truth"><strong>FALSE.</strong> Martensite is <strong>much harder</strong>. Pearlite = slow cool = softer.</div></div>
+    <div class="trap-card"><span class="trap-tag">HT T3</span><div class="trap-claim">"Solution treatment temperature is lower than precipitation treatment."</div><div class="trap-truth"><strong>FALSE.</strong> Solution treatment is at <strong>HIGHER</strong> temperature.</div></div>
+    <div class="trap-card"><span class="trap-tag">SSM T1</span><div class="trap-claim">"Alloys with narrow freezing range are preferable for SSM."</div><div class="trap-truth"><strong>FALSE.</strong> <strong>Wide</strong> freezing range alloys preferred — larger processing window.</div></div>
+    <div class="trap-card"><span class="trap-tag">SSM T2</span><div class="trap-claim">"HIP improves surface roughness."</div><div class="trap-truth"><strong>FALSE.</strong> HIP improves <em>internal</em> porosity. Does NOT affect surface roughness.</div></div>
+    <div class="trap-card"><span class="trap-tag">SSM T3</span><div class="trap-claim">"The thixo-route is a one-step process."</div><div class="trap-truth"><strong>FALSE.</strong> Thixo-route = <strong>TWO steps</strong>. Rheo-route = one step (no intermediate solidification).</div></div>
+  </div>
+</section>
+
+</main>
+<script src="js/glossary-data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

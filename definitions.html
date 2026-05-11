@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EG182 — Definitions & Diagrams</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+  /* Page-specific overrides for definitions */
+  .def-nav { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 32px; }
+  .def-nav-btn {
+    padding: 7px 16px; border-radius: 20px; border: 1px solid var(--border);
+    background: var(--bg-elev); color: var(--muted); font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; cursor: pointer; transition: all 0.15s; text-decoration: none; display: inline-block;
+  }
+  .def-nav-btn:hover, .def-nav-btn.active { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); text-decoration: none; }
+  .def-section { margin-bottom: 72px; padding-top: 16px; }
+  .diagram-wrap { background: #16161e; border: 1px solid var(--border); border-radius: var(--radius); padding: 28px 24px; margin: 22px 0; overflow-x: auto; }
+  .diagram-wrap svg { display: block; max-width: 100%; height: auto; margin: 0 auto; }
+  .diagram-caption { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--muted); text-align: center; margin-top: 10px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .def-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 1px; background: var(--border); border-radius: var(--radius); overflow: hidden; margin: 20px 0; }
+  .def-item { background: var(--bg-elev); padding: 15px 17px; border-left: 3px solid var(--accent); }
+  .def-item-name { font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 700; margin-bottom: 5px; }
+  .def-item-def { font-size: 13px; color: var(--text-2); line-height: 1.55; }
+  .def-item-note { font-size: 11px; color: var(--muted); margin-top: 5px; font-style: italic; }
+  /* colour variants */
+  .d-amber { border-left-color: var(--amber) !important; } .d-amber .def-item-name { color: var(--amber); }
+  .d-teal  { border-left-color: var(--teal)  !important; } .d-teal  .def-item-name { color: var(--teal); }
+  .d-blue  { border-left-color: var(--blue)  !important; } .d-blue  .def-item-name { color: var(--blue); }
+  .d-coral { border-left-color: var(--coral) !important; } .d-coral .def-item-name { color: var(--coral); }
+  .d-green { border-left-color: var(--green) !important; } .d-green .def-item-name { color: var(--green); }
+  .d-purple{ border-left-color: var(--purple)!important; } .d-purple .def-item-name { color: var(--purple); }
+  .d-accent{ border-left-color: var(--accent)!important; } .d-accent .def-item-name { color: var(--accent); }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <div class="nav-logo">EG</div><span>EG182</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">← Back to Study Site</a>
+      <a href="#casting" class="nav-link def-anchor">T2 Casting</a>
+      <a href="#plastics" class="nav-link def-anchor">T3 Plastics</a>
+      <a href="#rubber" class="nav-link def-anchor">T4 Rubber</a>
+      <a href="#pm" class="nav-link def-anchor">T5 PM</a>
+      <a href="#forming" class="nav-link def-anchor">T6 Forming</a>
+      <a href="#machining" class="nav-link def-anchor">T7 Machining</a>
+      <a href="#tools" class="nav-link def-anchor">T8/9 Tools</a>
+      <a href="#ht" class="nav-link def-anchor">T10 HT/AM/SSM</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+<div class="container">
+
+  <div style="padding-top: 20px;">
+    <span class="hero-tag">EG182 — Definitions & Diagrams</span>
+    <h1>Definitions with Diagrams</h1>
+    <p style="font-size: 17px; color: var(--text-2); max-width: 700px; margin-bottom: 32px;">Every key term defined from first principles, paired with annotated diagrams showing exactly what the words mean visually.</p>
+  </div>
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<!-- T2 — CASTING -->
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<div class="def-section" id="casting">
+  <h2 style="color: var(--amber);">Topic 2 — Metal Casting</h2>
+
+  <h3>Sand casting mould anatomy</h3>
+  <p>The gating system delivers molten metal from outside the mould to the cavity, while the riser provides a reservoir to compensate for shrinkage. Every component has a specific function.</p>
+
+  <div class="diagram-wrap">
+    <svg viewBox="0 0 720 420" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+          <path d="M1 1L9 5L1 9" fill="none" stroke="#7c6af7" stroke-width="1.5" stroke-linecap="round"/>
+        </marker>
+      </defs>
+
+      <!-- Background -->
+      <rect width="720" height="420" fill="#12121a"/>
+
+      <!-- COPE (top half) — sand -->
+      <rect x="40" y="60" width="640" height="140" rx="4" fill="#3a2e1a" stroke="#f7a84a" stroke-width="1.5" stroke-dasharray="6,3"/>
+      <text x="54" y="82" font-family="JetBrains Mono,monospace" font-size="11" fill="#f7a84a" font-weight="700">COPE (top half)</text>
+
+      <!-- DRAG (bottom half) — sand -->
+      <rect x="40" y="220" width="640" height="140" rx="4" fill="#3a2e1a" stroke="#f7a84a" stroke-width="1.5" stroke-dasharray="6,3"/>
+      <text x="54" y="242" font-family="JetBrains Mono,monospace" font-size="11" fill="#f7a84a" font-weight="700">DRAG (bottom half)</text>
+
+      <!-- Parting line -->
+      <line x1="40" y1="200" x2="680" y2="200" stroke="#f7d54a" stroke-width="1.5" stroke-dasharray="8,4"/>
+      <text x="44" y="197" font-family="JetBrains Mono,monospace" font-size="10" fill="#f7d54a">PARTING LINE</text>
+
+      <!-- Cavity (part shape) -->
+      <ellipse cx="370" cy="290" rx="100" ry="50" fill="#1a1a2e" stroke="#7c6af7" stroke-width="2"/>
+      <text x="370" y="295" font-family="JetBrains Mono,monospace" font-size="11" fill="#7c6af7" text-anchor="middle" font-weight="700">CAVITY</text>
+      <text x="370" y="310" font-family="JetBrains Mono,monospace" font-size="10" fill="#5a5a72" text-anchor="middle">(part shape)</text>
+
+      <!-- Pouring basin -->
+      <polygon points="80,40 130,40 120,60 90,60" fill="#f7a84a" opacity="0.8"/>
+      <text x="105" y="38" font-family="JetBrains Mono,monospace" font-size="10" fill="#f7a84a" text-anchor="middle">POURING BASIN</text>
+
+      <!-- Sprue (vertical) -->
+      <path d="M90,60 L82,140 L108,140 L120,60Z" fill="#f76c8a" opacity="0.8"/>
+      <text x="200" y="108" font-family="JetBrains Mono,monospace" font-size="10" fill="#f76c8a">SPRUE</text>
+      <text x="200" y="120" font-family="JetBrains Mono,monospace" font-size="9" fill="#5a5a72">(tapered vertical)</text>
+      <line x1="180" y1="110" x2="112" y2="100" stroke="#f76c8a" stroke-width="1" marker-end="url(#arr)"/>
+
+      <!-- Runner (horizontal) -->
+      <rect x="95" y="140" width="175" height="18" fill="#4af7c0" opacity="0.8"/>
+      <text x="145" y="175" font-family="JetBrains Mono,monospace" font-size="10" fill="#4af7c0">RUNNER</text>
+      <text x="145" y="187" font-family="JetBrains Mono,monospace" font-size="9" fill="#5a5a72">(horizontal channel)</text>
+      <line x1="160" y1="172" x2="180" y2="155" stroke="#4af7c0" stroke-width="1" marker-end="url(#arr)"/>
+
+      <!-- Gate -->
+      <rect x="265" y="148" width="24" height="50" fill="#7af76a" opacity="0.9"/>
+      <text x="380" y="175" font-family="JetBrains Mono,monospace" font-size="10" fill="#7af76a">GATE</text>
+      <text x="380" y="187" font-family="JetBrains Mono,monospace" font-size="9" fill="#5a5a72">(narrow entry)</text>
+      <line x1="375" y1="170" x2="296" y2="163" stroke="#7af76a" stroke-width="1" marker-end="url(#arr)"/>
+
+      <!-- Riser -->
+      <rect x="560" y="80" width="60" height="160" rx="4" fill="#c06af7" opacity="0.8"/>
+      <text x="590" y="140" font-family="JetBrains Mono,monospace" font-size="11" fill="white" text-anchor="middle" font-weight="700">RISER</text>
+      <text x="590" y="155" font-family="JetBrains Mono,monospace" font-size="9" fill="#e0c0ff" text-anchor="middle">solidifies</text>
+      <text x="590" y="167" font-family="JetBrains Mono,monospace" font-size="9" fill="#e0c0ff" text-anchor="middle">LAST</text>
+      <!-- Riser connects to cavity -->
+      <line x1="560" y1="240" x2="470" y2="270" stroke="#c06af7" stroke-width="1.5" stroke-dasharray="4,2"/>
+
+      <!-- Core inside cavity -->
+      <ellipse cx="370" cy="290" rx="40" ry="20" fill="#f76c8a" opacity="0.5"/>
+      <text x="370" y="293" font-family="JetBrains Mono,monospace" font-size="9" fill="white" text-anchor="middle" font-weight="700">CORE</text>
+      <text x="370" y="335" font-family="JetBrains Mono,monospace" font-size="9" fill="#f76c8a" text-anchor="middle">(creates hollow features)</text>
+
+      <!-- Flask outline -->
+      <rect x="30" y="30" width="660" height="340" rx="6" fill="none" stroke="#5a5a72" stroke-width="1.5"/>
+      <text x="370" y="390" font-family="JetBrains Mono,monospace" font-size="10" fill="#5a5a72" text-anchor="middle">FLASK (rigid box containing the mould)</text>
+
+      <!-- Flow arrow -->
+      <path d="M105,70 L105,100" stroke="#f7a84a" stroke-width="2" stroke-dasharray="4,2" marker-end="url(#arr)"/>
+      <text x="54" y="414" font-family="JetBrains Mono,monospace" font-size="9" fill="#5a5a72">Metal flows: pouring basin → sprue → runner → gate → cavity</text>
+    </svg>
+    <div class="diagram-caption">Sand casting mould anatomy — cross-section view</div>
+  </div>
+
+  <div class="def-grid">
+    <div class="def-item d-amber"><div class="def-item-name">Cope</div><div class="def-item-def">Top half of the sand mould.</div></div>
+    <div class="def-item d-amber"><div class="def-item-name">Drag</div><div class="def-item-def">Bottom half of the sand mould. Sits on moulding board during preparation.</div></div>
+    <div class="def-item d-amber"><div class="def-item-name">Flask</div><div class="def-item-def">Rigid box (wood or metal) containing and supporting both mould halves.</div></div>
+    <div class="def-item d-amber"><div class="def-item-name">Parting line</div><div class="def-item-def">Interface where cope and drag meet. Leaves a visible seam on the finished casting.</div></div>
+    <div class="def-item d-amber"><div class="def-item-name">Pouring basin</div><div class="def-item-def">Funnel at top of mould. Receives molten metal smoothly, reducing turbulence and splash.</div></div>
+    <div class="def-item d-coral"><div class="def-item-name">Sprue</div><div class="def-item-def">Tapered vertical channel. Metal flows down. Tapered to prevent air ingestion as metal accelerates.</div></div>
+    <div class="def-item d-teal"><div class="def-item-name">Runner</div><div class="def-item-def">Horizontal channel at base of sprue. Distributes molten metal laterally to the gates.</div></div>
+    <div class="def-item d-green"><div class="def-item-name">Gate</div><div class="def-item-def">Narrow entry point into mould cavity. Controls flow rate and is easy to snap off after solidification.</div></div>
+    <div class="def-item d-accent"><div class="def-item-name">Cavity</div><div class="def-item-def">The hollow space within the mould that defines the final shape of the casting.</div></div>
+    <div class="def-item d-coral"><div class="def-item-name">Core</div><div class="def-item-def">Sand insert placed in cavity to create hollow internal features. Also allows for shrinkage.</div></div>
+    <div class="def-item d-amber"><div class="def-item-name">Chaplet</div><div class="def-item-def">Metal support holding the core in correct position during pouring. Must have higher melting point than the cast metal.</div></div>
+    <div class="def-item d-purple"><div class="def-item-name">Riser</div><div class="def-item-def">Reservoir of molten metal that solidifies LAST. Feeds liquid metal into cavity to compensate solidification shrinkage.</div></div>
+  </div>
+
+  <h3>Solidification grain zones</h3>
+  <p>When metal solidifies in a mould, three distinct grain structure zones form from outside to centre, each with different mechanical properties.</p>
+
+  <div class="diagram-wrap">
+    <svg viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg">
+      <rect width="640" height="300" fill="#12121a"/>
+      <!-- Mould wall -->
+      <rect x="30" y="30" width="580" height="240" rx="4" fill="none" stroke="#f7a84a" stroke-width="2"/>
+      <text x="320" y="22" font-family="JetBrains Mono,monospace" font-size="11" fill="#f7a84a" text-anchor="middle" font-weight="700">MOULD WALL</text>
+
+      <!-- Chill zone -->
+      <rect x="32" y="32" width="24" height="236" fill="#6aabf7" opacity="0.7"/>
+      <rect x="584" y="32" width="24" height="236" fill="#6aabf7" opacity="0.7"/>
+      <rect x="32" y="32" width="576" height="24" fill="#6aabf7" opacity="0.7"/>
+      <rect x="32" y="244" width="576" height="24" fill="#6aabf7" opacity="0.7"/>
+
+      <!-- Columnar zone -->
+      <!-- Left columns -->
+      <rect x="56" y="56" width="120" height="188" fill="#7c6af7" opacity="0.5"/>
+      <!-- Right columns -->
+      <rect x="464" y="56" width="120" height="188" fill="#7c6af7" opacity="0.5"/>
+      <!-- Top columns -->
+      <rect x="56" y="56" width="528" height="60" fill="#7c6af7" opacity="0.5"/>
+      <!-- Bottom columns -->
+      <rect x="56" y="184" width="528" height="60" fill="#7c6af7" opacity="0.5"/>
+
+      <!-- Columnar grain lines (left) -->
+      <g stroke="#c06af7" stroke-width="1" opacity="0.8">
+        <line x1="70" y1="56" x2="140" y2="150"/><line x1="85" y1="56" x2="155" y2="150"/>
+        <line x1="100" y1="56" x2="160" y2="150"/><line x1="115" y1="56" x2="170" y2="150"/>
+        <line x1="130" y1="56" x2="175" y2="150"/><line x1="145" y1="56" x2="176" y2="150"/>
+      </g>
+      <!-- Columnar grain lines (right) -->
+      <g stroke="#c06af7" stroke-width="1" opacity="0.8">
+        <line x1="570" y1="56" x2="500" y2="150"/><line x1="555" y1="56" x2="485" y2="150"/>
+        <line x1="540" y1="56" x2="480" y2="150"/><line x1="525" y1="56" x2="470" y2="150"/>
+        <line x1="510" y1="56" x2="464" y2="150"/><line x1="495" y1="56" x2="464" y2="150"/>
+      </g>
+
+      <!-- Equiaxed zone (centre) -->
+      <rect x="176" y="116" width="288" height="68" rx="8" fill="#7af76a" opacity="0.3"/>
+      <!-- Equiaxed grain circles -->
+      <g fill="none" stroke="#7af76a" stroke-width="1" opacity="0.7">
+        <circle cx="220" cy="150" r="14"/><circle cx="255" cy="140" r="12"/>
+        <circle cx="290" cy="155" r="15"/><circle cx="325" cy="143" r="11"/>
+        <circle cx="360" cy="152" r="13"/><circle cx="395" cy="141" r="14"/>
+        <circle cx="430" cy="153" r="12"/>
+      </g>
+
+      <!-- Labels -->
+      <text x="30" y="165" font-family="JetBrains Mono,monospace" font-size="9" fill="#6aabf7" text-anchor="middle" transform="rotate(-90,30,165)">CHILL ZONE</text>
+      <text x="110" y="168" font-family="JetBrains Mono,monospace" font-size="9" fill="#c06af7" text-anchor="middle" transform="rotate(-90,110,168)">COLUMNAR ZONE</text>
+      <text x="320" y="152" font-family="JetBrains Mono,monospace" font-size="11" fill="#7af76a" text-anchor="middle" font-weight="700">EQUIAXED ZONE</text>
+      <text x="320" y="166" font-family="JetBrains Mono,monospace" font-size="9" fill="#7af76a" text-anchor="middle">(isotropic — best properties)</text>
+
+      <!-- Bottom labels -->
+      <text x="46" y="288" font-family="JetBrains Mono,monospace" font-size="9" fill="#6aabf7" text-anchor="middle">Fine, random</text>
+      <text x="150" y="288" font-family="JetBrains Mono,monospace" font-size="9" fill="#c06af7" text-anchor="middle">Long, directional</text>
+      <text x="320" y="288" font-family="JetBrains Mono,monospace" font-size="9" fill="#7af76a" text-anchor="middle">Equal size, all directions</text>
+
+      <!-- Heat flow arrow -->
+      <line x1="56" y1="270" x2="176" y2="270" stroke="#f7a84a" stroke-width="1.5" marker-end="url(#arr2)"/>
+      <defs><marker id="arr2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M1 1L9 5L1 9" fill="none" stroke="#f7a84a" stroke-width="1.5"/></marker></defs>
+      <text x="116" y="264" font-family="JetBrains Mono,monospace" font-size="9" fill="#f7a84a" text-anchor="middle">Heat flow →</text>
+    </svg>
+    <div class="diagram-caption">Solidification grain zones in a casting — cross-section view showing chill, columnar, and equiaxed zones</div>
+  </div>
+
+  <div class="def-grid">
+    <div class="def-item d-blue"><div class="def-item-name">Chill zone</div><div class="def-item-def">Outermost layer at mould wall. Very fine, randomly oriented grains from extremely rapid cooling. Thin.</div></div>
+    <div class="def-item d-purple"><div class="def-item-name">Columnar zone</div><div class="def-item-def">Long grains growing inward against heat flow direction. Anisotropic — strong along grain direction, weak perpendicular.</div></div>
+    <div class="def-item d-green"><div class="def-item-name">Equiaxed zone</div><div class="def-item-def">Centre grains — equal size in all directions. Isotropic. Best for general mechanical applications.</div></div>
+    <div class="def-item d-teal"><div class="def-item-name">Isotropic</div><div class="def-item-def">Properties same in all directions — equiaxed grains. Desirable for most engineering components.</div></div>
+    <div class="def-item d-coral"><div class="def-item-name">Anisotropic</div><div class="def-item-def">Properties differ with direction — columnar grains. Undesirable in castings, deliberate in composites.</div></div>
+    <div class="def-item d-amber"><div class="def-item-name">Thermal arrest</div><div class="def-item-def">Flat section on pure metal cooling curve. Temperature stays constant while latent heat of fusion is released.</div></div>
+    <div class="def-item d-amber"><div class="def-item-name">Mushy zone</div><div class="def-item-def">Semi-solid state between liquidus (TL) and solidus (TS). Part liquid, part solid. Prone to segregation.</div></div>
+    <div class="def-item d-amber"><div class="def-item-name">Segregation</div><div class="def-item-def">Non-uniform composition in alloy casting. Different elements freeze at different temperatures, causing concentration variations.</div></div>
+  </div>
+</div>
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<!-- T3 — PLASTICS -->
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<div class="def-section" id="plastics">
+  <h2 style="color: var(--teal);">Topic 3 — Plastics Shaping</h2>
+
+  <h3>Extruder anatomy</h3>
+  <p>The extruder is the workhorse of plastics processing. Understanding each component and its function is essential — and the die is <em>not</em> part of the extruder.</p>
+
+  <div class="diagram-wrap">
+    <svg viewBox="0 0 720 260" xmlns="http://www.w3.org/2000/svg">
+      <rect width="720" height="260" fill="#12121a"/>
+
+      <!-- Hopper -->
+      <polygon points="60,20 130,20 110,80 80,80" fill="#f7a84a" opacity="0.8"/>
+      <text x="95" y="15" font-family="JetBrains Mono,monospace" font-size="11" fill="#f7a84a" text-anchor="middle" font-weight="700">HOPPER</text>
+      <text x="95" y="55" font-family="JetBrains Mono,monospace" font-size="9" fill="#1a1a24" text-anchor="middle">pellets</text>
+      <text x="95" y="67" font-family="JetBrains Mono,monospace" font-size="9" fill="#1a1a24" text-anchor="middle">feed in</text>
+
+      <!-- Barrel -->
+      <rect x="60" y="80" width="460" height="80" rx="8" fill="#2e2e3e" stroke="#7c6af7" stroke-width="2"/>
+      <text x="280" y="125" font-family="JetBrains Mono,monospace" font-size="12" fill="#7c6af7" text-anchor="middle" font-weight="700">BARREL (heated)</text>
+
+      <!-- Screw inside barrel -->
+      <g stroke="#4af7c0" stroke-width="2" fill="none" opacity="0.7">
+        <path d="M80,100 Q100,120 120,100 Q140,80 160,100 Q180,120 200,100 Q220,80 240,100 Q260,120 280,100 Q300,80 320,100 Q340,120 360,100 Q380,80 400,100 Q420,120 440,100 Q460,80 480,100"/>
+        <line x1="80" y1="100" x2="480" y2="100"/>
+        <line x1="80" y1="140" x2="480" y2="140"/>
+      </g>
+      <text x="200" y="155" font-family="JetBrains Mono,monospace" font-size="10" fill="#4af7c0" text-anchor="middle">SCREW (rotates — conveys, melts, pressurises)</text>
+
+      <!-- Screen pack -->
+      <rect x="520" y="85" width="24" height="70" rx="3" fill="#7af76a" opacity="0.9"/>
+      <line x1="524" y1="90" x2="540" y2="90" stroke="#1a1a24" stroke-width="1"/>
+      <line x1="524" y1="98" x2="540" y2="98" stroke="#1a1a24" stroke-width="1"/>
+      <line x1="524" y1="106" x2="540" y2="106" stroke="#1a1a24" stroke-width="1"/>
+      <line x1="524" y1="114" x2="540" y2="114" stroke="#1a1a24" stroke-width="1"/>
+      <line x1="524" y1="122" x2="540" y2="122" stroke="#1a1a24" stroke-width="1"/>
+      <line x1="524" y1="130" x2="540" y2="130" stroke="#1a1a24" stroke-width="1"/>
+      <line x1="524" y1="138" x2="540" y2="138" stroke="#1a1a24" stroke-width="1"/>
+      <text x="532" y="175" font-family="JetBrains Mono,monospace" font-size="9" fill="#7af76a" text-anchor="middle">SCREEN</text>
+      <text x="532" y="186" font-family="JetBrains Mono,monospace" font-size="9" fill="#7af76a" text-anchor="middle">PACK</text>
+
+      <!-- Die (separate — highlighted differently) -->
+      <rect x="548" y="90" width="40" height="60" rx="3" fill="#f76c8a" opacity="0.9"/>
+      <text x="568" y="125" font-family="JetBrains Mono,monospace" font-size="10" fill="white" text-anchor="middle" font-weight="700">DIE</text>
+      <text x="568" y="175" font-family="JetBrains Mono,monospace" font-size="9" fill="#f76c8a" text-anchor="middle">NOT part</text>
+      <text x="568" y="186" font-family="JetBrains Mono,monospace" font-size="9" fill="#f76c8a" text-anchor="middle">of extruder!</text>
+
+      <!-- Extrudate coming out -->
+      <rect x="588" y="108" width="110" height="24" rx="4" fill="#6aabf7" opacity="0.8"/>
+      <text x="643" y="124" font-family="JetBrains Mono,monospace" font-size="10" fill="white" text-anchor="middle">extrudate</text>
+      <!-- Arrow showing direction -->
+      <line x1="620" y1="145" x2="700" y2="145" stroke="#6aabf7" stroke-width="1.5"/>
+      <polygon points="695,141 705,145 695,149" fill="#6aabf7"/>
+      <text x="660" y="160" font-family="JetBrains Mono,monospace" font-size="9" fill="#6aabf7" text-anchor="middle">continuous output</text>
+
+      <!-- Flow arrow inside barrel -->
+      <line x1="100" y1="220" x2="540" y2="220" stroke="#7c6af7" stroke-width="1.5"/>
+      <polygon points="535,216 545,220 535,224" fill="#7c6af7"/>
+      <text x="320" y="240" font-family="JetBrains Mono,monospace" font-size="10" fill="#7c6af7" text-anchor="middle">polymer flow direction →</text>
+
+      <!-- Heating elements (bars on barrel) -->
+      <g fill="#f7a84a" opacity="0.5">
+        <rect x="100" y="78" width="30" height="6" rx="2"/>
+        <rect x="180" y="78" width="30" height="6" rx="2"/>
+        <rect x="260" y="78" width="30" height="6" rx="2"/>
+        <rect x="340" y="78" width="30" height="6" rx="2"/>
+        <rect x="420" y="78" width="30" height="6" rx="2"/>
+        <text x="280" y="70" font-family="JetBrains Mono,monospace" font-size="9" fill="#f7a84a" text-anchor="middle">heating elements</text>
+      </g>
+    </svg>
+    <div class="diagram-caption">Single-screw extruder cross-section — showing all components and polymer flow direction</div>
+  </div>
+
+  <div class="def-grid">
+    <div class="def-item d-amber"><div class="def-item-name">Hopper</div><div class="def-item-def">Feed funnel at inlet of extruder. Holds plastic pellets and feeds them continuously into the barrel.</div></div>
+    <div class="def-item d-accent"><div class="def-item-name">Barrel</div><div class="def-item-def">Cylindrical heated tube containing the screw. Heats and pressurises polymer toward the die.</div></div>
+    <div class="def-item d-teal"><div class="def-item-name">Screw</div><div class="def-item-def">Rotates inside barrel — simultaneously conveys solid pellets forward, melts them by friction and conduction, and builds pressure for injection into the die.</div></div>
+    <div class="def-item d-green"><div class="def-item-name">Screen pack</div><div class="def-item-def">Wire mesh filter positioned before the die. Removes contaminants, builds back-pressure, and straightens the rotating melt flow.</div></div>
+    <div class="def-item d-coral"><div class="def-item-name">Die (extrusion)</div><div class="def-item-def">Separate, replaceable shaping tool — NOT part of the extruder. Each cross-section profile needs its own die. Defines what shape the extrudate takes.</div><div class="def-item-note">⚠️ Exam trap: commonly said to be part of the extruder — it is not.</div></div>
+    <div class="def-item d-blue"><div class="def-item-name">Mandrel</div><div class="def-item-def">Pin held in the centre of the die by spider legs. Creates the hollow centre in hollow profile extrusions such as pipes and tubes.</div></div>
+    <div class="def-item d-purple"><div class="def-item-name">Die swell</div><div class="def-item-def">Extrudate swells wider than the die opening as it exits. Polymer chains relax from their stretched, aligned state back to their natural coiled state.</div></div>
+    <div class="def-item d-accent"><div class="def-item-name">Qx = Qd − Qb</div><div class="def-item-def">Net output flow = drag flow (forward, from screw) minus back-pressure flow (reverse, from die resistance). The die resists flow, pushing some polymer back.</div></div>
+  </div>
+
+  <h3>Polymer melt behaviour</h3>
+
+  <div class="diagram-wrap">
+    <svg viewBox="0 0 640 240" xmlns="http://www.w3.org/2000/svg">
+      <rect width="640" height="240" fill="#12121a"/>
+
+      <!-- Left plot: Shear thinning -->
+      <text x="160" y="22" font-family="JetBrains Mono,monospace" font-size="12" fill="#f0f0f8" text-anchor="middle" font-weight="700">Shear Thinning</text>
+
+      <!-- Axes left -->
+      <line x1="50" y1="200" x2="50" y2="40" stroke="#5a5a72" stroke-width="1.5"/>
+      <line x1="50" y1="200" x2="290" y2="200" stroke="#5a5a72" stroke-width="1.5"/>
+      <text x="30" y="120" font-family="JetBrains Mono,monospace" font-size="10" fill="#7a7a92" text-anchor="middle" transform="rotate(-90,30,120)">VISCOSITY</text>
+      <text x="170" y="220" font-family="JetBrains Mono,monospace" font-size="10" fill="#7a7a92" text-anchor="middle">SHEAR RATE →</text>
+
+      <!-- Newtonian (flat) line -->
+      <line x1="55" y1="100" x2="285" y2="100" stroke="#6aabf7" stroke-width="2"/>
+      <text x="200" y="94" font-family="JetBrains Mono,monospace" font-size="10" fill="#6aabf7">Water (Newtonian)</text>
+
+      <!-- Polymer shear thinning curve -->
+      <path d="M55,55 Q100,60 140,90 Q180,130 220,160 Q250,180 285,192" stroke="#4af7c0" stroke-width="2.5" fill="none"/>
+      <text x="115" y="70" font-family="JetBrains Mono,monospace" font-size="10" fill="#4af7c0">Polymer melt</text>
+      <text x="115" y="82" font-family="JetBrains Mono,monospace" font-size="10" fill="#4af7c0">(shear thinning)</text>
+
+      <!-- Annotation arrows -->
+      <line x1="260" y1="100" x2="260" y2="185" stroke="#f7a84a" stroke-width="1.5"/>
+      <polygon points="256,180 260,192 264,180" fill="#f7a84a"/>
+      <text x="262" y="142" font-family="JetBrains Mono,monospace" font-size="9" fill="#f7a84a">viscosity</text>
+      <text x="262" y="153" font-family="JetBrains Mono,monospace" font-size="9" fill="#f7a84a">drops as</text>
+      <text x="262" y="164" font-family="JetBrains Mono,monospace" font-size="9" fill="#f7a84a">speed↑</text>
+
+      <!-- Right plot: Die swell -->
+      <text x="490" y="22" font-family="JetBrains Mono,monospace" font-size="12" fill="#f0f0f8" text-anchor="middle" font-weight="700">Die Swell</text>
+
+      <!-- Die shape -->
+      <rect x="360" y="80" width="40" height="80" rx="3" fill="#2e2e3e" stroke="#f76c8a" stroke-width="2"/>
+      <rect x="375" y="105" width="10" height="30" fill="#12121a"/>
+      <text x="380" y="175" font-family="JetBrains Mono,monospace" font-size="10" fill="#f76c8a" text-anchor="middle">die opening</text>
+
+      <!-- Extrudate swelling -->
+      <path d="M400,110 L420,110 Q440,108 450,100 Q460,95 470,95 L600,95 L600,145 L470,145 Q460,145 450,140 Q440,132 420,130 L400,130Z" fill="#4af7c0" opacity="0.7"/>
+      <text x="510" y="122" font-family="JetBrains Mono,monospace" font-size="10" fill="#12121a" text-anchor="middle" font-weight="700">extrudate</text>
+      <text x="510" y="134" font-family="JetBrains Mono,monospace" font-size="10" fill="#12121a" text-anchor="middle">(swells wider)</text>
+
+      <!-- Dimension lines -->
+      <line x1="376" y1="90" x2="390" y2="90" stroke="#f7a84a" stroke-width="1"/>
+      <line x1="383" y1="90" x2="383" y2="140" stroke="#f7a84a" stroke-width="1" stroke-dasharray="3,2"/>
+      <text x="338" y="118" font-family="JetBrains Mono,monospace" font-size="9" fill="#f7a84a">die size</text>
+
+      <line x1="490" y1="75" x2="570" y2="75" stroke="#f7d54a" stroke-width="1"/>
+      <line x1="490" y1="75" x2="490" y2="95" stroke="#f7d54a" stroke-width="1"/>
+      <line x1="570" y1="75" x2="570" y2="95" stroke="#f7d54a" stroke-width="1"/>
+      <line x1="490" y1="150" x2="570" y2="150" stroke="#f7d54a" stroke-width="1"/>
+      <line x1="490" y1="145" x2="490" y2="150" stroke="#f7d54a" stroke-width="1"/>
+      <line x1="570" y1="145" x2="570" y2="150" stroke="#f7d54a" stroke-width="1"/>
+      <text x="530" y="70" font-family="JetBrains Mono,monospace" font-size="9" fill="#f7d54a" text-anchor="middle">extrudate</text>
+      <text x="530" y="160" font-family="JetBrains Mono,monospace" font-size="9" fill="#f7d54a" text-anchor="middle">wider than die</text>
+
+      <!-- Caption notes -->
+      <text x="160" y="235" font-family="JetBrains Mono,monospace" font-size="9" fill="#5a5a72" text-anchor="middle">Push faster → flows easier</text>
+      <text x="490" y="235" font-family="JetBrains Mono,monospace" font-size="9" fill="#5a5a72" text-anchor="middle">Chains relax → extrudate swells</text>
+    </svg>
+    <div class="diagram-caption">Left: shear thinning behaviour vs Newtonian fluid. Right: die swell from viscoelastic memory</div>
+  </div>
+
+  <div class="def-grid">
+    <div class="def-item d-teal"><div class="def-item-name">Viscosity</div><div class="def-item-def">Resistance to flow. Higher molecular weight → higher viscosity. Higher temperature → lower viscosity. The measure of how "thick" the melt is.</div></div>
+    <div class="def-item d-teal"><div class="def-item-name">Shear thinning</div><div class="def-item-def">Viscosity decreases as shear rate increases. Polymer melts flow more easily the faster you push them. Non-Newtonian, pseudoplastic behaviour.</div><div class="def-item-note">Like ketchup — shake hard and it suddenly flows.</div></div>
+    <div class="def-item d-teal"><div class="def-item-name">Pseudoplastic</div><div class="def-item-def">Technical term for shear-thinning behaviour. Viscosity depends on shear rate. Opposite of Newtonian (constant viscosity).</div></div>
+    <div class="def-item d-teal"><div class="def-item-name">Viscoelasticity</div><div class="def-item-def">Combined viscous (flow) and elastic (memory) behaviour in polymer melts. Chains are stretched during flow and want to return to coiled state.</div></div>
+    <div class="def-item d-teal"><div class="def-item-name">Die swell</div><div class="def-item-def">Extrudate swells wider than the die opening on exit. Viscoelastic chains relax from stretched, aligned state back to natural coiled state.</div></div>
+    <div class="def-item d-amber"><div class="def-item-name">Frost line</div><div class="def-item-def">In blown film extrusion: the height at which the rising bubble solidifies. Higher frost line = more stretching = thinner film. Controls final film thickness.</div></div>
+  </div>
+</div>
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<!-- T5 — POWDER METALLURGY -->
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<div class="def-section" id="pm">
+  <h2 style="color: var(--blue);">Topic 5 — Powder Metallurgy</h2>
+
+  <h3>PM process sequence</h3>
+
+  <div class="diagram-wrap">
+    <svg viewBox="0 0 720 280" xmlns="http://www.w3.org/2000/svg">
+      <rect width="720" height="280" fill="#12121a"/>
+
+      <!-- Step boxes -->
+      <g>
+        <!-- Powder -->
+        <rect x="20" y="60" width="120" height="90" rx="8" fill="#1a2a3a" stroke="#6aabf7" stroke-width="2"/>
+        <text x="80" y="85" font-family="JetBrains Mono,monospace" font-size="11" fill="#6aabf7" text-anchor="middle" font-weight="700">POWDER</text>
+        <text x="80" y="100" font-family="JetBrains Mono,monospace" font-size="11" fill="#6aabf7" text-anchor="middle" font-weight="700">PRODUCTION</text>
+        <text x="80" y="120" font-family="JetBrains Mono,monospace" font-size="9" fill="#7a7a92" text-anchor="middle">Gas/water atomise</text>
+        <text x="80" y="132" font-family="JetBrains Mono,monospace" font-size="9" fill="#7a7a92" text-anchor="middle">Chemical/electrolysis</text>
+        <!-- Dots representing powder -->
+        <g fill="#6aabf7" opacity="0.6">
+          <circle cx="55" cy="148" r="4"/><circle cx="70" cy="142" r="3"/>
+          <circle cx="85" cy="148" r="4"/><circle cx="100" cy="143" r="3"/>
+          <circle cx="63" cy="156" r="3"/><circle cx="80" cy="155" r="4"/>
+          <circle cx="97" cy="156" r="3"/>
+        </g>
+      </g>
+
+      <!-- Arrow 1 -->
+      <line x1="140" y1="105" x2="158" y2="105" stroke="#5a5a72" stroke-width="2"/>
+      <polygon points="154,101 164,105 154,109" fill="#5a5a72"/>
+
+      <!-- Blending/Mixing -->
+      <rect x="160" y="60" width="120" height="90" rx="8" fill="#1a2a3a" stroke="#6aabf7" stroke-width="2"/>
+      <text x="220" y="85" font-family="JetBrains Mono,monospace" font-size="11" fill="#6aabf7" text-anchor="middle" font-weight="700">BLENDING /</text>
+      <text x="220" y="100" font-family="JetBrains Mono,monospace" font-size="11" fill="#6aabf7" text-anchor="middle" font-weight="700">MIXING</text>
+      <text x="220" y="120" font-family="JetBrains Mono,monospace" font-size="9" fill="#7a7a92" text-anchor="middle">Blending = same comp</text>
+      <text x="220" y="132" font-family="JetBrains Mono,monospace" font-size="9" fill="#7a7a92" text-anchor="middle">Mixing = diff comp</text>
+      <!-- Mixed powder -->
+      <g opacity="0.7">
+        <circle cx="195" cy="148" r="4" fill="#6aabf7"/><circle cx="210" cy="142" r="3" fill="#f7a84a"/>
+        <circle cx="225" cy="148" r="4" fill="#6aabf7"/><circle cx="240" cy="143" r="3" fill="#f7a84a"/>
+        <circle cx="203" cy="156" r="3" fill="#f7a84a"/><circle cx="220" cy="155" r="4" fill="#6aabf7"/>
+        <circle cx="237" cy="156" r="3" fill="#6aabf7"/>
+      </g>
+
+      <!-- Arrow 2 -->
+      <line x1="280" y1="105" x2="298" y2="105" stroke="#5a5a72" stroke-width="2"/>
+      <polygon points="294,101 304,105 294,109" fill="#5a5a72"/>
+
+      <!-- Compaction -->
+      <rect x="300" y="60" width="120" height="90" rx="8" fill="#1a2a3a" stroke="#7c6af7" stroke-width="2"/>
+      <text x="360" y="85" font-family="JetBrains Mono,monospace" font-size="11" fill="#7c6af7" text-anchor="middle" font-weight="700">COMPACTION</text>
+      <text x="360" y="100" font-family="JetBrains Mono,monospace" font-size="9" fill="#7a7a92" text-anchor="middle">F = Ap × Pc</text>
+      <!-- Die press diagram -->
+      <rect x="330" y="112" width="60" height="14" rx="2" fill="#7c6af7" opacity="0.8"/>
+      <text x="360" y="122" font-family="JetBrains Mono,monospace" font-size="8" fill="white" text-anchor="middle">punch ↓</text>
+      <rect x="330" y="128" width="60" height="20" rx="2" fill="#4a3a6a" stroke="#7c6af7"/>
+      <text x="360" y="142" font-family="JetBrains Mono,monospace" font-size="8" fill="#c06af7" text-anchor="middle">GREEN</text>
+      <rect x="330" y="150" width="60" height="14" rx="2" fill="#7c6af7" opacity="0.8"/>
+      <text x="360" y="160" font-family="JetBrains Mono,monospace" font-size="8" fill="white" text-anchor="middle">↑ punch</text>
+
+      <!-- Arrow 3 -->
+      <line x1="420" y1="105" x2="438" y2="105" stroke="#5a5a72" stroke-width="2"/>
+      <polygon points="434,101 444,105 434,109" fill="#5a5a72"/>
+
+      <!-- Sintering -->
+      <rect x="440" y="60" width="120" height="90" rx="8" fill="#1a2a3a" stroke="#f7a84a" stroke-width="2"/>
+      <text x="500" y="85" font-family="JetBrains Mono,monospace" font-size="11" fill="#f7a84a" text-anchor="middle" font-weight="700">SINTERING</text>
+      <text x="500" y="100" font-family="JetBrains Mono,monospace" font-size="9" fill="#7a7a92" text-anchor="middle">70-90% of Tm</text>
+      <text x="500" y="112" font-family="JetBrains Mono,monospace" font-size="9" fill="#7a7a92" text-anchor="middle">Diffusion bonds</text>
+      <!-- Neck formation diagram -->
+      <circle cx="485" cy="138" r="10" fill="none" stroke="#f7a84a" stroke-width="1.5"/>
+      <circle cx="505" cy="138" r="10" fill="none" stroke="#f7a84a" stroke-width="1.5"/>
+      <circle cx="525" cy="138" r="10" fill="none" stroke="#f7a84a" stroke-width="1.5"/>
+      <line x1="495" y1="138" x2="495" y2="138" stroke="#f7a84a" stroke-width="3"/>
+      <line x1="515" y1="138" x2="515" y2="138" stroke="#f7a84a" stroke-width="3"/>
+      <text x="500" y="162" font-family="JetBrains Mono,monospace" font-size="8" fill="#f7a84a" text-anchor="middle">necks form → pores shrink</text>
+
+      <!-- Arrow 4 -->
+      <line x1="560" y1="105" x2="578" y2="105" stroke="#5a5a72" stroke-width="2"/>
+      <polygon points="574,101 584,105 574,109" fill="#5a5a72"/>
+
+      <!-- Secondary ops -->
+      <rect x="580" y="60" width="120" height="90" rx="8" fill="#1a2a3a" stroke="#4af7c0" stroke-width="2"/>
+      <text x="640" y="82" font-family="JetBrains Mono,monospace" font-size="10" fill="#4af7c0" text-anchor="middle" font-weight="700">SECONDARY</text>
+      <text x="640" y="95" font-family="JetBrains Mono,monospace" font-size="10" fill="#4af7c0" text-anchor="middle" font-weight="700">OPERATIONS</text>
+      <text x="640" y="113" font-family="JetBrains Mono,monospace" font-size="9" fill="#7a7a92" text-anchor="middle">Sizing / Coining</text>
+      <text x="640" y="125" font-family="JetBrains Mono,monospace" font-size="9" fill="#7a7a92" text-anchor="middle">Infiltration</text>
+      <text x="640" y="137" font-family="JetBrains Mono,monospace" font-size="9" fill="#7a7a92" text-anchor="middle">Impregnation</text>
+      <text x="640" y="149" font-family="JetBrains Mono,monospace" font-size="9" fill="#7a7a92" text-anchor="middle">HIP / Heat Treat</text>
+
+      <!-- Key annotation -->
+      <text x="360" y="210" font-family="JetBrains Mono,monospace" font-size="11" fill="#f0f0f8" text-anchor="middle" font-weight="700">Key concept: metal is NEVER fully melted</text>
+      <text x="360" y="228" font-family="JetBrains Mono,monospace" font-size="10" fill="#5a5a72" text-anchor="middle">Sintering uses atomic diffusion at 70-90% Tm to bond particles without liquefaction</text>
+      <text x="360" y="246" font-family="JetBrains Mono,monospace" font-size="10" fill="#5a5a72" text-anchor="middle">This is why PM can process tungsten (Tm = 3422°C) that cannot be conventionally cast</text>
+    </svg>
+    <div class="diagram-caption">Complete PM process sequence — from raw powder to finished part</div>
+  </div>
+
+  <div class="def-grid">
+    <div class="def-item d-blue"><div class="def-item-name">Green compact</div><div class="def-item-def">Part after compaction — particles mechanically interlocked. Holds shape. Weak, porous, handleable. NOT yet sintered.</div><div class="def-item-note">Like pressed chalk — holds shape but crumbles easily.</div></div>
+    <div class="def-item d-blue"><div class="def-item-name">Sintering</div><div class="def-item-def">Heating compacted powder to 70-90% of melting point (in Kelvin). Atomic diffusion creates bonds across particle boundaries. No melting occurs. 1-5% shrinkage results.</div></div>
+    <div class="def-item d-blue"><div class="def-item-name">Neck formation</div><div class="def-item-def">Stage 1 of sintering. Atoms diffuse across particle contact boundaries, forming small bonding bridges called necks. Fastest densification stage.</div></div>
+    <div class="def-item d-blue"><div class="def-item-name">Pore shrinkage</div><div class="def-item-def">Stage 2 of sintering. Necks grow larger, pores between particles reduce in size and become more rounded. Continued densification.</div></div>
+    <div class="def-item d-blue"><div class="def-item-name">Grain growth</div><div class="def-item-def">Stage 3 of sintering. Little further densification. Grain boundaries migrate and grains enlarge. Excessive grain growth reduces mechanical properties.</div></div>
+    <div class="def-item d-amber"><div class="def-item-name">Blending vs Mixing</div><div class="def-item-def">Blending = same composition + different particle sizes → improves packing. Mixing = different compositions → creates alloy precursors. Fe + graphite = MIXING.</div><div class="def-item-note">⚠️ Exam trap: commonly confused.</div></div>
+    <div class="def-item d-teal"><div class="def-item-name">Infiltration</div><div class="def-item-def">Lower-melting metal (bronze) placed on sintered part, heated to melt, wicks into pores by capillary action. Increases density and thermal conductivity.</div></div>
+    <div class="def-item d-teal"><div class="def-item-name">Impregnation</div><div class="def-item-def">Oil forced into pores of sintered part. Creates self-lubricating bearings — rotation generates heat, oil seeps out and lubricates automatically. No maintenance needed.</div></div>
+  </div>
+</div>
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<!-- T6 — METAL FORMING -->
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<div class="def-section" id="forming">
+  <h2 style="color: var(--purple);">Topic 6 — Metal Forming</h2>
+
+  <h3>Blanking vs Punching</h3>
+  <p>These two operations both use a punch and die to cut sheet metal — but the desired product is different in each case.</p>
+
+  <div class="diagram-wrap">
+    <svg viewBox="0 0 640 220" xmlns="http://www.w3.org/2000/svg">
+      <rect width="640" height="220" fill="#12121a"/>
+
+      <!-- BLANKING (left) -->
+      <text x="160" y="22" font-family="JetBrains Mono,monospace" font-size="13" fill="#7af76a" text-anchor="middle" font-weight="700">BLANKING</text>
+      <text x="160" y="38" font-family="JetBrains Mono,monospace" font-size="10" fill="#5a5a72" text-anchor="middle">cut piece = desired part</text>
+
+      <!-- Punch -->
+      <rect x="120" y="48" width="80" height="30" rx="4" fill="#c06af7" opacity="0.9"/>
+      <text x="160" y="67" font-family="JetBrains Mono,monospace" font-size="10" fill="white" text-anchor="middle" font-weight="700">PUNCH ↓</text>
+
+      <!-- Sheet with hole (scrap) -->
+      <rect x="50" y="80" width="220" height="30" rx="2" fill="#2e2e3e" stroke="#5a5a72"/>
+      <!-- Hole left in sheet -->
+      <rect x="120" y="80" width="80" height="30" fill="#12121a"/>
+      <text x="50" y="125" font-family="JetBrains Mono,monospace" font-size="9" fill="#5a5a72">Sheet with hole = SCRAP</text>
+
+      <!-- Die -->
+      <rect x="50" y="110" width="100" height="20" rx="2" fill="#3a3a4a" stroke="#5a5a72"/>
+      <rect x="200" y="110" width="70" height="20" rx="2" fill="#3a3a4a" stroke="#5a5a72"/>
+
+      <!-- The blank (part) falls out -->
+      <ellipse cx="160" cy="155" rx="38" ry="16" fill="#7af76a" opacity="0.9"/>
+      <text x="160" y="159" font-family="JetBrains Mono,monospace" font-size="9" fill="#12121a" text-anchor="middle" font-weight="700">BLANK = PART ✓</text>
+      <text x="160" y="185" font-family="JetBrains Mono,monospace" font-size="9" fill="#7af76a" text-anchor="middle">e.g. coins, washers, discs</text>
+
+      <!-- Divider -->
+      <line x1="320" y1="20" x2="320" y2="200" stroke="#2e2e3e" stroke-width="1.5"/>
+
+      <!-- PUNCHING (right) -->
+      <text x="480" y="22" font-family="JetBrains Mono,monospace" font-size="13" fill="#f76c8a" text-anchor="middle" font-weight="700">PUNCHING</text>
+      <text x="480" y="38" font-family="JetBrains Mono,monospace" font-size="10" fill="#5a5a72" text-anchor="middle">cut piece = scrap (slug)</text>
+
+      <!-- Punch -->
+      <rect x="440" y="48" width="80" height="30" rx="4" fill="#c06af7" opacity="0.9"/>
+      <text x="480" y="67" font-family="JetBrains Mono,monospace" font-size="10" fill="white" text-anchor="middle" font-weight="700">PUNCH ↓</text>
+
+      <!-- Sheet with hole (PART) -->
+      <rect x="370" y="80" width="220" height="30" rx="2" fill="#2e2e3e" stroke="#f76c8a" stroke-width="1.5"/>
+      <!-- Hole -->
+      <rect x="440" y="80" width="80" height="30" fill="#12121a"/>
+      <text x="480" y="100" font-family="JetBrains Mono,monospace" font-size="9" fill="#f76c8a" text-anchor="middle">← hole created</text>
+
+      <!-- Die -->
+      <rect x="370" y="110" width="100" height="20" rx="2" fill="#3a3a4a" stroke="#5a5a72"/>
+      <rect x="520" y="110" width="70" height="20" rx="2" fill="#3a3a4a" stroke="#5a5a72"/>
+
+      <!-- Sheet is the part -->
+      <text x="480" y="145" font-family="JetBrains Mono,monospace" font-size="10" fill="#f76c8a" text-anchor="middle">Sheet with hole = PART ✓</text>
+
+      <!-- Slug falls out -->
+      <ellipse cx="480" cy="165" rx="35" ry="13" fill="#5a5a72" opacity="0.7"/>
+      <text x="480" y="169" font-family="JetBrains Mono,monospace" font-size="9" fill="#12121a" text-anchor="middle">slug = SCRAP</text>
+      <text x="480" y="185" font-family="JetBrains Mono,monospace" font-size="9" fill="#5a5a72" text-anchor="middle">e.g. bracket with holes</text>
+    </svg>
+    <div class="diagram-caption">Blanking vs Punching — the product distinction. Same tooling setup, different desired output.</div>
+  </div>
+
+  <div class="def-grid">
+    <div class="def-item d-green"><div class="def-item-name">Blanking</div><div class="def-item-def">The cut piece IS the desired part. Surrounding stock is scrap. Used for coins, washers, discs, gaskets.</div><div class="def-item-note">Memory: the "Blank" is what you keep.</div></div>
+    <div class="def-item d-coral"><div class="def-item-name">Punching</div><div class="def-item-def">The cut piece (slug) is the scrap. The surrounding sheet with the hole is the desired part. Used to create holes in brackets, panels, housings.</div></div>
+    <div class="def-item d-purple"><div class="def-item-name">Springback</div><div class="def-item-def">After bending, the elastic portion of the deformation recovers on releasing the force — the bend angle opens up. Fixed by overbending past the desired angle.</div></div>
+    <div class="def-item d-purple"><div class="def-item-name">Deep drawing</div><div class="def-item-def">Punch draws a flat blank into a die cavity, forming a hollow cup. Used for drinks cans, car body panels, kitchen sinks, ammunition shells.</div></div>
+    <div class="def-item d-purple"><div class="def-item-name">Blankholder</div><div class="def-item-def">Clamps the outer edges of the blank during drawing. Essential to prevent the flange from buckling under compressive stress (wrinkling defect).</div></div>
+    <div class="def-item d-amber"><div class="def-item-name">Thread rolling</div><div class="def-item-def">Cold rolling threads onto fasteners instead of cutting them. Stronger threads — grain flow preserved along thread profile, surface work-hardened. Better fatigue resistance.</div></div>
+  </div>
+</div>
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<!-- T7-9 — MACHINING AND TOOLS -->
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<div class="def-section" id="machining">
+  <h2 style="color: var(--coral);">Topics 7–9 — Machining, Cutting Tools & Grinding</h2>
+
+  <h3>Turning vs Milling — the critical distinction</h3>
+
+  <div class="diagram-wrap">
+    <svg viewBox="0 0 640 200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="640" height="200" fill="#12121a"/>
+
+      <!-- TURNING (left) -->
+      <text x="160" y="22" font-family="JetBrains Mono,monospace" font-size="13" fill="#f76c8a" text-anchor="middle" font-weight="700">TURNING</text>
+
+      <!-- Rotating workpiece -->
+      <ellipse cx="160" cy="100" rx="60" ry="60" fill="#2a2a3e" stroke="#f76c8a" stroke-width="2"/>
+      <ellipse cx="160" cy="100" rx="30" ry="30" fill="#3a3a5e" stroke="#f76c8a" stroke-width="1" stroke-dasharray="4,2"/>
+      <!-- Rotation arrows -->
+      <path d="M130,55 Q160,40 190,55" stroke="#f76c8a" stroke-width="2" fill="none"/>
+      <polygon points="186,50 194,58 184,60" fill="#f76c8a"/>
+      <text x="160" y="104" font-family="JetBrains Mono,monospace" font-size="11" fill="#f76c8a" text-anchor="middle" font-weight="700">WORKPIECE</text>
+      <text x="160" y="118" font-family="JetBrains Mono,monospace" font-size="9" fill="#f76c8a" text-anchor="middle">ROTATES</text>
+
+      <!-- Single point tool -->
+      <rect x="228" y="88" width="40" height="24" rx="3" fill="#7c6af7" opacity="0.9"/>
+      <polygon points="228,88 228,112 210,100" fill="#7c6af7" opacity="0.9"/>
+      <text x="255" y="115" font-family="JetBrains Mono,monospace" font-size="9" fill="#7c6af7" text-anchor="middle">single-point tool</text>
+      <text x="255" y="127" font-family="JetBrains Mono,monospace" font-size="9" fill="#5a5a72" text-anchor="middle">(moves linearly)</text>
+      <!-- Tool movement arrow -->
+      <line x1="270" y1="100" x2="270" y2="140" stroke="#4af7c0" stroke-width="1.5"/>
+      <polygon points="266,136 270,146 274,136" fill="#4af7c0"/>
+      <text x="288" y="120" font-family="JetBrains Mono,monospace" font-size="9" fill="#4af7c0">feed ↓</text>
+
+      <text x="160" y="175" font-family="JetBrains Mono,monospace" font-size="10" fill="#f76c8a" text-anchor="middle">Machine: LATHE</text>
+      <text x="160" y="190" font-family="JetBrains Mono,monospace" font-size="9" fill="#5a5a72" text-anchor="middle">Produces cylindrical shapes</text>
+
+      <!-- Divider -->
+      <line x1="320" y1="20" x2="320" y2="195" stroke="#2e2e3e" stroke-width="1.5"/>
+
+      <!-- MILLING (right) -->
+      <text x="480" y="22" font-family="JetBrains Mono,monospace" font-size="13" fill="#c06af7" text-anchor="middle" font-weight="700">MILLING</text>
+
+      <!-- Rotating cutter -->
+      <circle cx="480" cy="70" r="30" fill="#2a2a3e" stroke="#c06af7" stroke-width="2"/>
+      <!-- Cutter teeth -->
+      <g fill="#c06af7" opacity="0.9">
+        <polygon points="480,40 488,52 472,52"/>
+        <polygon points="510,70 498,78 498,62"/>
+        <polygon points="480,100 472,88 488,88"/>
+        <polygon points="450,70 462,62 462,78"/>
+      </g>
+      <!-- Rotation arrow -->
+      <path d="M455,48 Q480,38 505,48" stroke="#c06af7" stroke-width="2" fill="none"/>
+      <polygon points="501,43 509,51 499,53" fill="#c06af7"/>
+      <text x="480" y="74" font-family="JetBrains Mono,monospace" font-size="10" fill="#c06af7" text-anchor="middle" font-weight="700">TOOL</text>
+      <text x="480" y="87" font-family="JetBrains Mono,monospace" font-size="9" fill="#c06af7" text-anchor="middle">ROTATES</text>
+
+      <!-- Workpiece moving -->
+      <rect x="400" y="105" width="160" height="40" rx="4" fill="#2a2a3e" stroke="#7c6af7" stroke-width="1.5"/>
+      <text x="480" y="129" font-family="JetBrains Mono,monospace" font-size="10" fill="#7c6af7" text-anchor="middle">WORKPIECE moves →</text>
+      <!-- Movement arrow -->
+      <line x1="420" y1="155" x2="560" y2="155" stroke="#4af7c0" stroke-width="1.5"/>
+      <polygon points="555,151 565,155 555,159" fill="#4af7c0"/>
+      <text x="490" y="170" font-family="JetBrains Mono,monospace" font-size="9" fill="#4af7c0" text-anchor="middle">feed direction</text>
+
+      <text x="480" y="185" font-family="JetBrains Mono,monospace" font-size="10" fill="#c06af7" text-anchor="middle">Machine: MILLING MACHINE</text>
+      <text x="480" y="198" font-family="JetBrains Mono,monospace" font-size="9" fill="#5a5a72" text-anchor="middle">Flat surfaces, slots, profiles</text>
+    </svg>
+    <div class="diagram-caption">Turning (workpiece rotates, tool fixed) vs Milling (tool rotates, workpiece moves)</div>
+  </div>
+
+  <h3>Tool wear — crater and flank</h3>
+
+  <div class="diagram-wrap">
+    <svg viewBox="0 0 640 220" xmlns="http://www.w3.org/2000/svg">
+      <rect width="640" height="220" fill="#12121a"/>
+
+      <!-- Tool cross-section -->
+      <polygon points="100,180 340,180 340,80 200,80" fill="#3a3a5e" stroke="#7c6af7" stroke-width="2"/>
+
+      <!-- Rake face label -->
+      <line x1="200" y1="80" x2="340" y2="80" stroke="#5a5a72" stroke-width="1"/>
+      <text x="270" y="72" font-family="JetBrains Mono,monospace" font-size="11" fill="#f0f0f8" text-anchor="middle">RAKE FACE (top)</text>
+
+      <!-- Flank face label -->
+      <line x1="340" y1="80" x2="340" y2="180" stroke="#5a5a72" stroke-width="1"/>
+      <text x="370" y="135" font-family="JetBrains Mono,monospace" font-size="11" fill="#f0f0f8">FLANK FACE</text>
+      <text x="370" y="148" font-family="JetBrains Mono,monospace" font-size="11" fill="#f0f0f8">(side)</text>
+
+      <!-- Cutting edge -->
+      <circle cx="340" cy="80" r="5" fill="#f7d54a"/>
+      <text x="350" y="75" font-family="JetBrains Mono,monospace" font-size="10" fill="#f7d54a">cutting edge</text>
+
+      <!-- Crater wear on rake face -->
+      <ellipse cx="285" cy="80" rx="30" ry="8" fill="#f76c8a" opacity="0.7"/>
+      <text x="230" y="58" font-family="JetBrains Mono,monospace" font-size="11" fill="#f76c8a" text-anchor="middle" font-weight="700">CRATER WEAR</text>
+      <text x="230" y="70" font-family="JetBrains Mono,monospace" font-size="9" fill="#5a5a72" text-anchor="middle">chip sliding over rake face</text>
+      <line x1="265" y1="66" x2="275" y2="78" stroke="#f76c8a" stroke-width="1"/>
+
+      <!-- Flank wear on flank face -->
+      <rect x="340" y="120" width="8" height="40" rx="2" fill="#f7a84a" opacity="0.9"/>
+      <text x="490" y="118" font-family="JetBrains Mono,monospace" font-size="11" fill="#f7a84a" text-anchor="middle" font-weight="700">FLANK WEAR</text>
+      <text x="490" y="132" font-family="JetBrains Mono,monospace" font-size="9" fill="#5a5a72" text-anchor="middle">rubbing against</text>
+      <text x="490" y="144" font-family="JetBrains Mono,monospace" font-size="9" fill="#5a5a72" text-anchor="middle">machined surface</text>
+      <text x="490" y="162" font-family="JetBrains Mono,monospace" font-size="11" fill="#f7a84a" text-anchor="middle" font-weight="700">Replace at 0.5mm</text>
+      <line x1="430" y1="140" x2="352" y2="140" stroke="#f7a84a" stroke-width="1" stroke-dasharray="4,2"/>
+
+      <!-- Chip direction -->
+      <path d="M340,80 Q360,60 390,40 Q410,25 440,18" stroke="#4af7c0" stroke-width="2" fill="none"/>
+      <polygon points="436,13 445,20 435,24" fill="#4af7c0"/>
+      <text x="470" y="25" font-family="JetBrains Mono,monospace" font-size="10" fill="#4af7c0">chip flows here</text>
+
+      <!-- Workpiece -->
+      <rect x="100" y="180" width="240" height="30" rx="3" fill="#1a2a3a" stroke="#5a5a72"/>
+      <text x="220" y="200" font-family="JetBrains Mono,monospace" font-size="10" fill="#5a5a72" text-anchor="middle">WORKPIECE</text>
+
+      <!-- Flank wear measurement -->
+      <text x="200" y="215" font-family="JetBrains Mono,monospace" font-size="9" fill="#5a5a72" text-anchor="middle">↑ newly machined surface</text>
+    </svg>
+    <div class="diagram-caption">Single-point cutting tool showing crater wear (rake face) and flank wear (flank face) locations</div>
+  </div>
+
+  <h3>Grinding wheel structure</h3>
+
+  <div class="diagram-wrap">
+    <svg viewBox="0 0 640 240" xmlns="http://www.w3.org/2000/svg">
+      <rect width="640" height="240" fill="#12121a"/>
+
+      <!-- Wheel cross-section -->
+      <circle cx="200" cy="120" r="100" fill="#2a2a3e" stroke="#f7a84a" stroke-width="2"/>
+      <circle cx="200" cy="120" r="25" fill="#12121a" stroke="#5a5a72" stroke-width="2"/>
+      <text x="200" y="125" font-family="JetBrains Mono,monospace" font-size="10" fill="#5a5a72" text-anchor="middle">arbor hole</text>
+
+      <!-- Abrasive grains -->
+      <g fill="#f7a84a" opacity="0.9">
+        <polygon points="155,50 162,60 148,60"/><polygon points="175,42 182,52 168,52"/>
+        <polygon points="225,44 232,54 218,54"/><polygon points="245,52 252,62 238,62"/>
+        <polygon points="278,80 285,90 271,90"/><polygon points="290,105 297,115 283,115"/>
+        <polygon points="290,140 297,150 283,150"/><polygon points="272,166 279,176 265,176"/>
+        <polygon points="245,186 252,196 238,196"/><polygon points="218,198 225,208 211,208"/>
+        <polygon points="185,196 192,206 178,206"/><polygon points="155,185 162,195 148,195"/>
+        <polygon points="130,165 137,175 123,175"/><polygon points="114,140 121,150 107,150"/>
+        <polygon points="112,108 119,118 105,118"/><polygon points="122,80 129,90 115,90"/>
+        <polygon points="140,57 147,67 133,67"/>
+      </g>
+
+      <!-- Bond (background) -->
+      <text x="200" y="118" font-family="JetBrains Mono,monospace" font-size="11" fill="#c06af7" text-anchor="middle" font-weight="700">BOND holds</text>
+      <text x="200" y="132" font-family="JetBrains Mono,monospace" font-size="11" fill="#c06af7" text-anchor="middle" font-weight="700">grains together</text>
+
+      <!-- Porosity dots -->
+      <g fill="#4af7c0" opacity="0.5">
+        <circle cx="165" cy="65" r="4"/><circle cx="190" cy="58" r="3"/>
+        <circle cx="215" cy="62" r="4"/><circle cx="260" cy="90" r="3"/>
+        <circle cx="275" cy="125" r="4"/><circle cx="268" cy="160" r="3"/>
+        <circle cx="235" cy="185" r="4"/><circle cx="195" cy="192" r="3"/>
+        <circle cx="160" cy="180" r="4"/><circle cx="130" cy="155" r="3"/>
+        <circle cx="122" cy="120" r="4"/><circle cx="135" cy="90" r="3"/>
+      </g>
+
+      <!-- Labels pointing to wheel -->
+      <!-- Grains label -->
+      <line x1="260" y1="52" x2="320" y2="30" stroke="#f7a84a" stroke-width="1"/>
+      <text x="325" y="26" font-family="JetBrains Mono,monospace" font-size="11" fill="#f7a84a" font-weight="700">ABRASIVE GRAINS</text>
+      <text x="325" y="40" font-family="JetBrains Mono,monospace" font-size="9" fill="#5a5a72">Al₂O₃, SiC, CBN, diamond</text>
+      <text x="325" y="52" font-family="JetBrains Mono,monospace" font-size="9" fill="#5a5a72">Do the actual cutting</text>
+
+      <!-- Porosity label -->
+      <line x1="280" y1="130" x2="320" y2="130" stroke="#4af7c0" stroke-width="1"/>
+      <text x="325" y="125" font-family="JetBrains Mono,monospace" font-size="11" fill="#4af7c0" font-weight="700">POROSITY</text>
+      <text x="325" y="140" font-family="JetBrains Mono,monospace" font-size="9" fill="#5a5a72">Chip clearance + coolant</text>
+      <text x="325" y="152" font-family="JetBrains Mono,monospace" font-size="9" fill="#5a5a72">access to cutting zone</text>
+
+      <!-- Bond label -->
+      <line x1="240" y1="185" x2="320" y2="200" stroke="#c06af7" stroke-width="1"/>
+      <text x="325" y="196" font-family="JetBrains Mono,monospace" font-size="11" fill="#c06af7" font-weight="700">BOND MATERIAL</text>
+      <text x="325" y="210" font-family="JetBrains Mono,monospace" font-size="9" fill="#5a5a72">Holds grains — releases dull</text>
+      <text x="325" y="222" font-family="JetBrains Mono,monospace" font-size="9" fill="#5a5a72">ones to expose fresh cutting</text>
+
+      <!-- Rotation arrow -->
+      <path d="M105,80 Q80,120 105,160" stroke="#f76c8a" stroke-width="2" fill="none"/>
+      <polygon points="101,155 108,163 114,153" fill="#f76c8a"/>
+      <text x="70" y="125" font-family="JetBrains Mono,monospace" font-size="10" fill="#f76c8a" text-anchor="middle">ROTATION</text>
+    </svg>
+    <div class="diagram-caption">Grinding wheel cross-section showing the three components — grains, bond, and porosity</div>
+  </div>
+
+  <div class="def-grid">
+    <div class="def-item d-amber"><div class="def-item-name">Abrasive grains</div><div class="def-item-def">Hard cutting particles embedded in the wheel. Must be harder than the workpiece. Al₂O₃ (general), SiC (hard materials), CBN (steels), diamond (non-ferrous only).</div></div>
+    <div class="def-item d-purple"><div class="def-item-name">Bond material</div><div class="def-item-def">Holds abrasive grains together. Must be strong enough to hold grains during cutting but allow worn, dull grains to be released so fresh ones are exposed.</div></div>
+    <div class="def-item d-teal"><div class="def-item-name">Porosity</div><div class="def-item-def">Spaces between abrasive grains. Essential for: chip escape during grinding, coolant access to the cutting zone, preventing wheel clogging.</div></div>
+    <div class="def-item d-coral"><div class="def-item-name">Friability</div><div class="def-item-def">The ability of abrasive grains to FRACTURE and expose new sharp cutting edges. Causes self-sharpening behaviour. Too little → glazing. Too much → rapid wear.</div><div class="def-item-note">⚠️ Exam trap: friability ALLOWS fracture, it does NOT prevent it.</div></div>
+    <div class="def-item d-amber"><div class="def-item-name">Glazing</div><div class="def-item-def">Grinding wheel surface becomes smooth and shiny. Dull grains remain because friability is too low. Wheel stops cutting, generates excessive heat, poor surface finish.</div></div>
+    <div class="def-item d-amber"><div class="def-item-name">Wheel grade</div><div class="def-item-def">How strongly the bond holds the grains. Hard grade = grains stay longer. Soft grade = grains released easily. Rule: HARD material → SOFT grade wheel.</div></div>
+    <div class="def-item d-blue"><div class="def-item-name">Wheel structure</div><div class="def-item-def">Spacing between abrasive grains. Dense = more cutting edges, better finish, clogs faster. Open = more chip clearance, higher MRR, less clogging.</div></div>
+  </div>
+</div>
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<!-- T4 — RUBBER -->
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<div class="def-section" id="rubber">
+  <h2 style="color: var(--green);">Topic 4 — Rubber & PMC</h2>
+  <h3>Rubber processing sequence</h3>
+
+  <div class="diagram-wrap">
+    <svg viewBox="0 0 720 180" xmlns="http://www.w3.org/2000/svg">
+      <rect width="720" height="180" fill="#12121a"/>
+
+      <!-- Steps -->
+      <rect x="20" y="40" width="140" height="80" rx="8" fill="#1a2a1a" stroke="#7af76a" stroke-width="1.5"/>
+      <text x="90" y="68" font-family="JetBrains Mono,monospace" font-size="11" fill="#7af76a" text-anchor="middle" font-weight="700">COMPOUNDING</text>
+      <text x="90" y="85" font-family="JetBrains Mono,monospace" font-size="9" fill="#5a5a72" text-anchor="middle">Add all additives:</text>
+      <text x="90" y="97" font-family="JetBrains Mono,monospace" font-size="9" fill="#5a5a72" text-anchor="middle">carbon black, clay,</text>
+      <text x="90" y="109" font-family="JetBrains Mono,monospace" font-size="9" fill="#5a5a72" text-anchor="middle">plasticisers, ZnO</text>
+
+      <line x1="160" y1="80" x2="178" y2="80" stroke="#5a5a72" stroke-width="2"/>
+      <polygon points="174,76 184,80 174,84" fill="#5a5a72"/>
+
+      <rect x="180" y="40" width="140" height="80" rx="8" fill="#1a2a1a" stroke="#7af76a" stroke-width="1.5"/>
+      <text x="250" y="68" font-family="JetBrains Mono,monospace" font-size="11" fill="#7af76a" text-anchor="middle" font-weight="700">MIXING</text>
+      <text x="250" y="83" font-family="JetBrains Mono,monospace" font-size="9" fill="#f7d54a" text-anchor="middle">⚠️ TWO STAGES</text>
+      <text x="250" y="97" font-family="JetBrains Mono,monospace" font-size="9" fill="#5a5a72" text-anchor="middle">Stage 1: everything</text>
+      <text x="250" y="109" font-family="JetBrains Mono,monospace" font-size="9" fill="#f76c8a" text-anchor="middle">Stage 2: add sulphur</text>
+
+      <line x1="320" y1="80" x2="338" y2="80" stroke="#5a5a72" stroke-width="2"/>
+      <polygon points="334,76 344,80 334,84" fill="#5a5a72"/>
+
+      <rect x="340" y="40" width="140" height="80" rx="8" fill="#1a2a1a" stroke="#7af76a" stroke-width="1.5"/>
+      <text x="410" y="68" font-family="JetBrains Mono,monospace" font-size="11" fill="#7af76a" text-anchor="middle" font-weight="700">SHAPING</text>
+      <text x="410" y="85" font-family="JetBrains Mono,monospace" font-size="9" fill="#5a5a72" text-anchor="middle">Extrusion</text>
+      <text x="410" y="97" font-family="JetBrains Mono,monospace" font-size="9" fill="#5a5a72" text-anchor="middle">Calendering</text>
+      <text x="410" y="109" font-family="JetBrains Mono,monospace" font-size="9" fill="#5a5a72" text-anchor="middle">Moulding</text>
+
+      <line x1="480" y1="80" x2="498" y2="80" stroke="#5a5a72" stroke-width="2"/>
+      <polygon points="494,76 504,80 494,84" fill="#5a5a72"/>
+
+      <rect x="500" y="40" width="200" height="80" rx="8" fill="#2a1a1a" stroke="#f76c8a" stroke-width="2"/>
+      <text x="600" y="65" font-family="JetBrains Mono,monospace" font-size="11" fill="#f76c8a" text-anchor="middle" font-weight="700">VULCANISING</text>
+      <text x="600" y="82" font-family="JetBrains Mono,monospace" font-size="9" fill="#5a5a72" text-anchor="middle">Sulphur cross-links chains</text>
+      <text x="600" y="94" font-family="JetBrains Mono,monospace" font-size="9" fill="#5a5a72" text-anchor="middle">15-20 min (modern)</text>
+      <text x="600" y="106" font-family="JetBrains Mono,monospace" font-size="9" fill="#5a5a72" text-anchor="middle">Goodyear 1839 / 5 hrs</text>
+
+      <!-- Warning note -->
+      <text x="360" y="150" font-family="JetBrains Mono,monospace" font-size="10" fill="#f7d54a" text-anchor="middle">⚠️ SULPHUR ADDED LAST — early addition causes premature vulcanisation in the mixer</text>
+      <text x="360" y="168" font-family="JetBrains Mono,monospace" font-size="9" fill="#5a5a72" text-anchor="middle">This is the "rubber processor's nightmare" — a ruined batch stuck in the machine</text>
+    </svg>
+    <div class="diagram-caption">Rubber processing sequence — compounding → mixing (two stages!) → shaping → vulcanising</div>
+  </div>
+
+  <div class="def-grid">
+    <div class="def-item d-green"><div class="def-item-name">Elastomer</div><div class="def-item-def">Polymer with very large reversible elastic deformation. Three requirements: long flexible chains, light cross-links, glass transition temperature below room temperature.</div></div>
+    <div class="def-item d-green"><div class="def-item-name">Entropy-driven elasticity</div><div class="def-item-def">Stretched polymer chains spontaneously recoil to their natural disordered state when released. Driven by thermodynamic tendency toward higher entropy (disorder).</div></div>
+    <div class="def-item d-green"><div class="def-item-name">Vulcanisation</div><div class="def-item-def">Sulphur atoms form chemical bridges between polymer chains during heating. Creates permanent cross-links. Discovered by Charles Goodyear in 1839. Modern: 15-20 minutes.</div></div>
+    <div class="def-item d-amber"><div class="def-item-name">Carbon black</div><div class="def-item-def">Primary reinforcing filler. Increases tensile strength dramatically and provides UV protection. That's why most rubber is black.</div><div class="def-item-note">⚠️ Exam trap: carbon black DOES provide UV protection.</div></div>
+    <div class="def-item d-amber"><div class="def-item-name">China clay</div><div class="def-item-def">Non-reinforcing filler (hydrous aluminium silicate). Cheaper bulk filler used when the product cannot be black in colour.</div></div>
+    <div class="def-item d-amber"><div class="def-item-name">Cross-link density</div><div class="def-item-def">Number of sulphur bridges between chains. Low density → soft rubber (elastic bands, tyres). High density → ebonite (hard rubber, bowling balls).</div></div>
+  </div>
+</div>
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<!-- T10 — HEAT TREATMENT -->
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<div class="def-section" id="ht">
+  <h2 style="color: #f76af7;">Topic 10 — Heat Treatment, AM & SSM</h2>
+
+  <h3>Heat treatment — quenching media and cooling rate</h3>
+
+  <div class="diagram-wrap">
+    <svg viewBox="0 0 640 220" xmlns="http://www.w3.org/2000/svg">
+      <rect width="640" height="220" fill="#12121a"/>
+
+      <!-- Axes -->
+      <line x1="60" y1="180" x2="60" y2="20" stroke="#5a5a72" stroke-width="1.5"/>
+      <line x1="60" y1="180" x2="580" y2="180" stroke="#5a5a72" stroke-width="1.5"/>
+      <text x="30" y="100" font-family="JetBrains Mono,monospace" font-size="10" fill="#7a7a92" text-anchor="middle" transform="rotate(-90,30,100)">TEMPERATURE</text>
+      <text x="320" y="200" font-family="JetBrains Mono,monospace" font-size="10" fill="#7a7a92" text-anchor="middle">TIME →</text>
+
+      <!-- Austenite start line -->
+      <line x1="60" y1="40" x2="580" y2="40" stroke="#f7a84a" stroke-width="1" stroke-dasharray="6,3"/>
+      <text x="65" y="36" font-family="JetBrains Mono,monospace" font-size="9" fill="#f7a84a">Austenitising temperature (heated)</text>
+
+      <!-- Brine quench (fastest — steepest) -->
+      <path d="M80,40 Q100,55 120,100 Q140,150 160,175 Q180,182 580,185" stroke="#f76c8a" stroke-width="2.5" fill="none"/>
+      <text x="165" y="130" font-family="JetBrains Mono,monospace" font-size="10" fill="#f76c8a" font-weight="700">Brine</text>
+      <text x="165" y="142" font-family="JetBrains Mono,monospace" font-size="9" fill="#f76c8a">(FASTEST)</text>
+      <text x="165" y="154" font-family="JetBrains Mono,monospace" font-size="9" fill="#5a5a72">→ Martensite</text>
+
+      <!-- Fresh water -->
+      <path d="M80,40 Q110,60 150,110 Q190,158 230,174 Q280,182 580,184" stroke="#7c6af7" stroke-width="2" fill="none"/>
+      <text x="235" y="150" font-family="JetBrains Mono,monospace" font-size="10" fill="#7c6af7" font-weight="700">Fresh water</text>
+
+      <!-- Still oil -->
+      <path d="M80,40 Q130,65 200,120 Q260,155 320,170 Q400,180 580,183" stroke="#4af7c0" stroke-width="2" fill="none"/>
+      <text x="325" y="158" font-family="JetBrains Mono,monospace" font-size="10" fill="#4af7c0" font-weight="700">Still oil</text>
+
+      <!-- Air (slowest — gentlest) -->
+      <path d="M80,40 Q160,60 280,100 Q380,132 480,158 Q540,170 580,177" stroke="#7af76a" stroke-width="2" fill="none"/>
+      <text x="480" y="148" font-family="JetBrains Mono,monospace" font-size="10" fill="#7af76a" font-weight="700">Air</text>
+      <text x="480" y="161" font-family="JetBrains Mono,monospace" font-size="9" fill="#7af76a">(SLOWEST)</text>
+      <text x="480" y="173" font-family="JetBrains Mono,monospace" font-size="9" fill="#5a5a72">→ Pearlite</text>
+
+      <!-- Products label -->
+      <text x="320" y="18" font-family="JetBrains Mono,monospace" font-size="11" fill="#f0f0f8" text-anchor="middle" font-weight="700">Faster quench → harder product (martensite) | Slower cool → softer product (pearlite)</text>
+    </svg>
+    <div class="diagram-caption">Quenching media cooling curves — brine (fastest) through to air (slowest). Rate determines final microstructure.</div>
+  </div>
+
+  <div class="def-grid">
+    <div class="def-item d-accent"><div class="def-item-name">Annealing</div><div class="def-item-def">Heat below melting point, soak, then SLOW cool (in furnace). Softens metal, improves ductility, relieves residual stresses. Reverses effects of cold working.</div></div>
+    <div class="def-item d-coral"><div class="def-item-name">Hardening</div><div class="def-item-def">Heat steel above critical temperature (~723°C) to form austenite, then rapidly quench. Produces martensite — very hard but brittle. Always followed by tempering.</div></div>
+    <div class="def-item d-amber"><div class="def-item-name">Tempering</div><div class="def-item-def">Heat previously hardened steel to intermediate temperature. REDUCES brittleness while retaining most hardness. Does NOT increase hardness.</div><div class="def-item-note">⚠️ Exam trap: tempering reduces brittleness — it does NOT increase hardness.</div></div>
+    <div class="def-item d-amber"><div class="def-item-name">Martensite</div><div class="def-item-def">Forms by rapid quenching of austenite. Carbon has no time to diffuse — trapped in distorted crystal structure. Extremely hard and brittle. Highest hardness of any steel microstructure.</div></div>
+    <div class="def-item d-green"><div class="def-item-name">Pearlite</div><div class="def-item-def">Forms by slow cooling of austenite. Layered structure of ferrite and cementite. Much SOFTER than martensite. Better ductility.</div><div class="def-item-note">⚠️ Exam trap: martensite is harder than pearlite — not the other way round.</div></div>
+    <div class="def-item d-blue"><div class="def-item-name">Precipitation hardening</div><div class="def-item-def">Solution treatment (high temp) → quench → precipitation treatment (lower temp). Fine precipitate particles form that block dislocation movement → hardening. NOT available for all alloys.</div></div>
+    <div class="def-item d-blue"><div class="def-item-name">Rheo-route (SSM)</div><div class="def-item-def">Semi-solid processing from LIQUID. Cooled + sheared simultaneously into mushy zone. ONE step — no intermediate solidification. Lower cost, less control.</div></div>
+    <div class="def-item d-purple"><div class="def-item-name">Thixo-route (SSM)</div><div class="def-item-def">Semi-solid processing from SOLID billet. Pre-processed billet reheated into mushy zone. TWO steps — includes intermediate solidification. Higher control, higher cost.</div></div>
+  </div>
+</div>
+
+</div><!-- end container -->
+</main>
+
+<script src="js/main.js"></script>
+<script>
+  // Smooth scroll for anchor links on this page
+  document.querySelectorAll('.def-anchor').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+</script>
+</body>
+</html>
