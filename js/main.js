@@ -4,15 +4,16 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 
 // ── SECTION NAVIGATION ──────────────────────
+const NAV_ITEM_SEL = '[data-section]';
+
 function showSection(id, e) {
   if (e) e.preventDefault();
   document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-  document.querySelectorAll('.nav-link[data-section]').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll(NAV_ITEM_SEL).forEach(t => t.classList.remove('active'));
   const section = document.getElementById(id);
   if (section) { section.classList.add('active'); window.scrollTo({ top: 0, behavior: 'smooth' }); }
-  const tab = document.querySelector(`.nav-link[data-section="${id}"]`);
+  const tab = document.querySelector(`[data-section="${id}"]`);
   if (tab) tab.classList.add('active');
-  // Save state for back-button support
   history.pushState({ section: id }, '', `#${id}`);
 }
 
@@ -21,15 +22,17 @@ window.addEventListener('popstate', e => {
   const el = document.getElementById(id);
   if (el) {
     document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-    document.querySelectorAll('.nav-link[data-section]').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll(NAV_ITEM_SEL).forEach(t => t.classList.remove('active'));
     el.classList.add('active');
-    const tab = document.querySelector(`.nav-link[data-section="${id}"]`);
+    const tab = document.querySelector(`[data-section="${id}"]`);
     if (tab) tab.classList.add('active');
   }
 });
 
 // ── LEARN / REVISE MODE ──────────────────────
-function setMode(mode) {
+let _modeInitDone = false;
+
+function setMode(mode, silent) {
   document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
   const btn = document.querySelector(`.mode-btn[data-mode="${mode}"]`);
   if (btn) btn.classList.add('active');
@@ -39,6 +42,26 @@ function setMode(mode) {
     document.body.classList.remove('revise-mode');
   }
   localStorage.setItem('eg182-mode', mode);
+  if (silent) return;
+
+  // Border flash
+  document.querySelector('.mode-flash')?.remove();
+  const flash = document.createElement('div');
+  flash.className = `mode-flash ${mode}`;
+  document.body.appendChild(flash);
+  setTimeout(() => flash.remove(), 900);
+
+  // Toast
+  document.querySelector('.mode-toast')?.remove();
+  const label = mode === 'learn' ? '📖  Learn mode' : '⚡  Revise mode';
+  const toast = document.createElement('div');
+  toast.className = `mode-toast ${mode}`;
+  toast.textContent = label;
+  document.body.appendChild(toast);
+  setTimeout(() => {
+    toast.classList.add('fade-out');
+    setTimeout(() => toast.remove(), 350);
+  }, 1800);
 }
 
 // ── GLOSSARY SEARCH ──────────────────────────
@@ -95,7 +118,7 @@ function initGlossaryFilters(filterSelector) {
       if (input) { input.value = ''; }
       const countEl = document.getElementById('search-results-count');
       if (countEl) countEl.textContent = '';
-      const noResultsEl = document.querySelector('.no-results-msg');
+      const noResultsEl = document.getElementById('no-results');
       if (noResultsEl) noResultsEl.style.display = 'none';
 
       document.querySelectorAll('.glossary-section').forEach(sec => {
@@ -158,26 +181,81 @@ function buildGlossary(containerId) {
 }
 
 // ── KEYBOARD SHORTCUTS ───────────────────────
+const TOPIC_IDS = ['home','t1','t2','t3','t4','t5','t6','t7','t8','t9','t10','formulas','glossary','traps'];
+
 document.addEventListener('keydown', e => {
-  if (e.key === '/' && document.activeElement.tagName !== 'INPUT') {
+  if (document.activeElement.tagName === 'INPUT') return;
+
+  if (e.key === '/') {
     e.preventDefault();
-    if (typeof showSection === 'function') showSection('glossary');
-    setTimeout(() => {
-      const inp = document.querySelector('.search-input');
-      if (inp) inp.focus();
-    }, 150);
+    showSection('glossary');
+    setTimeout(() => { const inp = document.querySelector('.search-input'); if (inp) inp.focus(); }, 150);
   }
+
+  // Arrow key topic navigation
+  if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+    const active = document.querySelector('.section.active');
+    if (!active) return;
+    const idx = TOPIC_IDS.indexOf(active.id);
+    if (idx === -1) return;
+    const next = e.key === 'ArrowRight' ? TOPIC_IDS[idx + 1] : TOPIC_IDS[idx - 1];
+    if (next) showSection(next);
+  }
+
   if (e.key === 'Escape') {
     const inp = document.querySelector('.search-input');
     if (inp && document.activeElement === inp) { inp.value = ''; inp.dispatchEvent(new Event('input')); inp.blur(); }
   }
 });
 
+// ── SECTION ACCENT STRIPS ────────────────────
+function buildAccentStrips() {
+  TOPIC_IDS.filter(id => /^t\d+$/.test(id)).forEach(id => {
+    const section = document.getElementById(id);
+    if (!section) return;
+    const strip = document.createElement('div');
+    strip.className = 'section-accent';
+    section.insertBefore(strip, section.firstChild);
+  });
+}
+
+// ── PREV / NEXT NAV ──────────────────────────
+function buildTopicNav() {
+  const topics = TOPIC_IDS.filter(id => /^t\d+$/.test(id)); // only t1-t10
+  topics.forEach((id, i) => {
+    const section = document.getElementById(id);
+    if (!section) return;
+    const container = section.querySelector('.container');
+    if (!container) return;
+
+    const prev = topics[i - 1];
+    const next = topics[i + 1];
+    const labels = {
+      t1:'General Manufacturing',t2:'Metal Casting',t3:'Plastics Shaping',
+      t4:'Rubber & PMC',t5:'Powder Metallurgy',t6:'Metal Forming',
+      t7:'Metal Machining',t8:'Cutting Tools',t9:'Grinding & Finishing',
+      t10:'HT, AM & SSM'
+    };
+
+    const nav = document.createElement('div');
+    nav.className = 'topic-nav';
+    nav.innerHTML = `
+      <button class="topic-nav-btn${prev ? '' : ' disabled'}" onclick="${prev ? `showSection('${prev}')` : ''}">
+        ← ${prev ? labels[prev] : 'Start'}
+      </button>
+      <span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--dim)">${i+1} / ${topics.length}</span>
+      <button class="topic-nav-btn${next ? '' : ' disabled'}" onclick="${next ? `showSection('${next}')` : ''}">
+        ${next ? labels[next] : 'End'} →
+      </button>`;
+    container.appendChild(nav);
+  });
+}
+
 // ── INIT ─────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
-  // Restore mode
+  // Restore mode silently (no flash on page load)
   const savedMode = localStorage.getItem('eg182-mode') || 'learn';
-  setMode(savedMode);
+  setMode(savedMode, true);
 
   // Handle hash on load
   const hash = location.hash.slice(1);
@@ -187,6 +265,12 @@ document.addEventListener('DOMContentLoaded', () => {
   buildGlossary('glossary-container');
 
   // Init glossary search
-  initGlossarySearch('glossary-search-input', 'search-results-count', '.no-results-msg');
+  initGlossarySearch('glossary-search-input', 'search-results-count', 'no-results');
   initGlossaryFilters('[data-gfilter]');
+
+  // Add prev/next nav to all topic sections
+  buildTopicNav();
+
+  // Add coloured accent strips
+  buildAccentStrips();
 });

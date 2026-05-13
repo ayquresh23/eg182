@@ -7,8 +7,6 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-</head>
-<body>
 <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
 <!-- NAVIGATION -->
 <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
@@ -60,7 +58,7 @@
           <div class="hero-stat-label">Topics</div>
         </div>
         <div class="hero-stat">
-          <div class="hero-stat-value">300+</div>
+          <div class="hero-stat-value">400+</div>
           <div class="hero-stat-label">Terms</div>
         </div>
         <div class="hero-stat">
@@ -68,7 +66,7 @@
           <div class="hero-stat-label">Formulas</div>
         </div>
         <div class="hero-stat">
-          <div class="hero-stat-value">25+</div>
+          <div class="hero-stat-value">30+</div>
           <div class="hero-stat-label">MCQ Traps</div>
         </div>
       </div>
@@ -190,30 +188,30 @@
       <div class="topic-card" onclick="showSection('glossary')" style="--bar-color: var(--teal);">
         <div class="topic-num">Reference</div>
         <div class="topic-title">📚 Glossary</div>
-        <div class="topic-desc">300+ terms searchable across all 10 topics. Filter by topic, search by definition.</div>
+        <div class="topic-desc">400+ terms searchable across all 10 topics. Filter by topic, search by definition.</div>
       </div>
       <div class="topic-card" onclick="showSection('traps')" style="--bar-color: var(--coral);">
         <div class="topic-num">Reference</div>
         <div class="topic-title">⚠️ MCQ Traps</div>
-        <div class="topic-desc">25+ exam traps that catch people out. The wrong-but-believable claims and what's actually true.</div>
+        <div class="topic-desc">30+ exam traps that catch people out. The wrong-but-believable claims and what's actually true.</div>
       </div>
     </div>
 
-    <h2>How to use this site</h2>
-    <div class="two-col">
+    <h2 class="learn-only">How to use this site</h2>
+    <div class="two-col learn-only">
       <div class="concept-box note">
         <div class="concept-box-title">📖 Learn Mode</div>
-        <p>Read each topic from start to finish. First-principles intro builds up to engineering detail. Best for first-time learners or thorough review.</p>
+        <p>Read each topic from start to finish. First-principles intro builds up to engineering detail. Analogies and context included. Best for first-time learners or thorough review.</p>
       </div>
       <div class="concept-box tip">
         <div class="concept-box-title">⚡ Revise Mode</div>
-        <p>Hides intro fluff and shows only the exam-relevant content — formulas, traps, key terms. Best for last-minute exam prep.</p>
+        <p>Strips intro context and shows exam-relevant content only — key definitions, formulas, traps, and cheat sheets. Best for last-minute exam prep.</p>
       </div>
     </div>
 
-    <div class="concept-box success">
-      <div class="concept-box-title">💡 Pro tip</div>
-      <p>Use <strong>Ctrl+F</strong> (or <strong>Cmd+F</strong> on Mac) to search any page. The Glossary section also has a built-in search that filters across all 300+ terms instantly.</p>
+    <div class="concept-box success learn-only">
+      <div class="concept-box-title">⌨ Keyboard shortcuts</div>
+      <p>Press <strong>/</strong> to jump to Glossary search. Use <strong>→ / ←</strong> arrow keys to navigate between topics. Press <strong>Esc</strong> to clear search.</p>
     </div>
   </div>
 </section>
@@ -2981,14 +2979,14 @@
 <section id="glossary" class="section">
   <div class="container-wide">
     <h1>Complete Glossary</h1>
-    <p style="margin-bottom: 24px; color: var(--text-2);">Search across all 300+ terms instantly. Filter by topic. Every definition from first principles.</p>
-    
-    <div class="glossary-search">
+    <p style="margin-bottom: 24px; color: var(--text-2);">Search across all 400+ terms instantly. Filter by topic. Every definition from first principles.</p>
+
+    <div class="glossary-search-wrap">
       <div class="search-input-wrap">
         <input type="text" class="search-input" id="glossary-search-input" placeholder="Search any term, definition, or concept..." autocomplete="off">
         <span class="search-icon">⌕</span>
       </div>
-      <div id="search-results"></div>
+      <span id="search-results-count"></span>
     </div>
 
     <div class="filter-row">
@@ -3016,7 +3014,7 @@
 <section id="traps" class="section">
   <div class="container">
     <h1>MCQ Traps</h1>
-    <p class="hero-subtitle" style="margin-bottom: 32px;">25+ claims that sound plausible but are wrong. If you see any of these in your exam, you now know the truth.</p>
+    <p class="hero-subtitle" style="margin-bottom: 32px;">30+ claims that sound plausible but are wrong. If you see any of these in your exam, you now know the truth.</p>
 
     <h2>Topic 2 — Casting</h2>
     <div class="trap-card"><span class="trap-tag">Casting T1</span><div class="trap-claim">"Hot tearing is caused by flexible moulds restricting shrinkage."</div><div class="trap-truth"><strong>FALSE.</strong> Caused by <strong>RIGID</strong> moulds restricting thermal contraction.</div></div>
