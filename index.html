@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>EG182 — Manufacturing Technology 1 Study Site</title>
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
 </head>
 <body>
 <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
@@ -759,7 +762,7 @@
 
     <div class="formula-block">
       <div class="formula-name">Chvorinov's Rule — solidification time</div>
-      <div class="formula-eq">Ts = C × (V/A)²</div>
+      <div class="formula-eq">$$T_s = C\!\left(\dfrac{V}{A}\right)^{\!2}$$</div>
       <div class="formula-vars">
         <div class="formula-var"><span class="formula-var-symbol">Ts</span>solidification time (s)</div>
         <div class="formula-var"><span class="formula-var-symbol">C</span>mould constant (given in exam)</div>
@@ -771,7 +774,7 @@
 
     <div class="formula-block">
       <div class="formula-name">Sprue / pouring calculations — three steps</div>
-      <div class="formula-eq">v = √(2gh)  →  Q = v × A  →  T = V / Q</div>
+      <div class="formula-eq">$$v = \sqrt{2gh} \;\longrightarrow\; Q = vA \;\longrightarrow\; T = \dfrac{V}{Q}$$</div>
       <div class="formula-vars">
         <div class="formula-var"><span class="formula-var-symbol">v</span>velocity at sprue base (cm/s)</div>
         <div class="formula-var"><span class="formula-var-symbol">g</span>gravitational acceleration = 981 cm/s²</div>
@@ -932,7 +935,7 @@
 
     <div class="formula-block">
       <div class="formula-name">Net flow rate from extruder</div>
-      <div class="formula-eq">Qx = Qd − Qb</div>
+      <div class="formula-eq">$$Q_x = Q_d - Q_b$$</div>
       <div class="formula-vars">
         <div class="formula-var"><span class="formula-var-symbol">Qx</span>net output flow</div>
         <div class="formula-var"><span class="formula-var-symbol">Qd</span>drag flow (forward, from screw)</div>
@@ -1461,7 +1464,7 @@
 
     <div class="formula-block">
       <div class="formula-name">Compaction force</div>
-      <div class="formula-eq">F = Ap × Pc</div>
+      <div class="formula-eq">$$F = A_p \times P_c$$</div>
       <div class="formula-vars">
         <div class="formula-var"><span class="formula-var-symbol">F</span>compaction force (N)</div>
         <div class="formula-var"><span class="formula-var-symbol">Ap</span>projected area of part (mm²)</div>
@@ -1605,7 +1608,7 @@
     <h2 id="t5-formulas">Calculations</h2>
     <div class="formula-block">
       <div class="formula-name">Particle size from mesh screen</div>
-      <div class="formula-eq">Particle size = (25.4 / Mc) − wire diameter</div>
+      <div class="formula-eq">$$\text{Particle size} = \dfrac{25.4}{M_c} - \text{wire diameter}$$</div>
       <div class="formula-vars">
         <div class="formula-var"><span class="formula-var-symbol">Mc</span>mesh count (openings per linear inch)</div>
         <div class="formula-var"><span class="formula-var-symbol">25.4</span>mm per inch (constant)</div>
@@ -1759,7 +1762,7 @@
 
     <div class="formula-block">
       <div class="formula-name">Hollomon flow curve equation</div>
-      <div class="formula-eq">σ = K × εⁿ</div>
+      <div class="formula-eq">$$\sigma = K\varepsilon^n$$</div>
       <div class="formula-vars">
         <div class="formula-var"><span class="formula-var-symbol">σ</span>flow stress (MPa)</div>
         <div class="formula-var"><span class="formula-var-symbol">K</span>strength coefficient (MPa) — material constant</div>
@@ -1770,7 +1773,7 @@
 
     <div class="formula-block">
       <div class="formula-name">Average flow stress</div>
-      <div class="formula-eq">Ȳf = K × εfⁿ / (1 + n)</div>
+      <div class="formula-eq">$$\bar{Y}_f = \dfrac{K\varepsilon_f^n}{1+n}$$</div>
       <div class="formula-vars">
         <div class="formula-var"><span class="formula-var-symbol">Ȳf</span>average flow stress (MPa)</div>
         <div class="formula-var"><span class="formula-var-symbol">εf</span>final true strain</div>
@@ -2063,7 +2066,7 @@
 
     <div class="formula-block">
       <div class="formula-name">Material Removal Rate (MRR)</div>
-      <div class="formula-eq">MRR = v × f × d</div>
+      <div class="formula-eq">$$\text{MRR} = v \cdot f \cdot d$$</div>
       <div class="formula-vars">
         <div class="formula-var"><span class="formula-var-symbol">v</span>cutting speed (mm/s or m/min)</div>
         <div class="formula-var"><span class="formula-var-symbol">f</span>feed — tool advance per revolution (mm/rev)</div>
@@ -2109,7 +2112,7 @@
     <h2 id="t7-surface">Surface finish — what controls it</h2>
     <div class="formula-block">
       <div class="formula-name">Ideal surface roughness</div>
-      <div class="formula-eq">Ri = f² / (8 × NR)</div>
+      <div class="formula-eq">$$R_i = \dfrac{f^2}{8 N_R}$$</div>
       <div class="formula-vars">
         <div class="formula-var"><span class="formula-var-symbol">Ri</span>ideal surface roughness</div>
         <div class="formula-var"><span class="formula-var-symbol">f</span>feed rate</div>
@@ -2215,7 +2218,7 @@
     <h2 id="t8-taylor">Taylor tool life equation</h2>
     <div class="formula-block">
       <div class="formula-name">Taylor tool life</div>
-      <div class="formula-eq">v × Tⁿ = C</div>
+      <div class="formula-eq">$$v\, T^n = C$$</div>
       <div class="formula-vars">
         <div class="formula-var"><span class="formula-var-symbol">v</span>cutting speed (m/min)</div>
         <div class="formula-var"><span class="formula-var-symbol">T</span>tool life (min)</div>
@@ -2280,7 +2283,7 @@
     <h2 id="t8-cost">Cost and time optimisation</h2>
     <div class="formula-block">
       <div class="formula-name">Production cycle time per part</div>
-      <div class="formula-eq">Tc = Th + To + Tt</div>
+      <div class="formula-eq">$$T_c = T_h + T_o + T_t$$</div>
       <div class="formula-vars">
         <div class="formula-var"><span class="formula-var-symbol">Tc</span>total cycle time (min/part)</div>
         <div class="formula-var"><span class="formula-var-symbol">Th</span>handling time (load/unload)</div>
@@ -2291,7 +2294,7 @@
 
     <div class="formula-block">
       <div class="formula-name">Cost per part</div>
-      <div class="formula-eq">Cpc = Cm + (CL + Ceq) × Tc + Ct</div>
+      <div class="formula-eq">$$C_{pc} = C_m + (C_L + C_{eq})\,T_c + C_t$$</div>
       <div class="formula-vars">
         <div class="formula-var"><span class="formula-var-symbol">Cm</span>material cost (£/part)</div>
         <div class="formula-var"><span class="formula-var-symbol">CL</span>labour cost rate (£/min)</div>
@@ -2838,7 +2841,7 @@
 
     <div class="formula-block">
       <div class="formula-name">Chvorinov's rule — solidification time</div>
-      <div class="formula-eq">Ts = C × (V/A)²</div>
+      <div class="formula-eq">$$T_s = C\!\left(\dfrac{V}{A}\right)^{\!2}$$</div>
       <div class="formula-vars">
         <div class="formula-var"><span class="formula-var-symbol">Ts</span>solidification time (s)</div>
         <div class="formula-var"><span class="formula-var-symbol">C</span>mould constant — given in exam</div>
@@ -2857,7 +2860,7 @@
 
     <div class="formula-block">
       <div class="formula-name">Sprue / pouring — three-step sequence</div>
-      <div class="formula-eq">v = √(2gh) → Q = v × A → T = V / Q</div>
+      <div class="formula-eq">$$v = \sqrt{2gh} \;\longrightarrow\; Q = vA \;\longrightarrow\; T = \dfrac{V}{Q}$$</div>
       <div class="formula-vars">
         <div class="formula-var"><span class="formula-var-symbol">v</span>velocity at sprue base (cm/s)</div>
         <div class="formula-var"><span class="formula-var-symbol">g</span>981 cm/s² (gravitational acceleration)</div>
@@ -2873,7 +2876,7 @@
 
     <div class="formula-block">
       <div class="formula-name">Compaction force</div>
-      <div class="formula-eq">F = Ap × Pc</div>
+      <div class="formula-eq">$$F = A_p \times P_c$$</div>
       <div class="formula-vars">
         <div class="formula-var"><span class="formula-var-symbol">F</span>force (N)</div>
         <div class="formula-var"><span class="formula-var-symbol">Ap</span>projected area of part (mm²)</div>
@@ -2884,7 +2887,7 @@
 
     <div class="formula-block">
       <div class="formula-name">Particle size from mesh screen</div>
-      <div class="formula-eq">Particle size = (25.4 / Mc) − wire diameter</div>
+      <div class="formula-eq">$$\text{Particle size} = \dfrac{25.4}{M_c} - \text{wire diameter}$$</div>
       <div class="formula-vars">
         <div class="formula-var"><span class="formula-var-symbol">Mc</span>mesh count (openings per linear inch)</div>
         <div class="formula-var"><span class="formula-var-symbol">25.4</span>mm per inch (constant)</div>
@@ -2896,7 +2899,7 @@
 
     <div class="formula-block">
       <div class="formula-name">Flow stress — Hollomon equation</div>
-      <div class="formula-eq">σ = K × εⁿ</div>
+      <div class="formula-eq">$$\sigma = K\varepsilon^n$$</div>
       <div class="formula-vars">
         <div class="formula-var"><span class="formula-var-symbol">σ</span>flow stress (MPa)</div>
         <div class="formula-var"><span class="formula-var-symbol">K</span>strength coefficient (MPa)</div>
@@ -2907,7 +2910,7 @@
 
     <div class="formula-block">
       <div class="formula-name">Average flow stress</div>
-      <div class="formula-eq">Ȳf = K × εfⁿ / (1 + n) = σf / (1 + n)</div>
+      <div class="formula-eq">$$\bar{Y}_f = \dfrac{K\varepsilon_f^n}{1+n} = \dfrac{\sigma_f}{1+n}$$</div>
       <div class="formula-vars">
         <div class="formula-var"><span class="formula-var-symbol">Ȳf</span>average flow stress (MPa)</div>
         <div class="formula-var"><span class="formula-var-symbol">εf</span>final true strain</div>
@@ -2917,7 +2920,7 @@
 
     <div class="formula-block">
       <div class="formula-name">Finding K and n from two data points</div>
-      <div class="formula-eq">ln σ = ln K + n × ln ε</div>
+      <div class="formula-eq">$$\ln\sigma = \ln K + n\ln\varepsilon$$</div>
       <p style="padding: 8px 0;"><strong>Method:</strong> Write two equations using two (σ, ε) pairs. Subtract to eliminate ln K → find n. Substitute back → find ln K → K = e^(ln K).</p>
     </div>
 
@@ -2925,7 +2928,7 @@
 
     <div class="formula-block">
       <div class="formula-name">Material removal rate (MRR)</div>
-      <div class="formula-eq">MRR = v × f × d</div>
+      <div class="formula-eq">$$\text{MRR} = v \cdot f \cdot d$$</div>
       <div class="formula-vars">
         <div class="formula-var"><span class="formula-var-symbol">v</span>cutting speed</div>
         <div class="formula-var"><span class="formula-var-symbol">f</span>feed (mm/rev)</div>
@@ -2935,7 +2938,7 @@
 
     <div class="formula-block">
       <div class="formula-name">Taylor tool life equation</div>
-      <div class="formula-eq">v × Tⁿ = C</div>
+      <div class="formula-eq">$$v\, T^n = C$$</div>
       <div class="formula-vars">
         <div class="formula-var"><span class="formula-var-symbol">v</span>cutting speed (m/min)</div>
         <div class="formula-var"><span class="formula-var-symbol">T</span>tool life (min)</div>
@@ -2946,7 +2949,7 @@
 
     <div class="formula-block">
       <div class="formula-name">Ideal surface roughness</div>
-      <div class="formula-eq">Ri = f² / (8 × NR)</div>
+      <div class="formula-eq">$$R_i = \dfrac{f^2}{8 N_R}$$</div>
       <div class="formula-vars">
         <div class="formula-var"><span class="formula-var-symbol">Ri</span>ideal surface roughness</div>
         <div class="formula-var"><span class="formula-var-symbol">f</span>feed rate</div>
@@ -2956,8 +2959,8 @@
 
     <div class="formula-block">
       <div class="formula-name">Production cycle time and cost per part</div>
-      <div class="formula-eq">Tc = Th + To + Tt</div>
-      <div class="formula-eq" style="margin-top: 8px; font-size: 20px;">Cpc = Cm + (CL + Ceq) × Tc + Ct</div>
+      <div class="formula-eq">$$T_c = T_h + T_o + T_t$$</div>
+      <div class="formula-eq" style="margin-top: 8px; font-size: 20px;">$$C_{pc} = C_m + (C_L + C_{eq})\,T_c + C_t$$</div>
       <div class="formula-vars">
         <div class="formula-var"><span class="formula-var-symbol">Tc</span>cycle time (min/part)</div>
         <div class="formula-var"><span class="formula-var-symbol">Th</span>handling time</div>
@@ -3115,5 +3118,15 @@
 </main>
 <script src="js/glossary-data.js"></script>
 <script src="js/main.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });
+});
+</script>
 </body>
 </html>
