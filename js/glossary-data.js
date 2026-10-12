@@ -450,3 +450,208 @@ const glossaryData = {
     ]
   }
 }
+
+/* Side-by-side comparisons, shown in term previews and expanded glossary entries */
+const glossaryComparisons = [
+  { terms: ["Isotropic", "Anisotropic"],
+    aliases: [["isotropy"], ["anisotropy"]],
+    rows: [
+      ["Properties", "Same in all directions", "Differ with direction"],
+      ["Grain type", "Equiaxed grains", "Columnar grains"],
+      ["Where in a casting", "Centre (equiaxed zone)", "Columnar zone"],
+      ["Also seen in", "General engineering parts", "Composites (deliberately)"]
+    ] },
+  { terms: ["Chill zone", "Columnar zone", "Equiaxed zone"],
+    rows: [
+      ["Location", "At the mould wall", "Grows inward from the chill zone", "Centre of the casting"],
+      ["Grains", "Very fine, random", "Long, aligned against heat flow", "Equal size in all directions"],
+      ["Properties", "Fine-grained skin", "Anisotropic", "Isotropic, best mechanical properties"]
+    ] },
+  { terms: ["Fine grains", "Coarse grains"],
+    rows: [
+      ["Cooling rate", "Rapid", "Slow"],
+      ["Room-temperature strength", "Higher, tougher", "Lower"],
+      ["High-temperature creep", "Worse", "Better"]
+    ] },
+  { terms: ["Expendable mould", "Permanent mould"],
+    rows: [
+      ["Reuse", "Destroyed after each casting", "Reused thousands of times"],
+      ["Material", "Sand, ceramic shell, foam", "Metal"],
+      ["Examples", "Sand, investment, lost foam casting", "Die casting, centrifugal casting"]
+    ] },
+  { terms: ["Cope", "Drag"],
+    rows: [
+      ["Position", "Top half of the mould", "Bottom half of the mould"]
+    ] },
+  { terms: ["Hot chamber die casting", "Cold chamber die casting"],
+    rows: [
+      ["Injection system", "Submerged in the melt", "Separate, metal ladled in each shot"],
+      ["Speed", "Fast, continuous cycle", "Slower"],
+      ["Metals", "Zinc and tin alloys only", "Al, Mg, Cu"]
+    ] },
+  { terms: ["Net shape", "Near-net shape"],
+    rows: [
+      ["Finishing needed", "None", "Minimal"],
+      ["Examples", "Some die castings, coining", "Most PM, investment casting"]
+    ] },
+  { terms: ["Job shop", "Batch production", "Mass production"],
+    rows: [
+      ["Volume", "Low", "Medium", "High"],
+      ["Variety", "High", "Medium", "Low"],
+      ["Cost per part", "High", "Medium", "Low"]
+    ] },
+  { terms: ["Consumer goods", "Capital goods"],
+    rows: [
+      ["Bought by", "Individuals", "Companies"],
+      ["Purpose", "Personal use", "To make other goods or services"],
+      ["Examples", "Cars, phones, tyres", "Lathes, aircraft, robots"]
+    ] },
+  { terms: ["Processing operation", "Assembly operation"],
+    rows: [
+      ["Works on", "A single material or part", "Two or more components"],
+      ["Examples", "Casting, machining, forging", "Welding, bolting, riveting"]
+    ] },
+  { terms: ["Thermoplastic", "Thermoset"],
+    rows: [
+      ["On heating", "Softens, can be remelted", "Cures permanently"],
+      ["Structure", "Unchanged by shaping", "Irreversible cross-linked network"],
+      ["Recyclable", "Yes", "No"],
+      ["Analogy", "Butter", "Concrete"]
+    ] },
+  { terms: ["Newtonian fluid", "Pseudoplastic fluid"],
+    rows: [
+      ["Viscosity vs shear rate", "Constant", "Falls as shear rate rises (shear thinning)"],
+      ["Examples", "Water, oil", "All polymer melts"]
+    ] },
+  { terms: ["Compression moulding", "Transfer moulding"],
+    rows: [
+      ["Charge placed", "Directly in the heated mould", "In a separate pot, forced into the cavity"],
+      ["Best for", "Simpler shapes", "Complex shapes and inserts"]
+    ] },
+  { terms: ["Negative mould", "Positive mould"],
+    rows: [
+      ["Shape", "Concave cavity", "Convex raised form"],
+      ["Surface touching mould", "Inside of the part", "Outside of the part"]
+    ] },
+  { terms: ["Continuous fibres", "Chopped fibres"],
+    rows: [
+      ["Performance", "Highest structural", "Moderate"],
+      ["Flows into complex moulds", "No", "Yes (SMC, BMC, spray-up)"]
+    ] },
+  { terms: ["Open mould", "Closed mould"],
+    rows: [
+      ["Tooling cost", "Low", "Higher"],
+      ["Production rate", "Low, labour intensive", "Higher"],
+      ["Processes", "Hand lay-up, spray-up, filament winding", "Compression, transfer, injection of SMC/BMC"]
+    ] },
+  { terms: ["Glass fibre", "Carbon fibre", "Aramid"],
+    rows: [
+      ["Strength", "Low cost, good stiffness", "Highest stiffness and strength, light", "Highest toughness, impact absorption"],
+      ["Cost", "Low", "High", "Medium-high"],
+      ["Uses", "Boats, wind turbine blades", "Aerospace, F1", "Body armour, helmets"]
+    ] },
+  { terms: ["Gas atomisation", "Water atomisation"],
+    rows: [
+      ["Particle shape", "Spherical", "Irregular"],
+      ["Strength", "Excellent flowability", "Better compaction and green strength"],
+      ["Cost", "Higher", "Cheaper"]
+    ] },
+  { terms: ["Elemental powder", "Pre-alloyed powder"],
+    rows: [
+      ["Each particle", "Pure metal", "Final alloy composition"],
+      ["Alloy forms", "During sintering", "Already alloyed"],
+      ["Used for", "Simple mixed alloys", "Stainless steels, superalloys"]
+    ] },
+  { terms: ["Infiltration", "Impregnation"],
+    rows: [
+      ["Fills pores with", "Lower-melting metal (bronze)", "Oil"],
+      ["Purpose", "Density and strength", "Self-lubricating bearings"]
+    ] },
+  { terms: ["HIP", "CIP"],
+    rows: [
+      ["Pressure medium", "Inert gas", "Water"],
+      ["Temperature", "High", "Room temperature"],
+      ["Result", "Near full density, porosity removed", "Uniform green density"]
+    ] },
+  { terms: ["Cold working", "Warm working", "Hot working"],
+    rows: [
+      ["Temperature", "Below 0.3 Tm", "0.3–0.5 Tm", "Above ~0.5 Tm (recrystallisation)"],
+      ["Forces", "High", "Intermediate", "Low"],
+      ["Work hardening", "Significant", "Some", "None (recrystallises)"],
+      ["Finish and accuracy", "Excellent", "Good", "Oxidised surface"]
+    ] },
+  { terms: ["Open-die forging", "Impression-die forging"],
+    rows: [
+      ["Die", "Flat dies, metal flows freely", "Shaped cavity"],
+      ["Parts", "Simple shapes, large parts", "Complex parts (crankshafts, con-rods)"],
+      ["Flash", "None", "Yes, helps fill the cavity"]
+    ] },
+  { terms: ["Direct extrusion", "Indirect extrusion"],
+    rows: [
+      ["Moves", "Ram pushes billet to fixed die", "Die moves into a stationary billet"],
+      ["Metal flow", "Same direction as the ram", "Backwards through the hollow ram"],
+      ["Friction", "Higher", "Lower"]
+    ] },
+  { terms: ["Blanking", "Punching"],
+    rows: [
+      ["Cut-out piece", "The part you keep", "Scrap (slug)"],
+      ["Sheet left behind", "Scrap", "The part you keep"]
+    ] },
+  { terms: ["Peripheral milling", "Face milling"],
+    rows: [
+      ["Cutter axis", "Parallel to the surface", "Perpendicular to the surface"],
+      ["Cutting edges used", "Outside of the cutter", "End and edge of the cutter"]
+    ] },
+  { terms: ["Roughing cuts", "Finishing cuts"],
+    rows: [
+      ["Feed and depth", "High", "Low"],
+      ["Speed", "Low", "High"],
+      ["Goal", "Remove material fast", "Final size and surface finish"]
+    ] },
+  { terms: ["Continuous chip", "Discontinuous chip", "Built-up edge"],
+    rows: [
+      ["Material", "Ductile", "Brittle", "Ductile"],
+      ["Speed and feed", "High speed, small feed, sharp tool", "Low speed, large feed", "Low–medium speed"],
+      ["Surface finish", "Best", "Fair", "Damaged"]
+    ] },
+  { terms: ["Single-point tool", "Multi-point tool"],
+    rows: [
+      ["Cutting edges", "One", "More than one"],
+      ["Examples", "Turning tools", "Drills, milling cutters"]
+    ] },
+  { terms: ["Crater wear", "Flank wear"],
+    rows: [
+      ["Location", "Rake face", "Flank face"],
+      ["Cause", "Chip sliding over the tool", "Rubbing against the machined surface"],
+      ["Tool life criterion", "Less commonly used", "Replace at ~0.5 mm wear land"]
+    ] },
+  { terms: ["Coolant-type cutting fluid", "Lubricant-type cutting fluid"],
+    rows: [
+      ["Base", "Water", "Oil"],
+      ["Main job", "Remove heat", "Reduce friction"],
+      ["Best at", "High cutting speeds", "Low cutting speeds"]
+    ] },
+  { terms: ["Dressing", "Truing"],
+    rows: [
+      ["Purpose", "Sharpen the wheel", "Restore the wheel's shape"],
+      ["How", "Removes dull grains to expose sharp ones", "Restores concentricity and geometry"]
+    ] },
+  { terms: ["Martensite", "Bainite", "Pearlite"],
+    rows: [
+      ["Formed by", "Rapid quench of austenite", "Intermediate cooling", "Slow cooling of austenite"],
+      ["Structure", "Distorted BCC, trapped carbon", "Intermediate", "Layered ferrite + cementite"],
+      ["Hardness", "Very hard, brittle", "Intermediate", "Much softer"]
+    ] },
+  { terms: ["Hardening", "Tempering"],
+    aliases: [["quench hardening"], []],
+    rows: [
+      ["Process", "Heat above critical temperature, quench", "Reheat hardened steel to an intermediate temperature"],
+      ["Result", "Martensite, very hard and brittle", "Less brittle, tougher"]
+    ] },
+  { terms: ["Rheo-route", "Thixo-route"],
+    rows: [
+      ["Starting point", "Liquid metal", "Solid pre-processed billet"],
+      ["Steps", "One (cool + shear together)", "Two (with intermediate solidification)"],
+      ["Trade-off", "Lower cost", "Higher control"]
+    ] }
+];
